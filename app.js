@@ -1,3 +1,21 @@
+// Global JS Error Logger for diagnostics
+window.addEventListener('error', function(e) {
+  const errDiv = document.createElement('div');
+  errDiv.style.position = 'fixed';
+  errDiv.style.top = '0';
+  errDiv.style.left = '0';
+  errDiv.style.width = '100%';
+  errDiv.style.backgroundColor = '#ef4444';
+  errDiv.style.color = '#ffffff';
+  errDiv.style.padding = '12px';
+  errDiv.style.zIndex = '99999';
+  errDiv.style.fontSize = '0.9rem';
+  errDiv.style.fontFamily = 'monospace';
+  errDiv.style.whiteSpace = 'pre-wrap';
+  errDiv.innerHTML = `<strong>JS ERROR:</strong> ${e.message} at ${e.filename}:${e.lineno}:${e.colno}`;
+  document.body.appendChild(errDiv);
+});
+
 // Active Database (will be dynamically populated from LocalStorage, data.json, or data.js fallback)
 let timelineData = [];
 let chaptersData = [];
@@ -1231,6 +1249,11 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+// Escape regular expression characters
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 // 7. Render Search Results
