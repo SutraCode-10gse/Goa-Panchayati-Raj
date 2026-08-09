@@ -290,11 +290,14 @@ function switchTab(tabId) {
       const tabSearch = document.createElement('section');
       tabSearch.id = 'tab-search';
       tabSearch.className = 'tab-pane';
+      tabSearch.style.overflowY = 'auto';
+      tabSearch.style.paddingBottom = '40px';
+      tabSearch.style.height = '100%';
       tabSearch.innerHTML = `
         <div class="card card-wide search-results-card" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; width: 100%;">
           <h3>Search Results</h3>
           <p id="search-results-summary" style="font-size: 0.95rem; color: var(--text-secondary);">Enter a keyword in the sidebar search box to search the entire Act.</p>
-          <div class="search-results-list" id="search-results-output" style="display: flex; flex-direction: column; gap: 12px; max-height: 60vh; overflow-y: auto; padding-right: 4px;">
+          <div class="search-results-list" id="search-results-output" style="display: flex; flex-direction: column; gap: 12px;">
             <!-- Dynamically populated search matches -->
           </div>
         </div>
@@ -1304,22 +1307,22 @@ function renderSearchResults() {
     const number = sec.number.toLowerCase();
     
     if (text.includes(query) || title.includes(query) || number.includes(query)) {
-      // Find snippets in the text
+      // Find first matched sentence containing the query
       const sentences = (sec.versions['Latest'] || '').split(/[.\n]+/);
-      const matchingSnippets = [];
-      
-      sentences.forEach(sentence => {
+      let snippetText = '';
+      for (const sentence of sentences) {
         if (sentence.toLowerCase().includes(query)) {
-          const trimmed = sentence.trim();
-          if (trimmed.length > 0 && matchingSnippets.length < 3) { // Limit to 3 snippets per section
-            matchingSnippets.push(trimmed);
-          }
+          snippetText = sentence.trim();
+          break;
         }
-      });
+      }
+      if (!snippetText) {
+        snippetText = (sec.versions['Latest'] || '').substring(0, 120).trim();
+      }
       
       matches.push({
         section: sec,
-        snippets: matchingSnippets
+        snippet: snippetText
       });
     }
   });
@@ -1361,11 +1364,9 @@ function renderSearchResults() {
       navigateToSection(sec.id);
     });
     
-    // Highlight query in snippets
-    const highlightedSnippets = match.snippets.map(snip => {
-      const regex = new RegExp(`(${escapeRegExp(state.globalSearchQuery)})`, 'gi');
-      return snip.replace(regex, '<span class="highlight-match">$1</span>');
-    }).join(' ... ');
+    // Highlight query in the single-line snippet
+    const regex = new RegExp(`(${escapeRegExp(state.globalSearchQuery)})`, 'gi');
+    const highlightedSnippet = match.snippet.replace(regex, '<span class="highlight-match">$1</span>');
     
     card.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
@@ -1376,8 +1377,8 @@ function renderSearchResults() {
           ${sec.tier}
         </span>
       </div>
-      <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; margin: 0; font-style: italic;">
-        ${highlightedSnippets || 'Keyword found in title or section index reference.'}
+      <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; margin: 0; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: block;">
+        ${highlightedSnippet || 'Keyword found in title or section index reference.'}
       </p>
     `;
     

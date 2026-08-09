@@ -362,11 +362,11 @@
         </section>
 
         <!-- 7. SEARCH RESULTS TAB -->
-        <section id="tab-search" class="tab-pane">
-          <div class="card card-wide search-results-card" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+        <section id="tab-search" class="tab-pane" style="overflow-y: auto; padding-bottom: 40px; height: 100%;">
+          <div class="card card-wide search-results-card" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; width: 100%;">
             <h3>Search Results</h3>
             <p id="search-results-summary" style="font-size: 0.95rem; color: var(--text-secondary);">Enter a keyword in the sidebar search box to search the entire Act.</p>
-            <div class="search-results-list" id="search-results-output" style="display: flex; flex-direction: column; gap: 12px; max-height: 60vh; overflow-y: auto; padding-right: 4px;">
+            <div class="search-results-list" id="search-results-output" style="display: flex; flex-direction: column; gap: 12px;">
               <!-- Dynamically populated search matches -->
             </div>
           </div>
