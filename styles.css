@@ -1072,14 +1072,15 @@ input:checked + .slider:before {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-md);
   padding: 24px;
-  flex-grow: 1;
   font-size: 1rem;
   line-height: 1.7;
-  overflow-y: auto;
   white-space: pre-wrap;
   margin-bottom: 24px;
   font-family: var(--font-body);
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  height: auto;
+  min-height: 180px;
+  overflow: visible;
 }
 
 .text-display-pane.mono {
