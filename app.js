@@ -283,6 +283,26 @@ function toggleTheme() {
 function switchTab(tabId) {
   state.activeTab = tabId;
   
+  // Dynamically inject the Search Results tab pane if it is missing from the HTML
+  if (tabId === 'search' && !document.getElementById('tab-search')) {
+    const viewport = document.querySelector('.content-viewport');
+    if (viewport) {
+      const tabSearch = document.createElement('section');
+      tabSearch.id = 'tab-search';
+      tabSearch.className = 'tab-pane';
+      tabSearch.innerHTML = `
+        <div class="card card-wide search-results-card" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; width: 100%;">
+          <h3>Search Results</h3>
+          <p id="search-results-summary" style="font-size: 0.95rem; color: var(--text-secondary);">Enter a keyword in the sidebar search box to search the entire Act.</p>
+          <div class="search-results-list" id="search-results-output" style="display: flex; flex-direction: column; gap: 12px; max-height: 60vh; overflow-y: auto; padding-right: 4px;">
+            <!-- Dynamically populated search matches -->
+          </div>
+        </div>
+      `;
+      viewport.appendChild(tabSearch);
+    }
+  }
+  
   // Update nav buttons
   document.querySelectorAll('.nav-btn').forEach(btn => {
     if (btn.getAttribute('data-tab') === tabId) {
@@ -379,8 +399,8 @@ function setupEventListeners() {
       searchClear.style.display = 'none';
     }
     
-    // Automatically switch to search tab if query is 2+ characters long
-    if (state.globalSearchQuery.length >= 2) {
+    // Automatically switch to search tab if query is 3+ characters long
+    if (state.globalSearchQuery.length >= 3) {
       if (state.activeTab !== 'search') {
         switchTab('search');
       } else {
@@ -925,9 +945,9 @@ function renderExplorerDetail() {
     // Normal single-version text
     const normalText = section.versions[state.explorerBaseVersion] || '';
     const query = state.globalSearchQuery.trim();
-    if (query.length >= 2) {
+    if (query.length >= 3) {
       const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
-      textPane.innerHTML = escapeHtml(normalText).replace(regex, '<span class="highlight-match" style="background-color: var(--accent-glow); color: var(--accent-light); font-weight: 600; padding: 2px 4px; border-radius: 2px;">$1</span>');
+      textPane.innerHTML = escapeHtml(normalText).replace(regex, '<span class="highlight-match">$1</span>');
     } else {
       textPane.textContent = normalText;
     }
@@ -1266,11 +1286,11 @@ function renderSearchResults() {
   output.innerHTML = '';
   
   const query = state.globalSearchQuery.toLowerCase().trim();
-  if (query.length < 2) {
-    summary.textContent = 'Enter at least 2 characters in the search box to search the entire Act.';
+  if (query.length < 3) {
+    summary.textContent = 'Enter at least 3 characters in the search box to search the entire Act.';
     output.innerHTML = `
       <div class="no-selection-placeholder" style="padding: 40px; text-align: center; color: var(--text-muted);">
-        <p>Please enter a keyword of 2 or more characters to begin searching.</p>
+        <p>Please enter a keyword of 3 or more characters to begin searching.</p>
       </div>
     `;
     return;
@@ -1344,7 +1364,7 @@ function renderSearchResults() {
     // Highlight query in snippets
     const highlightedSnippets = match.snippets.map(snip => {
       const regex = new RegExp(`(${escapeRegExp(state.globalSearchQuery)})`, 'gi');
-      return snip.replace(regex, '<span class="highlight-match" style="background-color: var(--accent-glow); color: var(--accent-light); font-weight: 600; padding: 2px 4px; border-radius: 2px;">$1</span>');
+      return snip.replace(regex, '<span class="highlight-match">$1</span>');
     }).join(' ... ');
     
     card.innerHTML = `

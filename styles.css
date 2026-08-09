@@ -1081,11 +1081,20 @@ input:checked + .slider:before {
   height: auto;
   min-height: 180px;
   overflow: visible;
+  flex-shrink: 0;
 }
 
 .text-display-pane.mono {
   font-family: var(--font-mono);
   font-size: 0.9rem;
+}
+
+.highlight-match {
+  background-color: var(--accent-glow);
+  color: var(--accent-light);
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: var(--border-radius-sm);
 }
 
 /* Section History Details Table */
