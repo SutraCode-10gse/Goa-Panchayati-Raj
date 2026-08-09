@@ -61,7 +61,7 @@
               <span>Compare Engine</span>
             </button>
           </li>
-          <li>
+          <li id="nav-db-container" style="display: none;">
             <button class="nav-btn" data-tab="database" id="btn-database">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
               <span>Manage Database</span>
@@ -357,6 +357,15 @@
               <button id="db-reset-btn" class="nav-btn" style="width: auto; padding: 6px 12px; margin-top: 10px; display: none; font-size: 0.8rem; background-color: var(--del-bg); color: var(--del-color); border: 1px solid rgba(239,68,68,0.2);">
                 Reset to Default System Database
               </button>
+            </div>
+          </div>
+        <!-- 7. SEARCH RESULTS TAB -->
+        <section id="tab-search" class="tab-pane">
+          <div class="card card-wide search-results-card" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+            <h3>Search Results</h3>
+            <p id="search-results-summary" style="font-size: 0.95rem; color: var(--text-secondary);">Enter a keyword in the sidebar search box to search the entire Act.</p>
+            <div class="search-results-list" id="search-results-output" style="display: flex; flex-direction: column; gap: 12px; max-height: 60vh; overflow-y: auto; padding-right: 4px;">
+              <!-- Dynamically populated search matches -->
             </div>
           </div>
         </section>

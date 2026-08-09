@@ -312,6 +312,10 @@ function switchTab(tabId) {
       viewTitle.textContent = 'Manage Database';
       viewSubtitle.textContent = 'Export, backup, or import custom JSON databases';
       break;
+    case 'search':
+      viewTitle.textContent = 'Search Results';
+      viewSubtitle.textContent = 'Contextual references for your keyword search';
+      break;
   }
 
   // Perform render for specific views
@@ -330,29 +334,64 @@ function setupEventListeners() {
     });
   });
 
+  // Secret keyboard shortcut (Ctrl + Alt + D) to toggle Admin Database Manager
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.altKey && e.key.toLowerCase() === 'd') {
+      e.preventDefault();
+      const dbContainer = document.getElementById('nav-db-container');
+      if (dbContainer) {
+        const isHidden = dbContainer.style.display === 'none';
+        dbContainer.style.display = isHidden ? 'block' : 'none';
+        if (isHidden) {
+          switchTab('database');
+        }
+      }
+    }
+  });
+
   // Global Search Input
   const searchInput = document.getElementById('global-search-input');
   const searchClear = document.getElementById('search-clear-btn');
   
   searchInput.addEventListener('keyup', (e) => {
-    state.globalSearchQuery = e.target.value.toLowerCase().trim();
+    state.globalSearchQuery = e.target.value.trim();
     if (state.globalSearchQuery.length > 0) {
       searchClear.style.display = 'block';
     } else {
       searchClear.style.display = 'none';
     }
-    // Perform search filtering on explorer TOC if we're in explorer, or switch to explorer
-    if (state.activeTab !== 'explorer' && state.activeTab !== 'reader') {
-      switchTab('explorer');
+    
+    // Automatically switch to search tab if query is 3+ characters long
+    if (state.globalSearchQuery.length >= 3) {
+      if (state.activeTab !== 'search') {
+        switchTab('search');
+      } else {
+        renderSearchResults();
+      }
+    } else {
+      renderView(state.activeTab);
     }
-    renderView(state.activeTab);
+  });
+
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      state.globalSearchQuery = searchInput.value.trim();
+      if (state.globalSearchQuery.length > 0) {
+        switchTab('search');
+      }
+    }
   });
 
   searchClear.addEventListener('click', () => {
     searchInput.value = '';
     state.globalSearchQuery = '';
     searchClear.style.display = 'none';
-    renderView(state.activeTab);
+    if (state.activeTab === 'search') {
+      switchTab('dashboard');
+    } else {
+      renderView(state.activeTab);
+    }
   });
 
   // Reader Toolbar Filters
@@ -543,6 +582,9 @@ function renderView(viewId) {
     case 'compare':
       updateCompareVersionSelectors();
       renderCompareEngine();
+      break;
+    case 'search':
+      renderSearchResults();
       break;
   }
 }
@@ -864,7 +906,13 @@ function renderExplorerDetail() {
   } else {
     // Normal single-version text
     const normalText = section.versions[state.explorerBaseVersion] || '';
-    textPane.textContent = normalText;
+    const query = state.globalSearchQuery.trim();
+    if (query.length >= 2) {
+      const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+      textPane.innerHTML = escapeHtml(normalText).replace(regex, '<span class="highlight-match" style="background-color: var(--accent-glow); color: var(--accent-light); font-weight: 600; padding: 2px 4px; border-radius: 2px;">$1</span>');
+    } else {
+      textPane.textContent = normalText;
+    }
   }
 
   // Bind dropdown and toggle events
@@ -1183,4 +1231,113 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+// 7. Render Search Results
+function renderSearchResults() {
+  const output = document.getElementById('search-results-output');
+  const summary = document.getElementById('search-results-summary');
+  
+  if (!output || !summary) return;
+  
+  output.innerHTML = '';
+  
+  const query = state.globalSearchQuery.toLowerCase().trim();
+  if (query.length < 2) {
+    summary.textContent = 'Enter at least 2 characters in the search box to search the entire Act.';
+    output.innerHTML = `
+      <div class="no-selection-placeholder" style="padding: 40px; text-align: center; color: var(--text-muted);">
+        <p>Please enter a keyword of 2 or more characters to begin searching.</p>
+      </div>
+    `;
+    return;
+  }
+  
+  // Find matches
+  const matches = [];
+  sectionsData.forEach(sec => {
+    const text = (sec.versions['Latest'] || '').toLowerCase();
+    const title = sec.title.toLowerCase();
+    const number = sec.number.toLowerCase();
+    
+    if (text.includes(query) || title.includes(query) || number.includes(query)) {
+      // Find snippets in the text
+      const sentences = (sec.versions['Latest'] || '').split(/[.\n]+/);
+      const matchingSnippets = [];
+      
+      sentences.forEach(sentence => {
+        if (sentence.toLowerCase().includes(query)) {
+          const trimmed = sentence.trim();
+          if (trimmed.length > 0 && matchingSnippets.length < 3) { // Limit to 3 snippets per section
+            matchingSnippets.push(trimmed);
+          }
+        }
+      });
+      
+      matches.push({
+        section: sec,
+        snippets: matchingSnippets
+      });
+    }
+  });
+  
+  summary.innerHTML = `Found <strong>${matches.length}</strong> sections referencing <strong>"${escapeHtml(state.globalSearchQuery)}"</strong>.`;
+  
+  if (matches.length === 0) {
+    output.innerHTML = `
+      <div class="no-selection-placeholder" style="padding: 40px; text-align: center; color: var(--text-muted);">
+        <p>No matches found. Try searching for other terms like "quorum", "license", "member", or "tax".</p>
+      </div>
+    `;
+    return;
+  }
+  
+  // Render cards
+  matches.forEach(match => {
+    const sec = match.section;
+    const card = document.createElement('div');
+    card.className = 'search-result-card';
+    card.style.padding = '18px';
+    card.style.marginBottom = '12px';
+    card.style.backgroundColor = 'var(--bg-tertiary)';
+    card.style.border = '1px solid var(--border-color)';
+    card.style.borderRadius = 'var(--border-radius-md)';
+    card.style.cursor = 'pointer';
+    card.style.transition = 'all var(--transition-fast)';
+    
+    card.addEventListener('mouseenter', () => {
+      card.style.borderColor = 'var(--accent-color)';
+      card.style.transform = 'translateY(-2px)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.borderColor = 'var(--border-color)';
+      card.style.transform = 'translateY(0)';
+    });
+    
+    card.addEventListener('click', () => {
+      navigateToSection(sec.id);
+    });
+    
+    // Highlight query in snippets
+    const highlightedSnippets = match.snippets.map(snip => {
+      const regex = new RegExp(`(${escapeRegExp(state.globalSearchQuery)})`, 'gi');
+      return snip.replace(regex, '<span class="highlight-match" style="background-color: var(--accent-glow); color: var(--accent-light); font-weight: 600; padding: 2px 4px; border-radius: 2px;">$1</span>');
+    }).join(' ... ');
+    
+    card.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <h4 style="margin: 0; font-family: var(--font-title); font-size: 1.05rem; color: var(--accent-light);">
+          Section ${sec.number}: ${sec.title}
+        </h4>
+        <span class="badge badge-tier-${sec.tier === 'General' ? 'general' : (sec.tier === 'Village Panchayat' ? 'vp' : 'zp')}" style="font-size: 0.72rem;">
+          ${sec.tier}
+        </span>
+      </div>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; margin: 0; font-style: italic;">
+        ${highlightedSnippets || 'Keyword found in title or section index reference.'}
+      </p>
+    `;
+    
+    output.appendChild(card);
+  });
 }
