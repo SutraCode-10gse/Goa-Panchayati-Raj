@@ -336,7 +336,7 @@ function setupEventListeners() {
 
   // Secret keyboard shortcut (Ctrl + Alt + D) to toggle Admin Database Manager
   document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && e.altKey && e.key.toLowerCase() === 'd') {
+    if (e.ctrlKey && e.altKey && (e.code === 'KeyD' || e.keyCode === 68 || e.key.toLowerCase() === 'd')) {
       e.preventDefault();
       const dbContainer = document.getElementById('nav-db-container');
       if (dbContainer) {
@@ -354,15 +354,15 @@ function setupEventListeners() {
   const searchClear = document.getElementById('search-clear-btn');
   
   searchInput.addEventListener('keyup', (e) => {
-    state.globalSearchQuery = e.target.value.trim();
+    state.globalSearchQuery = e.target.value.toLowerCase().trim();
     if (state.globalSearchQuery.length > 0) {
       searchClear.style.display = 'block';
     } else {
       searchClear.style.display = 'none';
     }
     
-    // Automatically switch to search tab if query is 3+ characters long
-    if (state.globalSearchQuery.length >= 3) {
+    // Automatically switch to search tab if query is 2+ characters long
+    if (state.globalSearchQuery.length >= 2) {
       if (state.activeTab !== 'search') {
         switchTab('search');
       } else {
