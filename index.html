@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goa Panchayat Raj Act, 1994 - Legislative Tracker</title>
+  <meta name="description" content="An interactive legislative history tracker for the Goa Panchayat Raj Act, 1994 and its amendments up to 2025/2026.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+  <!-- Layout Wrapper -->
+  <div class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <svg class="logo-icon" viewBox="0 0 24 24" width="28" height="28">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+          </svg>
+          <div class="logo-text">
+            <h2>Goa Panchayati Raj</h2>
+            <span>Act & Amendments</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <button class="nav-btn active" data-tab="dashboard" id="btn-dashboard">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+              <span>Dashboard</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" data-tab="reader" id="btn-reader">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              <span>Full Act Reader</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" data-tab="explorer" id="btn-explorer">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              <span>Act Explorer</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" data-tab="timeline" id="btn-timeline">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+              <span>Amendment Timeline</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" data-tab="compare" id="btn-compare">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3zm-4-4L8 3v3H2v2h6v3l4.01-4z"/></svg>
+              <span>Compare Engine</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" data-tab="database" id="btn-database">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+              <span>Manage Database</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Search Section -->
+      <div class="sidebar-search">
+        <label for="global-search-input">Search Act</label>
+        <div class="search-box-wrapper">
+          <input type="text" id="global-search-input" placeholder="Search keywords..." aria-label="Search Act">
+          <button id="search-clear-btn" style="display: none;">&times;</button>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42zM4 10.5H1v2h3v-2zm9-7h-2v3h2v-3zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.75l1.8 1.79 1.41-1.41-1.79-1.8-1.42 1.42zM20 10.5h3v2h-3v-2zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-5.76 11.2l-1.8 1.79 1.41 1.41 1.8-1.79-1.41-1.41zm11.52 1.41l1.8-1.79-1.41-1.41-1.8 1.79 1.41 1.41zM11 18v3h2v-3h-2z"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.7 3.3-8.8 8-9.8.7-.1 1.4.3 1.6 1 .2.7-.1 1.4-.7 1.8-3.4 2.1-5.6 5.8-5.6 9.9 0 5.2 4 9.5 9.1 9.9.7.1 1.2.7 1.2 1.4 0 .7-.5 1.3-1.2 1.4-.4.1-.9.4-1.3.4z"/></svg>
+          <span id="theme-text">Light Mode</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Workspace -->
+    <main class="workspace">
+      
+      <!-- Top Header -->
+      <header class="workspace-header">
+        <div class="header-title-area">
+          <h1 id="current-view-title">Dashboard Overview</h1>
+          <p id="current-view-subtitle">Consolidated View of Goa Panchayat Raj Act, 1994</p>
+        </div>
+        <div class="header-meta">
+          <span class="badge badge-outline">As Amended Up to 2025/2026</span>
+        </div>
+      </header>
+
+      <!-- Content Sections -->
+      <div class="content-viewport">
+        
+        <!-- 1. DASHBOARD TAB -->
+        <section id="tab-dashboard" class="tab-pane active">
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-label">Total Chapters</span>
+              <span class="stat-value" id="stat-chapters">10</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Sections Tracked</span>
+              <span class="stat-value" id="stat-sections">15</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Amendments Listed</span>
+              <span class="stat-value" id="stat-amendments">6</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Latest Version</span>
+              <span class="stat-value" id="stat-latest-year">2026</span>
+            </div>
+          </div>
+
+          <!-- Dashboard Grid -->
+          <div class="dashboard-grid">
+            
+            <!-- Structure Card -->
+            <div class="card card-wide structure-summary-card">
+              <h3>Goa Panchayati Raj Structure</h3>
+              <p>Under the Goa Panchayat Raj Act, 1994, rural local governance is structured as a two-tier system following the 73rd Constitutional Amendment. Gram Sabhas form the core deliberative assembly at the ward level.</p>
+              
+              <div class="tier-flow-diagram">
+                <div class="flow-node node-zilla">
+                  <span class="node-level">District Level</span>
+                  <h4>Zilla Panchayats</h4>
+                  <p>North Goa & South Goa ZP (Sec 115-A)</p>
+                </div>
+                <div class="flow-arrow">
+                  <svg viewBox="0 0 24 24" width="24" height="24"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17L5.41 10.59 4 12l8 8z"/></svg>
+                </div>
+                <div class="flow-node node-panchayat">
+                  <span class="node-level">Village Level</span>
+                  <h4>Village Panchayats</h4>
+                  <p>Sarpanch, Dy. Sarpanch & Secretary (Sec 7)</p>
+                </div>
+                <div class="flow-arrow">
+                  <svg viewBox="0 0 24 24" width="24" height="24"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17L5.41 10.59 4 12l8 8z"/></svg>
+                </div>
+                <div class="flow-node node-gram">
+                  <span class="node-level">Electoral Level</span>
+                  <h4>Gram Sabhas</h4>
+                  <p>All Registered Voters in the Wards (Sec 3)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Highlights -->
+            <div class="card recent-highlights-card">
+              <h3>Recent Legislative Updates</h3>
+              <div class="recent-updates-list">
+                <div class="update-item">
+                  <span class="update-year badge badge-danger">2026 Bill</span>
+                  <h4>MLA Attendance & Secretary Autonomy</h4>
+                  <p>A bill introduced to allow local MLAs to attend Gram Sabhas as non-voting associate members (Sec 4-A) and clarify the Panchayat Secretary's execution powers (Sec 47).</p>
+                </div>
+                <div class="update-item">
+                  <span class="update-year badge badge-success">2025 Act</span>
+                  <h4>Deemed Building Permission</h4>
+                  <p>Halved the approval decision period from 30 days to 15 days under Section 66, introducing automatic deemed clearance if the Panchayat is silent.</p>
+                </div>
+                <div class="update-item">
+                  <span class="update-year badge badge-primary">2023 Act</span>
+                  <h4>Sealing Unlicensed Businesses</h4>
+                  <p>Added Section 72-A, authorizing the Secretary to seal commercial setups operating without valid licenses, with safeguards for pending applications.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Access Sections -->
+            <div class="card quick-access-card">
+              <h3>Key Amended Sections</h3>
+              <p>Directly jump into the historical legislative tracking for the most active sections:</p>
+              <div class="quick-access-buttons">
+                <button class="quick-btn" data-sec-id="sec3">
+                  <strong>Section 3</strong>
+                  <span>Gram Sabha Meetings</span>
+                  <span class="chevron">&rarr;</span>
+                </button>
+                <button class="quick-btn" data-sec-id="sec4a">
+                  <strong>Section 4-A</strong>
+                  <span>MLA Gram Sabha Role</span>
+                  <span class="chevron">&rarr;</span>
+                </button>
+                <button class="quick-btn" data-sec-id="sec47">
+                  <strong>Section 47</strong>
+                  <span>Secretary Functions</span>
+                  <span class="chevron">&rarr;</span>
+                </button>
+                <button class="quick-btn" data-sec-id="sec66">
+                  <strong>Section 66</strong>
+                  <span>Building Construction Rules</span>
+                  <span class="chevron">&rarr;</span>
+                </button>
+                <button class="quick-btn" data-sec-id="sec72a">
+                  <strong>Section 72-A</strong>
+                  <span>Power to Seal Premises</span>
+                  <span class="chevron">&rarr;</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 2. FULL ACT READER TAB -->
+        <section id="tab-reader" class="tab-pane">
+          <div class="reader-toolbar">
+            <div class="toolbar-search">
+              <input type="text" id="reader-search-input" placeholder="Filter sections in this view...">
+            </div>
+            <div class="toolbar-filters">
+              <label><input type="checkbox" id="filter-show-vp" checked> Village level (Tiers)</label>
+              <label><input type="checkbox" id="filter-show-zp" checked> Zilla level (Tiers)</label>
+            </div>
+          </div>
+          
+          <div class="reader-container" id="full-act-text-container">
+            <!-- Dynamically populated entire consolidated act -->
+          </div>
+        </section>
+
+        <!-- 3. ACT EXPLORER TAB -->
+        <section id="tab-explorer" class="tab-pane">
+          <div class="explorer-layout">
+            <!-- Sidebar Panel: Table of Contents -->
+            <div class="explorer-toc">
+              <div class="toc-header">
+                <label for="chapter-select" style="font-size: 0.75rem; text-transform: uppercase; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 6px;">Select Chapter</label>
+                <select id="chapter-select" style="width: 100%; padding: 8px 12px; background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); color: var(--text-primary); font-family: var(--font-body); font-size: 0.88rem; outline: none; transition: border-color var(--transition-fast);">
+                  <!-- Dynamically populated -->
+                </select>
+              </div>
+              <div class="toc-list" id="explorer-toc-list">
+                <!-- Dynamically populated chapters & sections -->
+              </div>
+            </div>
+
+            <!-- Main Work Panel: Section Details -->
+            <div class="explorer-content" id="explorer-content-panel">
+              <!-- Dynamically populated section details -->
+              <div class="no-selection-placeholder">
+                <svg viewBox="0 0 24 24" width="48" height="48"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                <p>Select a section from the Chapter Table of Contents to begin tracking its amendment history.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. TIMELINE TAB -->
+        <section id="tab-timeline" class="tab-pane">
+          <div class="timeline-intro">
+            <h3>Chronological History of Amendments</h3>
+            <p>Select an amendment year to view the legislative context and see which sections were altered or introduced.</p>
+          </div>
+          
+          <div class="timeline-view-wrapper">
+            <div class="timeline-left-column" id="timeline-navigation-track">
+              <!-- Dynamically populated vertical timeline nodes -->
+            </div>
+            <div class="timeline-right-column" id="timeline-detail-panel">
+              <div class="timeline-no-selection">
+                <p>Select an amendment from the timeline track to read details.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. COMPARE ENGINE TAB -->
+        <section id="tab-compare" class="tab-pane">
+          <div class="compare-control-bar">
+            <div class="compare-input-group">
+              <label for="compare-section-select">Select Section:</label>
+              <select id="compare-section-select">
+                <!-- Dynamically populated amended sections -->
+              </select>
+            </div>
+            
+            <div class="compare-input-group">
+              <label for="compare-version-a">Base Version (Older):</label>
+              <select id="compare-version-a">
+                <!-- Dynamically populated versions -->
+              </select>
+            </div>
+
+            <div class="compare-input-group">
+              <label for="compare-version-b">Target Version (Newer):</label>
+              <select id="compare-version-b">
+                <!-- Dynamically populated versions -->
+              </select>
+            </div>
+            
+            <div class="compare-input-group">
+              <label for="compare-mode-toggle">Diff Layout:</label>
+              <select id="compare-mode-toggle">
+                <option value="inline">Inline (Track Changes)</option>
+                <option value="side">Side-by-Side Comparison</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="compare-workspace" id="compare-workspace-output">
+            <!-- Dynamically populated comparisons -->
+          </div>
+        </section>
+
+        <!-- 6. DATABASE MANAGER TAB -->
+        <section id="tab-database" class="tab-pane">
+          <div class="card card-wide database-manager-card" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+            <h3>Database Management</h3>
+            <p>The Goa Panchayat Raj Act Tracker is powered by a structured JSON database. You can export the current database to modify it, or upload your own database files to dynamically update the application's legal text, chapter structure, and timelines.</p>
+            
+            <div class="db-actions-row">
+              <div class="db-action-box">
+                <h4>1. Export / Backup Database</h4>
+                <p>Download the current active database in structured JSON format. You can edit this file in any text editor to modify sections, update texts, or add historical details.</p>
+                <button class="quick-btn" id="db-export-btn">
+                  <strong>Export to JSON</strong>
+                  <span class="chevron">&rarr;</span>
+                </button>
+              </div>
+              
+              <div class="db-action-box">
+                <h4>2. Import / Upload Database</h4>
+                <p>Upload a JSON database file. This will immediately override the current Act text, sections, and timelines. The database is saved in your browser's local storage and persists across reloads.</p>
+                
+                <div class="upload-dropzone" id="db-upload-dropzone">
+                  <svg viewBox="0 0 24 24" width="48" height="48" fill="var(--text-muted)"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+                  <p>Drag and drop your JSON file here, or <span class="upload-link" style="color: var(--accent-light); cursor: pointer; text-decoration: underline;">click to browse</span></p>
+                  <input type="file" id="db-file-input" accept=".json" style="display: none;">
+                </div>
+              </div>
+            </div>
+
+            <!-- Database Status Panel -->
+            <div class="db-status-panel">
+              <h4>Database Status</h4>
+              <div class="status-indicator">
+                <span class="status-dot status-active" id="db-status-dot"></span>
+                <span id="db-status-text">Using default system database (data.json)</span>
+              </div>
+              <button id="db-reset-btn" class="nav-btn" style="width: auto; padding: 6px 12px; margin-top: 10px; display: none; font-size: 0.8rem; background-color: var(--del-bg); color: var(--del-color); border: 1px solid rgba(239,68,68,0.2);">
+                Reset to Default System Database
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Global scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

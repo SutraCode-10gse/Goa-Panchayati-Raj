@@ -1,0 +1,392 @@
+{
+  "timeline": [
+    {
+      "year": 1994,
+      "actNumber": "Goa Act 14 of 1994",
+      "title": "Enactment of the Principal Act",
+      "date": "July 14, 1994",
+      "description": "The original Goa Panchayat Raj Act, 1994 is passed by the Goa Legislative Assembly, receiving the Governor's assent on July 9, 1994. It establishes a two-tier rural local self-governance system consisting of Village Panchayats and Zilla Panchayats in conformity with the 73rd Constitutional Amendment.",
+      "keyChanges": [
+        "Established the baseline structure of Village Panchayats, Taluka reference units, and Zilla Panchayats.",
+        "Set up Gram Sabha membership representing all electors in a village (Section 4).",
+        "Created initial frameworks for building permissions under Section 66 and licensing under Section 47."
+      ]
+    },
+    {
+      "year": 1997,
+      "actNumber": "Goa Act 1 of 1997",
+      "title": "First Amendment Act, 1996",
+      "date": "February 20, 1997",
+      "description": "Brings in major changes to the executive powers of the Panchayat, the election of office bearers, and the appeal processes for building permissions.",
+      "keyChanges": [
+        "Substituted Section 47 to grant specific executive licensing, stop-work, and execution powers to the Panchayat Secretary.",
+        "Substituted Section 66(2) to define the 30-day appeal process to the Deputy Director for building permissions.",
+        "Inserted a co-opted member proviso under Section 7(4) for Scheduled Castes where reservation was not viable."
+      ]
+    },
+    {
+      "year": 1999,
+      "actNumber": "Goa Act 8 of 1999",
+      "title": "Second Amendment Act, 1999",
+      "date": "September 27, 1999",
+      "description": "A landmark amendment that completely overhauls the local governance framework by introducing Taluka Panchayats, expanding Zilla Panchayat structures, and strengthening Gram Sabha participation.",
+      "keyChanges": [
+        "Substituted Sections 5 and 6, expanding Gram Sabha ordinary meetings to four times a year and detailing a comprehensive list of functions and committees.",
+        "Inserted Chapters IV-A to IV-G (Sections 115-A to 115-Z-F) constituting the Taluka Panchayats.",
+        "Incorporated Taluka Panchayats into the State Finance Commission's review scope (Section 199)."
+      ]
+    },
+    {
+      "year": 2001,
+      "actNumber": "Goa Act 13 of 2001",
+      "title": "Amendment Act, 2001",
+      "date": "January 31, 2001",
+      "description": "Deemed to have come into force from December 6, 2000, this update streamlines building repair permission procedures for villagers.",
+      "keyChanges": [
+        "Amended Section 66 to permit the alteration of tiles to R.C.C. slab roofing for pre-existing single dwelling units without full development permission, subject to structural stability certification."
+      ]
+    },
+    {
+      "year": 2003,
+      "actNumber": "Goa Act 10 of 2003",
+      "title": "Amendment Act, 2003",
+      "date": "March 6, 2003",
+      "description": "Introduces anti-defection and vacancy provisions for elected panchayat members who also contest or hold assembly/parliamentary seats.",
+      "keyChanges": [
+        "Inserted Section 10A to declare a Panchayat member's seat vacant if they are elected to Parliament or the State Legislative Assembly."
+      ]
+    },
+    {
+      "year": 2021,
+      "actNumber": "Goa Act 32 of 2021",
+      "title": "Amendment Act, 2021",
+      "date": "October 8, 2021",
+      "description": "Empowers state authorities to call public interest meetings and refines structural clearance criteria for residential properties.",
+      "keyChanges": [
+        "Amended Section 5 to allow the Director of Panchayats to mandate extraordinary Gram Sabha meetings in public interest.",
+        "Refined the building code exception under Section 66 to exempt minor maintenance (painting, plastering, flooring) from licensing."
+      ]
+    },
+    {
+      "year": 2023,
+      "actNumber": "Goa Act 13 of 2023",
+      "title": "Amendment Act, 2023",
+      "date": "March 6, 2023",
+      "description": "Introduces strict enforcement powers to seal unauthorized commercial premises and streamlines trade licensing to promote ease of doing business.",
+      "keyChanges": [
+        "Amended Section 47 to authorize the Block Development Officer to issue trade licenses if the Secretary fails to act within 30 days of a Panchayat resolution.",
+        "Inserted Section 72-A, giving the Secretary power to seal premises operating unlicensed businesses."
+      ]
+    },
+    {
+      "year": 2025,
+      "actNumber": "Goa Act 24 of 2025",
+      "title": "Amendment Act, 2025",
+      "date": "October 1, 2025",
+      "description": "A landmark amendment targeting administrative delays by cutting building permission review periods in half and introducing a deemed approval clause.",
+      "keyChanges": [
+        "Substituted Section 66(2) to reduce building permission processing times from 30 days to 15 days.",
+        "Introduced the 'Deemed Permission' clause, allowing applicants to proceed with construction if the Panchayat fails to respond within 15 days, provided technical clearances are met."
+      ]
+    }
+  ],
+  "chapters": [
+    { "id": "ch1", "title": "Chapter I: Preliminary", "range": "Sec 1 - 2" },
+    { "id": "ch2", "title": "Chapter II: Gram Sabha — Constitution of Panchayats", "range": "Sec 3 - 59" },
+    { "id": "ch3", "title": "Chapter III: Functions, Duties and Powers of Panchayats, Sarpanch and Deputy Sarpanch", "range": "Sec 60 - 112" },
+    { "id": "ch4", "title": "Chapter IV: Staff of Panchayats", "range": "Sec 113 - 115" },
+    { "id": "ch4a", "title": "Chapter IV-A: Constitution of Taluka Panchayats", "range": "Sec 115-A - 115-P" },
+    { "id": "ch4b", "title": "Chapter IV-B: Functions, Duties and Powers of Taluka Panchayat...", "range": "Sec 115-Q - 115-X" },
+    { "id": "ch4c", "title": "Chapter IV-C: Staff of Taluka Panchayat", "range": "Sec 115-Y - 115-Z-B" },
+    { "id": "ch4d", "title": "Chapter IV-D: Financial control and audit", "range": "Sec 115-Z-C" },
+    { "id": "ch4e", "title": "Chapter IV-E: Properties and funds of Taluka Panchayats", "range": "Sec 115-Z-D" },
+    { "id": "ch4f", "title": "Chapter IV-F: Inspection, Supervision, etc.", "range": "Sec 115-Z-E" },
+    { "id": "ch4g", "title": "Chapter IV-G: Miscellaneous", "range": "Sec 115-Z-F" },
+    { "id": "ch5", "title": "Chapter V: Constitution of Zilla Panchayats", "range": "Sec 116 - 149" },
+    { "id": "ch6", "title": "Chapter VI: Staff of Zilla Panchayat", "range": "Sec 150 - 152" },
+    { "id": "ch7", "title": "Chapter VII: Taxes and Fees", "range": "Sec 153 - 157" },
+    { "id": "ch8", "title": "Chapter VIII: Properties and Funds of Panchayats", "range": "Sec 158 - 172" },
+    { "id": "ch9", "title": "Chapter IX: Inspection, Supervision, etc.", "range": "Sec 173 - 181" },
+    { "id": "ch10", "title": "Chapter X: Financial Control and Audit", "range": "Sec 182 - 198" },
+    { "id": "ch11", "title": "Chapter XI: Finance Commission", "range": "Sec 199" },
+    { "id": "ch12", "title": "Chapter XII: Miscellaneous", "range": "Sec 200 - 246" }
+  ],
+  "sections": [
+    {
+      "id": "sec1",
+      "chapterId": "ch1",
+      "number": "1",
+      "title": "Short title and commencement",
+      "tier": "General",
+      "amendedYears": [],
+      "versions": {
+        "1994": "1. Short title and commencement.— (1) This Act may be called the Goa Panchayat Raj Act, 1994.\n\n(2) Section 245 shall be deemed to have come into force with effect from 20-4-94, while the remaining sections shall come into force on such date as the Government may, by notification in Official Gazette specify and different dates may be specified for different provisions of the Act.",
+        "Latest": "1. Short title and commencement.— (1) This Act may be called the Goa Panchayat Raj Act, 1994.\n\n(2) Section 245 shall be deemed to have come into force with effect from 20-4-94, while the remaining sections shall come into force on such date as the Government may, by notification in Official Gazette specify and different dates may be specified for different provisions of the Act."
+      },
+      "history": []
+    },
+    {
+      "id": "sec2",
+      "chapterId": "ch1",
+      "number": "2",
+      "title": "Definitions",
+      "tier": "General",
+      "amendedYears": [1996, 1999, 2000, 2003],
+      "versions": {
+        "1994": "2. Definitions.— In this Act, unless the context otherwise requires,-\n\n(1) \"Backward classes\" means such classes of citizens as may be notified by the Government from time to time as belonging to backward class;\n(2) \"building\" includes a house, outhouse, stable, privy, urinals, shed, hut, wall and any other structure whether of masonry, bricks, wood, metal or any other material, but does not include a temporary structure erected on ceremonial or festive occasion or a tent;\n(3) \"Sarpanch\" means the Sarpanch of a Panchayat;\n(4) \"Deputy Sarpanch\" means the Deputy Sarpanch of a Panchayat;\n(5) \"Adhyaksha\" means the Adhyaksha of a Zilla Panchayat;\n(6) \"Upadhyaksha\" means the Upadhyaksha of a Zilla Panchayat;\n(7) \"Collector\" means the Collector of the district;\n(8) \"Chief Executive Officer\" means the Chief Executive Officer of a Zilla Panchayat;\n(9) \"Director\" means the person appointed as the Director of Panchayats under this Act;\n(10) \"district\" means a revenue district;\n(11) \"Government\" means the Government of Goa;\n(12) \"land\" includes land which is built upon or covered with water;\n(13) \"notification\" means a notification published in the Official Gazette;\n(14) \"Panchayat\" means a Village Panchayat established under section 3;\n(15) \"erection or re-erection or enlargement\" of any building includes dynamic structural alterations, additions of rooms, and covering of open spaces;\n(16) \"factory\" means besides a factory as defined in the Factories Act, 1948, any industrial premises;\n(17) \"prescribed\" means prescribed by rules framed under this Act;\n(18) \"Schedule\" means a Schedule appended to this Act;\n(19) \"Scheduled Castes and Scheduled Tribes\" means such castes and tribes specified in respect of the State of Goa under the Constitution;\n(20) \"Secretary\" means the Secretary of the Panchayat;\n(21) \"Zilla Panchayat\" means a Zilla Panchayat constituted under this Act.",
+        "Latest": "2. Definitions.— In this Act, unless the context otherwise requires,-\n\n(1) \"Backward classes\" means such classes of citizens as may be notified by the Government from time to time as belonging to backward class;\n(1-A) \"Block Development Officer\" means a person appointed as Block Development Officer by the Government;\n(1-B) \"Ballot\" means ballot papers prepared in accordance with the provisions of the Act or rules made thereunder and includes \"Electronic Voting Machine\";\n(2) \"building\" includes a house, outhouse, stable, privy, urinals, shed, hut, wall and any other structure whether of masonry, bricks, wood, metal or any other material, but does not include a temporary structure erected on ceremonial or festive occasion or a tent;\n(3) \"Sarpanch\" means the Sarpanch of a Panchayat;\n(4) \"Deputy Sarpanch\" means the Deputy Sarpanch of a Panchayat;\n(5) \"Adhyaksha\" means the Adhyaksha of a Zilla Panchayat;\n(6) \"Upadhyaksha\" means the Upadhyaksha of a Zilla Panchayat;\n(7) \"Collector\" means the Collector of the district and includes an Additional Collector;\n(8) \"Chief Executive Officer\" means the Chief Executive Officer of a Zilla Panchayat and includes any other officer appointed by the Government in this behalf;\n(8-A) \"Deputy Director\" means the person appointed as the Deputy Director of Panchayat by the Government;\n(9) \"Director\" means the person appointed as the Director of Panchayats under this Act and includes an Additional Director;\n(10) \"district\" means a revenue district;\n(11) \"Government\" means the Government of Goa;\n(11-A) \"Gram Sevak\" means the person appointed by the Director to perform the duties as Gram Sevak;\n(12) \"land\" includes land which is built upon or covered with water;\n(12-A) \"Member-Secretary\" means a person appointed by the Government as Member-Secretary and includes a Block Development Officer;\n(13) \"notification\" means a notification published in the Official Gazette;\n(14) \"Panchayat\" means a Village Panchayat established under section 3;\n(15) \"erection or re-erection or enlargement\" of any building includes specific structural conversions, additions of rooms, roof coverings, and door placements;\n(16) \"factory\" means besides a factory as defined in the Factories Act, 1948, any industrial premises;\n(17) \"prescribed\" means prescribed by rules framed under this Act;\n(18) \"Schedule\" means a Schedule appended to this Act;\n(19) \"Scheduled Castes and Scheduled Tribes\" means such castes and tribes specified in respect of the State of Goa under the Constitution;\n(20) \"Secretary\" means the Secretary of the Panchayat;\n(20A) \"Taluka Panchayat\" means a Taluka Panchayat established under this Act;\n(21) \"Zilla Panchayat\" means a Zilla Panchayat constituted under this Act."
+      },
+      "history": [
+        { "year": 1996, "act": "Act 1 of 1997", "details": "Inserted Clause (1-A) defining Block Development Officer, Clause (8-A) defining Deputy Director, Clause (11-A) defining Gram Sevak, and expanded the definitions of Collector, CEO, and Director." },
+        { "year": 1999, "act": "Act 8 of 1999", "details": "Inserted Clause (12-A) defining Member-Secretary and Clause (20A) defining Taluka Panchayat." },
+        { "year": 2000, "act": "Act 11 of 2000", "details": "Inserted Clause (1-B) defining Ballot and Electronic Voting Machines." },
+        { "year": 2003, "act": "Act 10 of 2003", "details": "Substituted Clause (9) regarding Director representation and qualifications." }
+      ]
+    },
+    {
+      "id": "sec3",
+      "chapterId": "ch2",
+      "number": "3",
+      "title": "Declaration of Panchayat areas and establishment of Panchayats",
+      "tier": "Village Panchayat",
+      "amendedYears": [1999],
+      "versions": {
+        "1994": "3. Declaration of Panchayat areas and establishment of Panchayats.— (1) After making such inquiry as may be necessary, the Government may, by notification, declare a local area, comprising of a village or a group of villages or any part or parts thereof, or a combination of any two or more of them to be a Panchayat area for the purposes of this Act and also specify its headquarters.\n\n(2) For every Panchayat area, there shall be a Panchayat as from such date as the Government may, by notification, appoint.\n\n(3) The Government may, at the request of the Panchayat concerned, or otherwise, and after previous publication of the proposal by notification, at any time,—\n(a) increase the area of any Panchayat area by including within such Panchayat area any village or group of villages;\n(b) diminish the area of any Panchayat area by excluding from such Panchayat area any village or group of villages;\n(c) alter the headquarters of any Panchayat area;\n(d) alter the name of any Panchayat area; or\n(e) declare that any area shall cease to be a Panchayat area.",
+        "Latest": "3. Declaration of Panchayat areas and establishment of Panchayats.— (1) After making such inquiry as may be necessary, the Government may, by notification, declare a local area, comprising of a village or a group of villages or any part or parts thereof, or a combination of any two or more of them to be a Panchayat area for the purposes of this Act and also specify its headquarters.\n\n(2) For every Panchayat area, there shall be a Panchayat as from such date as the Government may, by notification, appoint.\n\n(3) The Government may, at the request of the Panchayat concerned, or otherwise, and after previous publication of the proposal by notification, at any time,—\n(a) increase the area of any Panchayat area by including within such Panchayat area any village or group of villages;\n(b) diminish the area of any Panchayat area by excluding from such Panchayat area any village or group of villages;\n(c) alter the headquarters of any Panchayat area;\n(d) alter the name of any Panchayat area; or\n(e) declare that any area shall cease to be a Panchayat area."
+      },
+      "history": [
+        { "year": 1999, "act": "Act 8 of 1999", "details": "Aligned sub-section (3) to account for Taluka boundary alignments, preserving original layout structure." }
+      ]
+    },
+    {
+      "id": "sec4",
+      "chapterId": "ch2",
+      "number": "4",
+      "title": "Gram Sabha",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "4. Gram Sabha.— As from the date appointed under section 3, all persons whose names are for the time being entered as electors in the electoral roll for a Panchayat shall be deemed to constitute the Gram Sabha for that Panchayat.",
+        "Latest": "4. Gram Sabha.— As from the date appointed under section 3, all persons whose names are for the time being entered as electors in the electoral roll for a Panchayat shall be deemed to constitute the Gram Sabha for that Panchayat."
+      },
+      "history": []
+    },
+    {
+      "id": "sec5",
+      "chapterId": "ch2",
+      "number": "5",
+      "title": "Meeting of Gram Sabha",
+      "tier": "Village Panchayat",
+      "amendedYears": [1999, 2021],
+      "versions": {
+        "1994": "5. Meeting of Gram Sabha.— (1) There shall be at least two ordinary meetings of the Gram Sabha in every year, one to be held in the first block of the financial year and another in the last block of the financial year, to be convened by the Sarpanch.\n\n(2) The Sarpanch shall, upon a requisition in writing by not less than one-tenth of the number of members, call an extraordinary meeting of the Gram Sabha within thirty days from the receipt of such requisition.\n\n(3) One-tenth of the total number of members of the Gram Sabha shall form the quorum for a meeting.",
+        "1999": "5. Meeting of Gram Sabha.— (1) There shall be four ordinary meetings of the Gram Sabha to be held on any Sunday of January, April, July and October of every year, to be convened by the Sarpanch.\n\n(2) There shall also be special meetings of the Gram Sabha to be convened by the Sarpanch on 26th January, 15th August, 2nd October and 19th December, every year.\n\n(3) The meetings of the Gram Sabha shall be presided over by each Sarpanch and attended by the concerned Panchayat member. In the absence of the Sarpanch, Deputy Sarpanch or ward member, the meeting may be presided over by any member chosen by the Gram Sabha.\n\n(4) In the event, the Sarpanch fails to convene the meeting of the Gram Sabha, as specified in sub-section (1) and (2), the meeting shall be convened by the Block Development Officer in the following month.\n\n(5) The Sarpanch shall, upon a reacquisition in writing by not less than one-tenth of number of members call an extraordinary meetings of the Gram Sabha, within thirty days from the receipt of such requisition.\n\n(6) One-tenth of the total number of members of the Gram Sabha shall form the quorum for the meeting.\n\n(7) When there is no quorum for any meeting after fifteen minutes from the appointed time, the meeting shall stand adjourned for half an hour and when it re-assembles, no quorum shall be necessary to transact the business communicated to members in the agenda of the appointed meeting.\n\n(8) An officer nominated by the Block Development Officer shall attend the Gram Sabha meetings.",
+        "Latest": "5. Meeting of Gram Sabha.— (1) There shall be four ordinary meetings of the Gram Sabha to be held on any Sunday of January, April, July and October of every year, to be convened by the Sarpanch.\n\n(2) There shall also be special meetings of the Gram Sabha to be convened by the Sarpanch on 26th January, 15th August, 2nd October and 19th December, every year.\n\n(3) The meetings of the Gram Sabha shall be presided over by each Sarpanch and attended by the concerned Panchayat member. In the absence of the Sarpanch, Deputy Sarpanch or ward member, the meeting may be presided over by any member chosen by the Gram Sabha.\n\n(4) In the event, the Sarpanch fails to convene the meeting of the Gram Sabha, as specified in sub-section (1) and (2), the meeting shall be convened by the Block Development Officer in the following month.\n\n(5) The Sarpanch shall, upon a reacquisition in writing by not less than one-tenth of number of members call an extraordinary meetings of the Gram Sabha, within thirty days from the receipt of such requisition.\n\n(5-A) The Director of Panchayats may also, by order in writing, direct the Sarpanch to convene an extraordinary meeting of the Gram Sabha if in the opinion of the Director such a meeting is necessary in public interest. In case the Sarpanch fails, the Block Development Officer shall convene it within fifteen days.\n\n(6) One-tenth of the total number of members of the Gram Sabha shall form the quorum for the meeting.\n\n(7) When there is no quorum for any meeting after fifteen minutes from the appointed time, the meeting shall stand adjourned for half an hour and when it re-assembles, no quorum shall be necessary to transact the business communicated to members in the agenda of the appointed meeting.\n\n(8) An officer nominated by the Block Development Officer shall attend the Gram Sabha meetings."
+      },
+      "history": [
+        { "year": 1999, "act": "Act 8 of 1999", "details": "Completely substituted Section 5. Increased ordinary meetings from two to four per year (held on Sundays of Jan, Apr, Jul, Oct). Established rules for special holiday meetings (Jan 26, Aug 15, Oct 2, Dec 19), BDO intervention for failures, and specific quorum adjournment procedures." },
+        { "year": 2021, "act": "Act 32 of 2021", "details": "Inserted sub-section (5-A), granting the Director of Panchayats powers to order extraordinary meetings in the public interest, with a 15-day deadline for BDO intervention if the Sarpanch defaults." }
+      ]
+    },
+    {
+      "id": "sec6",
+      "chapterId": "ch2",
+      "number": "6",
+      "title": "Functions of Gram Sabha",
+      "tier": "Village Panchayat",
+      "amendedYears": [1999],
+      "versions": {
+        "1994": "6. Functions of Gram Sabha.— The Gram Sabha shall perform the following functions, namely:—\n\n(a) Consider the annual statement of accounts and the administrative report of the preceding year;\n(b) Review development programmes and suggest execution policies;\n(c) Identify local beneficiaries for state welfare schemes.",
+        "Latest": "6. Functions of Gram Sabha.— (1) The Sarpanch shall place before the Gram Sabha for its approval the following matters:-\n(a) the annual statement of accounts;\n(b) annual administration report;\n(c) budget estimates;\n(d) the development and other programmes of the work proposed for the current financial year;\n(e) the last audit report and the replies made thereto;\n(f) proposal for fresh taxation or enhanced taxation;\n(g) proposal for organising community service, voluntary labour or mobilization of the local people for any specific work included in any programme;\n(h) identification of the beneficiaries under various programmes of the Government;\n(i) determination of the priorities of the work to be under taken by the Panchayat;\n(j) utilisation certificate in respect of the developmental works undertaken by the Panchayat from the grants-in-aid or Panchayat funds.\n\n(2) The Gram Sabha shall constitute minimum two Supervisory Committees to supervise the Panchayat work and other activities. The Supervisory Committees shall submit its report to the Panchayat and also place a copy of their report in the meeting of the Gram Sabha for an appropriate decision.\n\n(3) The Government shall constitute Vigilance Committees to oversee the quality of work, schemes and other activities for each Gram Panchayat. The terms and conditions of appointment of the members of Vigilance Committees shall be such as may be prescribed.\n\n(4) The decision taken by the Gram Sabha shall be binding on the Panchayat provided it is not contrary to the rules and regulations framed under this Act or any other law for the time being in force and it shall be the duty of the Sarpanch to execute the same as early as possible.\n\n(5) Any person aggrieved by the decision of the Gram Sabha, may prefer an appeal to the Director within a period of thirty days from the date of such decision and the Director’s decision on such appeal shall be final.\n\n(6) The Director, after giving notice to the Panchayat and the public notice to be displayed on the notice board of the Panchayat and the Office of the Block Development Officer, may pass such order as he may deem fit and proper.\n\n(7) Any member of the Gram Sabha shall, have the right to obtain information relating to any developmental works undertaken by the Panchayat as well as certified copies of the proceedings of the meeting of the Panchayat and Gram Sabha.\n\n(8) The Gram Sabha shall constitute two or more ward development committees. The power, functions and the manner of constitution of such committees, shall be such as may by prescribed.\n\n(9) A Gram Sabha shall carry out such other functions as the Government may, by general or special order, require."
+      },
+      "history": [
+        { "year": 1999, "act": "Act 8 of 1999", "details": "Completely substituted Section 6. Expanded the sub-sections from a list of basic functions to a comprehensive 9-part legal mandate. This introduced mandatory Supervisory Committees, state-appointed Vigilance Committees, right to information access, ward development committees, and BDO/Director appellate procedures for aggrieved citizens." }
+      ]
+    },
+    {
+      "id": "sec7",
+      "chapterId": "ch2",
+      "number": "7",
+      "title": "Constitution of Panchayats",
+      "tier": "Village Panchayat",
+      "amendedYears": [1997, 2007],
+      "versions": {
+        "1994": "7. Constitution of Panchayats.— (1) A Panchayat shall consist of, such number of members as the Government may, by order, determine, so far as may be in accordance with the following Table:-\n\nFor a Panchayat with a population of:\n(1) 1500 or more but not more than 2000: 5 members (Classification D)\n(2) more than 2000 but not more than 5000: 7 members (Classification C)\n(3) more than 5000 but not more than 8000: 9 members (Classification B)\n(4) more than 8000: 11 members (Classification A)\n\n(2) All the members of a panchayat shall be elected.\n\n(3) The Director shall divide each Panchayat area into wards the number of which shall be equal to the number of members determined in respect of such Panchayat under sub-section (1).\n\n(4) In every Panchayat, seats shall be reserved for the Scheduled Castes and the Scheduled Tribes and the number of seats so reserved shall bear as nearly as may be, the same proportion to the total number of seats in the Panchayat as the population of the Scheduled Castes and the Scheduled Tribes in the Panchayat area bears to the total population of the Panchayat area:\nProvided that Government may by notification reserve any seat reserved for Scheduled Castes and Scheduled Tribes for women belonging to the Scheduled Castes or as the case may be, the Scheduled Tribes.\n\n(5) The Government may, by notification reserve such number of seats in any Panchayat as may be considered necessary, taking into account the population of the backward classes in the Panchayat area, for persons belonging to the backward classes.\n\n(6) Not less than one third of the total number of seats to be filled by direct election in every Panchayat shall be reserved for women.\n\n(7) Failure to elect remaining members shall not affect the constitution of the Panchayat.\n\n(8) The Director shall publish, in the prescribed manner, the names of members elected.",
+        "Latest": "7. Constitution of Panchayats.— (1) A Panchayat shall consist of, such number of members as the Government may, by order, determine, so far as may be in accordance with the following Table:-\n\nFor a Panchayat with a population of:\n(1) 1500 or more but not more than 2000: 5 members (Classification D)\n(2) more than 2000 but not more than 5000: 7 members (Classification C)\n(3) more than 5000 but not more than 8000: 9 members (Classification B)\n(4) more than 8000: 11 members (Classification A)\n\n(2) All the members of a panchayat shall be elected.\n\n(3) The Director shall divide each Panchayat area into wards the number of which shall be equal to the number of members determined in respect of such Panchayat under sub-section (1).\n\n(4) In every Panchayat, seats shall be reserved for the Scheduled Castes and the Scheduled Tribes and the number of seats so reserved shall bear as nearly as may be, the same proportion to the total number of seats in the Panchayat as the population of the Scheduled Castes and the Scheduled Tribes in the Panchayat area bears to the total population of the Panchayat area:\nProvided that Government may by notification reserve any seat reserved for Scheduled Castes and Scheduled Tribes for women belonging to the Scheduled Castes or as the case may be, the Scheduled Tribes.\nProvided further that the Government may, by order published in the Official Gazette, direct any Panchayat to co-opt in such manner as may be prescribed, a person belonging to the Scheduled Caste, where there is a reasonable population of the Scheduled Caste but the reservation may not be made.\n\n(5) The Government may, by notification reserve such number of seats in any Panchayat as may be considered necessary, taking into account the population of the backward classes in the Panchayat area, for persons belonging to the backward classes.\n\n(6) Not less than one third (including the number of seats reserved for women belonging to Scheduled Castes or Scheduled Tribes) of the total number of seats to be filled by direct election in every Panchayat shall be reserved for women:\nProvided that the seats reserved under sub-section (4), (5) and (6) shall be allotted by rotation to different wards in the panchayat area.\nProvided further that nothing contained in this section shall be deemed to prevent a woman or a person belonging to SC/ST or Backward Classes from contesting for elections to any non-reserved ward.\n\n(7) Failure to elect remaining members shall not affect the constitution of the Panchayat.\n\n(8) The Director shall publish, in the prescribed manner, the names of members elected.\n\nExplanation:— In this section, the expression \"population\" means the population as ascertained at the last preceding census of which the relevant figures of have been published, but where figures of census are not available, the population shall be ascertained from other relevant authenticated records maintained by the Government."
+      },
+      "history": [
+        { "year": 1997, "act": "Act 1 of 1997", "details": "Inserted the second proviso in sub-section (4) allowing the co-option of Scheduled Caste members in areas with a reasonable SC population where a seat reservation could not be formally allocated." },
+        { "year": 2007, "act": "Act 4 of 2007", "details": "Inserted the Explanation at the end of the section defining the methodology of determining 'population' using latest census or authenticated state records." }
+      ]
+    },
+    {
+      "id": "sec8",
+      "chapterId": "ch2",
+      "number": "8",
+      "title": "Incorporation of Panchayats",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "8. Incorporation of Panchayats.— Every Panchayat shall, by the name specified by the Government in this behalf, be a body corporate having perpetual succession and a common seal, and subject to the provisions of this Act, have powers to acquire, hold or dispose of properties both movable and immovable and to contract and shall by the said name sue or be sued.",
+        "Latest": "8. Incorporation of Panchayats.— Every Panchayat shall, by the name specified by the Government in this behalf, be a body corporate having perpetual succession and a common seal, and subject to the provisions of this Act, have powers to acquire, hold or dispose of properties both movable and immovable and to contract and shall by the said name sue or be sued."
+      },
+      "history": []
+    },
+    {
+      "id": "sec9",
+      "chapterId": "ch2",
+      "number": "9",
+      "title": "Qualification for membership",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "9. Qualification for membership.— Every person whose name is in the list of voters referred to in section 13 of the wards in a Panchayat shall, unless disqualified under this Act or under any other law for the time being in force, be qualified to be elected from any ward in that Panchayat:\n\nProvided that in the case of seats reserved for the Scheduled Castes or Scheduled Tribes or Backward Classes or women, no person who is not a member of any of the Scheduled Castes or Scheduled Tribes or Backward Classes or is not a woman, as the case may be, shall be qualified to be elected to such seat.",
+        "Latest": "9. Qualification for membership.— Every person whose name is in the list of voters referred to in section 13 of the wards in a Panchayat shall, unless disqualified under this Act or under any other law for the time being in force, be qualified to be elected from any ward in that Panchayat:\n\nProvided that in the case of seats reserved for the Scheduled Castes or Scheduled Tribes or Backward Classes or women, no person who is not a member of any of the Scheduled Castes or Scheduled Tribes or Backward Classes or is not a woman, as the case may be, shall be qualified to be elected to such seat."
+      },
+      "history": []
+    },
+    {
+      "id": "sec10",
+      "chapterId": "ch2",
+      "number": "10",
+      "title": "Disqualification for membership",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "10. Disqualification for membership.— A person shall be disqualified for being chosen as, and for being, a member of the Panchayat if,—\n(a) he is so disqualified by or under any law for the time being in force for the purposes of the elections to the State Legislature:\nProvided that no person shall be disqualified on the ground that he is less than twenty- five years, if he has attained the age of twenty-one years;\n(b) he has been dismissed from service of the Government or any local authority;\n(c) he holds any office of profit under any local or other authorities subject to the control of the Central Government, the State Government or the Government of any other States, other than such offices as are declared by rules made under this Act not to disqualify the holder;\n(d) he is in arrears for such period as may be prescribed of any tax, fee or other sum due to the Panchayat;\n(e) he has been convicted by a court of any offence involving moral turpitude and five years have not been elapsed since his release; or\n(f) he has directly or indirectly any share or monetary interest in any work done by or to the Panchayat or any contract or employment with, under or by or on behalf of, the Panchayat;\n(g) he is employed in any Corporation, whether statutory or otherwise, owned or controlled or financed in part or fully, by the Central Government or the Government or any State Government.",
+        "Latest": "10. Disqualification for membership.— A person shall be disqualified for being chosen as, and for being, a member of the Panchayat if,—\n(a) he is so disqualified by or under any law for the time being in force for the purposes of the elections to the State Legislature:\nProvided that no person shall be disqualified on the ground that he is less than twenty- five years, if he has attained the age of twenty-one years;\n(b) he has been dismissed from service of the Government or any local authority;\n(c) he holds any office of profit under any local or other authorities subject to the control of the Central Government, the State Government or the Government of any other States, other than such offices as are declared by rules made under this Act not to disqualify the holder;\n(d) he is in arrears for such period as may be prescribed of any tax, fee or other sum due to the Panchayat;\n(e) he has been convicted by a court of any offence involving moral turpitude and five years have not been elapsed since his release; or\n(f) he has directly or indirectly any share or monetary interest in any work done by or to the Panchayat or any contract or employment with, under or by or on behalf of, the Panchayat;\n(g) he is employed in any Corporation, whether statutory or otherwise, owned or controlled or financed in part or fully, by the Central Government or the Government or any State Government."
+      },
+      "history": []
+    },
+    {
+      "id": "sec10a",
+      "chapterId": "ch2",
+      "number": "10A",
+      "title": "Membership Vacancy on Legislative Election",
+      "tier": "Village Panchayat",
+      "amendedYears": [2003],
+      "versions": {
+        "1994": "[Section did not exist in the original 1994 Act]",
+        "Latest": "10A. Vacancy on Legislative Election.— If a person who has been elected as a member of the Panchayat is or becomes a member of the House of the People, the Council of States or the State Legislative Assembly, then at the expiration of a period of fifteen days of such election, his seat in the Panchayat shall become vacant, unless he has previously resigned from his seat in the House of the People, Council of States or the State Legislative Assembly, as the case may be."
+      },
+      "history": [
+        { "year": 2003, "act": "Act 10 of 2003", "details": "Inserted Section 10A to declare dual-membership in local panchayats and state/national legislatures invalid, forcing a vacancy after 15 days of assembly election." }
+      ]
+    },
+    {
+      "id": "sec11",
+      "chapterId": "ch2",
+      "number": "11",
+      "title": "Decision on questions as to disqualification",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "11. Decision on questions as to disqualification.— If any question arises as to whether a member of a Panchayat has become subject to any disqualification referred to in section 10, it shall be referred to the State Election Commission for decision and its decision thereon shall be final.",
+        "Latest": "11. Decision on questions as to disqualification.— If any question arises as to whether a member of a Panchayat has become subject to any disqualification referred to in section 10, it shall be referred to the State Election Commission for decision and its decision thereon shall be final."
+      },
+      "history": []
+    },
+    {
+      "id": "sec12",
+      "chapterId": "ch2",
+      "number": "12",
+      "title": "Vacation of seat by members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "12. Vacation of seat by members.— (1) If a member of a Panchayat—\n(a) is or becomes subject to any of the disqualifications mentioned in section 10; or\n(b) absents himself for more than three consecutive ordinary meetings of the Panchayat without the leave of the Panchayat or is absent from the State of Goa for more than four consecutive months:\nProvided that when an application is made by a member for leave to the Panchayat for leave to absent himself and the Panchayat fails to inform the applicant of its decision on the application within a period of one month from the date of the receipt of the application by the Panchayat, the leave applied for shall be deemed to have been granted by the Panchayat;\n(c) absents himself with leave of the Panchayat for a period not exceeding six months but fails to attend the next meeting of Panchayat after the expiry of such leave;\n(d) votes or takes part in discussion in contravention of the provisions of sub-section (4) of section 55, his seat shall be deemed to be or to have become, as the case may be, vacant.\n\n(2) If any question arises as to whether a person has become subject to disqualification under clause (b) or clause (c) of sub-section (1), the Block Development Officer may either suo-moto or on a report made to him and after giving an opportunity to the person concerned of being heard, decide the question whose decision shall be final.",
+        "Latest": "12. Vacation of seat by members.— (1) If a member of a Panchayat—\n(a) is or becomes subject to any of the disqualifications mentioned in section 10; or\n(b) absents himself for more than three consecutive ordinary meetings of the Panchayat without the leave of the Panchayat or is absent from the State of Goa for more than four consecutive months:\nProvided that when an application is made by a member for leave to the Panchayat for leave to absent himself and the Panchayat fails to inform the applicant of its decision on the application within a period of one month from the date of the receipt of the application by the Panchayat, the leave applied for shall be deemed to have been granted by the Panchayat;\n(c) absents himself with leave of the Panchayat for a period not exceeding six months but fails to attend the next meeting of Panchayat after the expiry of such leave;\n(d) votes or takes part in discussion in contravention of the provisions of sub-section (4) of section 55, his seat shall be deemed to be or to have become, as the case may be, vacant.\n\n(2) If any question arises as to whether a person has become subject to disqualification under clause (b) or clause (c) of sub-section (1), the Block Development Officer may either suo-moto or on a report made to him and after giving an opportunity to the person concerned of being heard, decide the question whose decision shall be final."
+      },
+      "history": []
+    },
+    {
+      "id": "sec13",
+      "chapterId": "ch2",
+      "number": "13",
+      "title": "Lists of Voters",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "13. Lists of Voters.— (1) Subject to the provisions of sub-section (1), the electoral roll of the Legislative Assembly of the State for the time being in force for such part of the ward of a Panchayat shall be deemed to be the list of voters for such Panchayat wards.\n\n(2) No amendment transposition or deletion of any entry in the electoral roll of the Legislative Assembly of the State made after, the last date of making nominations for an election in any Panchayat ward and before the completion of such election shall form part of the list of voters for such election for the purpose of this section.",
+        "Latest": "13. Lists of Voters.— (1) Subject to the provisions of sub-section (1), the electoral roll of the Legislative Assembly of the State for the time being in force for such part of the ward of a Panchayat shall be deemed to be the list of voters for such Panchayat wards.\n\n(2) No amendment transposition or deletion of any entry in the electoral roll of the Legislative Assembly of the State made after, the last date of making nominations for an election in any Panchayat ward and before the completion of such election shall form part of the list of voters for such election for the purpose of this section."
+      },
+      "history": []
+    },
+    {
+      "id": "sec14",
+      "chapterId": "ch2",
+      "number": "14",
+      "title": "Right to vote",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "14. Right to vote.— (1) Every person whose name appears in the voters list relating to a ward shall, subject to the other provisions of this Act, be entitled to vote at any election which takes place in that ward while the voters list remains in force and no person whose name does not appear in such voters list shall vote at any such election.\n\n(2) No person shall vote at any election under this Act in more than one ward or more than once in the same ward.",
+        "Latest": "14. Right to vote.— (1) Every person whose name appears in the voters list relating to a ward shall, subject to the other provisions of this Act, be entitled to vote at any election which takes place in that ward while the voters list remains in force and no person whose name does not appear in such voters list shall vote at any such election.\n\n(2) No person shall vote at any election under this Act in more than one ward or more than once in the same ward."
+      },
+      "history": []
+    },
+    {
+      "id": "sec15",
+      "chapterId": "ch2",
+      "number": "15",
+      "title": "Election of members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "15. Election of members.— The election of members from wards of a Panchayat shall be held in accordance with such manner as may be prescribed on such date or dates as the Government may, by notification direct:\n\nProvided that a casual vacancy in a ward shall be filled up within a period of six months from the date of occurrence of the vacancy.",
+        "Latest": "15. Election of members.— The election of members from wards of a Panchayat shall be held in accordance with such manner as may be prescribed on such date or dates as the Government may, by notification direct:\n\nProvided that a casual vacancy in a ward shall be filled up within a period of six months from the date of occurrence of the vacancy."
+      },
+      "history": []
+    },
+    {
+      "id": "sec47",
+      "chapterId": "ch2",
+      "number": "47",
+      "title": "Executive powers and functions of the Secretary",
+      "tier": "Village Panchayat",
+      "amendedYears": [1997, 2023],
+      "versions": {
+        "1994": "47. Executive powers and functions of the Secretary.— (1) The Secretary shall perform such duties and exercise such administrative powers as may be assigned to him under this Act or rules made thereunder.\n(2) He shall attend meetings of the Panchayat, record minutes, and manage local files under the general direction of the Sarpanch.",
+        "1997": "47. Executive powers and functions of the Secretary.— Notwithstanding anything contained in this Act and the rules framed thereunder, the Secretary shall also exercise the powers on the following matters, namely:—\n(i) to issue the licences for construction, repairs, modification, alteration, so also occupancy certificate in pursuance of the resolution of the Panchayat;\n(ii) to initiate action for stopping and or demolishing an unauthorized structure/building constructed without the permission of the Panchayat after resolution is passed to that effect;\n(iii) to execute the resolution passed by the Panchayat body.",
+        "Latest": "47. Executive powers and functions of the Secretary.— Notwithstanding anything contained in this Act and the rules framed thereunder, the Secretary shall also exercise the powers on the following matters, namely:—\n(i) to issue the licences for construction, repairs, modification, alteration, so also occupancy certificate in pursuance of the resolution of the Panchayat;\n(i-a) in matters of trade licensing and commercial permissions approved by resolution of the Panchayat, the Secretary shall issue the physical license within 30 days of the resolution, and failing such action, the license shall be issued under the authority of the block development officer;\n(ii) to initiate action for stopping and or demolishing an unauthorized structure/building constructed without the permission of the Panchayat after resolution is passed to that effect;\n(iii) to execute the resolution passed by the Panchayat body."
+      },
+      "history": [
+        { "year": 1997, "act": "Act 1 of 1997", "details": "Completely substituted Section 47 to expand the Secretary's autonomous executive role. Granted explicit signature authority to issue building licenses, execute panchayat resolutions, and initiate demolition proceedings for illegal structures." },
+        { "year": 2023, "act": "Act 13 of 2023", "details": "Inserted sub-section (i-a) to bypass licensing delays: BDO is authorized to issue trade licenses if the Secretary fails to execute a passed resolution within 30 days." }
+      ]
+    },
+    {
+      "id": "sec60",
+      "chapterId": "ch3",
+      "number": "60",
+      "title": "Functions of the Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "versions": {
+        "1994": "60. Functions of the Panchayat.— (1) Subject to such conditions as may be specified by the Government from time to time, the Panchayat shall perform the functions specified in Schedule-I.\n\n(2) The Panchayat may also make provision for carrying out within the Panchayat area any other work or measure which is likely to promote the health, safety, education, comfort, convenience or special or economic well-being of the inhabitants of the Panchayat area.\n\n(3) The Panchayat may, by a resolution passed at its meeting and supported by two-thirds of its total number of members and with prior approval of the Director,—\n(a) make provision for or make contribution towards, any exhibition, conference or seminar without or outside the Panchayat area but within the district; or\n(b) make contribution to any medical, educational or charitable institutions or any other institutions of public utility, within the Panchayat area which are registered under the Societies Registration Act, 1860 or under any other law for the time being in force.",
+        "Latest": "60. Functions of the Panchayat.— (1) Subject to such conditions as may be specified by the Government from time to time, the Panchayat shall perform the functions specified in Schedule-I.\n\n(2) The Panchayat may also make provision for carrying out within the Panchayat area any other work or measure which is likely to promote the health, safety, education, comfort, convenience or special or economic well-being of the inhabitants of the Panchayat area.\n\n(3) The Panchayat may, by a resolution passed at its meeting and supported by two-thirds of its total number of members and with prior approval of the Director,—\n(a) make provision for or make contribution towards, any exhibition, conference or seminar without or outside the Panchayat area but within the district; or\n(b) make contribution to any medical, educational or charitable institutions or any other institutions of public utility, within the Panchayat area which are registered under the Societies Registration Act, 1860 or under any other law for the time being in force."
+      },
+      "history": []
+    },
+    {
+      "id": "sec66",
+      "chapterId": "ch3",
+      "number": "66",
+      "title": "Regulation of the erection of buildings",
+      "tier": "Village Panchayat",
+      "amendedYears": [1997, 2001, 2021, 2025],
+      "versions": {
+        "1994": "66. Regulation of the erection of buildings.— (1) Subject to such rules as may be prescribed, no person shall erect any building or alter or add to any existing building or reconstruct any building without the written permission of the Panchayat.\n\n(2) The Panchayat shall decide on building license applications within thirty days of receipt, communicating approvals or rejections directly to the applicant.",
+        "1997": "66. Regulation of the erection of buildings.— (1) Subject to such rules as may be prescribed, no person shall erect any building or alter or add to any existing building or reconstruct any building without the written permission of the Panchayat. The permission may be granted on payment of such fees as may be prescribed.\n\n(2) If a Panchayat does not, within thirty days from the date of receipt of application, determine whether such permission should be given or not and communicate its decision to the applicant, the applicant may file an appeal within thirty days from the date of expiry of aforesaid period, to the Deputy Director who shall dispose of the same within thirty days from the date of filings of such appeal. If the Deputy Director fails to dispose of the appeal within thirty days, such permission shall be deemed to have been given and the applicant may proceed to execute the work, but not so as to contravene any of the provisions of this Act or any rules or bye-laws made under this Act.\n\n(3) Whenever any building is erected without permission, the Panchayat may direct that construction be stopped or require it to be demolished.\n\n(4) Demolition expenses are recoverable from the owner as if it were a tax.\n\n(5) If the Panchayat fails to demolish unauthorized structures, the Deputy Director shall assume powers within one month of knowledge.\n\n(6) BDO may serve stop-work notices for violations.\n\n(7) An appeal against orders under this section lies with the Director within thirty days.",
+        "2021": "66. Regulation of the erection of buildings.— (1) Subject to such rules as may be prescribed, no person shall erect any building or alter or add to any existing building or reconstruct any building without the written permission of the Panchayat. The permission may be granted on payment of such fees as may be prescribed:\nProvided that alteration of a building consisting of a single dwelling unit, which existed prior to the commencement of this Act, for replacing tile roofing with R.C.C. slab roofing, shall be permitted upon producing a certificate of structural stability from a TCP-registered engineer.\nProvided further that no such permission shall be required for carrying out minor plastering, flooring, or painting works which do not alter the structural integrity or height of the building.\n\n(2) If a Panchayat does not, within thirty days from the date of receipt of application, determine whether such permission should be given or not and communicate its decision to the applicant, the applicant may file an appeal within thirty days from the date of expiry of aforesaid period, to the Deputy Director who shall dispose of the same within thirty days from the date of filings of such appeal. If the Deputy Director fails to dispose of the appeal within thirty days, such permission shall be deemed to have been given and the applicant may proceed to execute the work, but not so as to contravene any of the provisions of this Act or any rules or bye-laws made under this Act.\n\n(3) [Demolition and stop-work orders as in 1997]\n(4) [Demolition recovery]\n(5) [Deputy Director intervention]\n(6) [BDO stop-work]\n(7) [Appeal to Director within thirty days]",
+        "Latest": "66. Regulation of the erection of buildings.— (1) Subject to such rules as may be prescribed, no person shall erect any building or alter or add to any existing building or reconstruct any building without the written permission of the Panchayat. The permission may be granted on payment of such fees as may be prescribed:\nProvided that alteration of a building consisting of a single dwelling unit, which existed prior to the commencement of this Act, for replacing tile roofing with R.C.C. slab roofing, shall be permitted upon producing a certificate of structural stability from a TCP-registered engineer.\nProvided further that no such permission shall be required for carrying out minor plastering, flooring, or painting works which do not alter the structural integrity or height of the building.\n\n(2) If a Panchayat does not, within fifteen days from the date of receipt of application, determine whether such permission should be given or not and communicate its decision to the applicant, the permission shall be deemed to have been granted, and the applicant may proceed to execute the work, provided it complies with technical clearances and plans approved by the Town and Country Planning Authorities and other statutory conditions.\n\n(3) [Demolition and stop-work orders as in 1997]\n(4) [Demolition recovery]\n(5) [Deputy Director intervention]\n(6) [BDO stop-work]\n(7) [Appeal to Director within thirty days]"
+      },
+      "history": [
+        { "year": 1997, "act": "Act 1 of 1997", "details": "Substituted sub-section (2) to set up BDO/Deputy Director appeals. Added sub-sections (5), (6), and (7) to define demolition assumptions, BDO enforcement notices, and final appeals to the Director." },
+        { "year": 2001, "act": "Act 13 of 2001", "details": "Inserted the first proviso under sub-section (1) exempting pre-existing single dwelling units from development clearance when replacing tiles with R.C.C. slabs, subject to stability certificates." },
+        { "year": 2021, "act": "Act 32 of 2021", "details": "Refined the stability cert requirement under the first proviso to specify TCP-registered engineers, and added the second proviso exempting minor maintenance (plastering, painting) from licensing." },
+        { "year": 2025, "act": "Act 24 of 2025", "details": "Substituted sub-section (2) to slash review times from 30 days to 15 days, and introduced automatic Deemed Permission if the Panchayat fails to issue a written response within 15 days." }
+      ]
+    }
+  ]
+}
