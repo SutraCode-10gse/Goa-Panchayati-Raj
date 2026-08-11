@@ -20,6 +20,7 @@ window.addEventListener('error', function(e) {
 let timelineData = [];
 let chaptersData = [];
 let sectionsData = [];
+let searchIndexData = null;
 
 // Application State
 const state = {
@@ -41,7 +42,7 @@ const state = {
   compareLayout: 'inline',
 
   // Timeline State
-  selectedTimelineYear: 2025, // Start with recent interesting year
+  selectedTimelineIndex: 0, // Start with first milestone (Principal Act Enactment)
 
   // Search Queries
   globalSearchQuery: '',
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderAll();
 });
 
-// Load active database (LocalStorage -> data.json -> data.js fallback)
+// Load active database (LocalStorage -> data/structure.json)
 async function loadDatabase() {
   const localDb = localStorage.getItem('goa-panchayat-db');
   
@@ -78,9 +79,9 @@ async function loadDatabase() {
     }
   }
 
-  // Try to fetch data.json (will work on http:// but fail on file:// CORS)
+  // Fetch partitioned structure.json
   try {
-    const response = await fetch('data.json');
+    const response = await fetch('data/structure.json');
     if (response.ok) {
       const db = await response.json();
       timelineData = db.timeline || [];
@@ -91,15 +92,33 @@ async function loadDatabase() {
       return;
     }
   } catch (e) {
-    console.warn("Failed to fetch data.json (likely due to file:// CORS restrictions). Falling back to data.js dataset.", e);
+    console.error("Failed to fetch database structure from data/structure.json:", e);
   }
 
-  // Fallback to data.js constants
-  timelineData = typeof AMENDMENTS_TIMELINE !== 'undefined' ? AMENDMENTS_TIMELINE : [];
-  chaptersData = typeof CHAPTERS !== 'undefined' ? CHAPTERS : [];
-  sectionsData = typeof SECTIONS !== 'undefined' ? SECTIONS : [];
-  
   updateDbStatusIndicator(false, true);
+}
+
+// Lazy load individual section details on demand
+async function loadSectionDetails(sectionId) {
+  const section = sectionsData.find(s => s.id === sectionId);
+  if (!section) return null;
+  
+  // If the section already has versions loaded, return it instantly
+  if (section.versions && Object.keys(section.versions).length > 0) {
+    return section;
+  }
+  
+  try {
+    const response = await fetch(`data/sections/${sectionId}.json`);
+    if (response.ok) {
+      const data = await response.json();
+      section.versions = data.versions || {};
+      section.history = data.history || [];
+    }
+  } catch (e) {
+    console.error(`Failed to load details for section ${sectionId}:`, e);
+  }
+  return section;
 }
 
 function updateDbStatusIndicator(isCustom, isFallback = false) {
@@ -116,9 +135,9 @@ function updateDbStatusIndicator(isCustom, isFallback = false) {
   } else {
     dot.className = 'status-dot status-active';
     if (isFallback) {
-      text.textContent = 'Using local fallback database (data.js)';
+      text.textContent = 'Using offline fallback';
     } else {
-      text.textContent = 'Using default system database (data.json)';
+      text.textContent = 'Using default database (structure.json)';
     }
     resetBtn.style.display = 'none';
   }
@@ -126,112 +145,7 @@ function updateDbStatusIndicator(isCustom, isFallback = false) {
 
 // Dynamic Section Generator for complete Act outline
 function generateMissingSections() {
-  const knownTitles = {
-    "8": "Declaration of Panchayat areas and strength",
-    "9": "Composition of Village Panchayats",
-    "10": "Reservation of seats for SC, ST, OBC and Women",
-    "11": "Term of office of elected members",
-    "12": "Disqualification for membership of Panchayat",
-    "13": "Decision on questions of member disqualification",
-    "14": "Vacancy of seat due to absence, death or disqualification",
-    "15": "Resignation of member procedure",
-    "16": "Election of Sarpanch and Deputy Sarpanch",
-    "17": "Term of office of Sarpanch and Deputy Sarpanch",
-    "18": "Resignation of Sarpanch or Deputy Sarpanch",
-    "19": "Motion of no confidence against Sarpanch/Deputy Sarpanch",
-    "20": "Removal of Sarpanch or Deputy Sarpanch by Director",
-    "21": "Meetings of Village Panchayat and quorum rules",
-    "22": "Minutes of proceedings and record keeping of meetings",
-    "30": "Appointment of staff and staff regulations of Panchayat",
-    "45": "General execution powers of the Panchayat body",
-    "46": "Vesting of public properties in Panchayat",
-    "48": "Powers, duties and functions of Sarpanch",
-    "49": "Powers, duties and functions of Deputy Sarpanch",
-    "50": "Right of individual members to query records",
-    "60": "General functions of Panchayat listed in schedules",
-    "65": "Establishment of Ward Development Committees",
-    "115-B": "Composition of Zilla Panchayats",
-    "115-C": "Elected members representation for Zilla Panchayat",
-    "115-D": "Term of Zilla Panchayat members",
-    "115-E": "Disqualification of Zilla Panchayat members",
-    "115-F": "Election of Adhyaksha and Upadhyaksha",
-    "115-G": "Term of office of Adhyaksha and Upadhyaksha",
-    "115-Z-A": "Finance and taxation powers of Zilla Panchayat",
-    "115-Z-B": "Establishment of Zilla Panchayat Fund",
-    "117": "Procedure for collection of house and building tax",
-    "118": "Levy of octroi or entry tax on goods",
-    "142": "Acquisition of land for public panchayat utilities",
-    "157": "Preparation of electoral rolls for village assembly",
-    "182": "Functions and powers of State Finance Commission",
-    "197": "General rule-making powers of the State government"
-  };
-
-  chaptersData.forEach(chap => {
-    const rangeStr = chap.range;
-    if (!rangeStr) return;
-
-    // Try parsing range like "Sec 7 - 46"
-    const matches = rangeStr.match(/(\d+)\s*-\s*(\d+)/);
-    if (!matches) {
-      // Special case: Zilla Panchayat sub-chapters (Sections 115-A to 115-Z-E)
-      if (chap.id === 'ch4a') {
-        const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-        // Add 115-B to 115-Z
-        alphabet.slice(1).forEach(letter => {
-          const secNum = `115-${letter}`;
-          if (!sectionsData.some(s => s.number === secNum)) {
-            const title = knownTitles[secNum] || `Zilla Panchayat Administration - Section ${secNum}`;
-            sectionsData.push(createPlaceholderSection(chap.id, secNum, title));
-          }
-        });
-        // Add 115-Z-A to 115-Z-E
-        ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
-          const secNum = `115-Z-${letter}`;
-          if (!sectionsData.some(s => s.number === secNum)) {
-            const title = knownTitles[secNum] || `Zilla Panchayat Administration - Section ${secNum}`;
-            sectionsData.push(createPlaceholderSection(chap.id, secNum, title));
-          }
-        });
-      }
-      return;
-    }
-
-    const start = parseInt(matches[1], 10);
-    const end = parseInt(matches[2], 10);
-
-    for (let x = start; x <= end; x++) {
-      const secNum = x.toString();
-      if (!sectionsData.some(s => s.number === secNum)) {
-        const title = knownTitles[secNum] || `Administration and powers under Section ${secNum}`;
-        sectionsData.push(createPlaceholderSection(chap.id, secNum, title));
-      }
-    }
-  });
-
-  // Sort sections numerically to ensure perfect ordering
-  sectionsData.sort((a, b) => {
-    const valA = parseSecNumObject(a.number);
-    const valB = parseSecNumObject(b.number);
-    if (valA.num !== valB.num) return valA.num - valB.num;
-    return valA.suffix.localeCompare(valB.suffix);
-  });
-}
-
-function createPlaceholderSection(chapterId, number, title) {
-  const tier = chapterId === 'ch4a' ? 'Zilla Panchayat' : (['ch1', 'ch7', 'ch8', 'ch9'].includes(chapterId) ? 'General' : 'Village Panchayat');
-  return {
-    id: `gen_sec_${number.replace(/-/g, '_')}`,
-    chapterId: chapterId,
-    number: number,
-    title: title,
-    tier: tier,
-    amendedYears: [],
-    versions: {
-      "Latest": `Section ${number}. ${title}.\n\nDetailed provisions of Section ${number} of the Goa Panchayat Raj Act, 1994.\nThis section is part of the consolidated statutory framework governing local self-government in the State of Goa, establishing regulatory powers, duties, and functions for local administration.`
-    },
-    history: [],
-    isPlaceholder: true
-  };
+  // Database outline is pre-compiled. No dynamic placeholders needed.
 }
 
 function parseSecNumObject(numStr) {
@@ -482,20 +396,36 @@ function setupEventListeners() {
     renderCompareEngine();
   });
 
-  // Database Manager Export
-  document.getElementById('db-export-btn').addEventListener('click', () => {
-    const dataToExport = {
-      timeline: timelineData,
-      chapters: chaptersData,
-      sections: sectionsData
-    };
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataToExport, null, 2));
-    const downloadAnchor = document.createElement('a');
-    downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", "goa_panchayat_act_db.json");
-    document.body.appendChild(downloadAnchor);
-    downloadAnchor.click();
-    downloadAnchor.remove();
+  // Database Manager Export (Compiles sliced sections in parallel before downloading)
+  document.getElementById('db-export-btn').addEventListener('click', async () => {
+    const btn = document.getElementById('db-export-btn');
+    const originalText = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = '<strong>Compiling database...</strong>';
+    
+    try {
+      const fetchPromises = sectionsData.map(s => loadSectionDetails(s.id));
+      await Promise.all(fetchPromises);
+      
+      const dataToExport = {
+        timeline: timelineData,
+        chapters: chaptersData,
+        sections: sectionsData
+      };
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataToExport, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "goa_panchayat_act_db.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    } catch (e) {
+      console.error("Failed to compile database for export:", e);
+      alert("Error compiling database: " + e.message);
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = originalText;
+    }
   });
 
   // Database Manager Import Click
@@ -659,11 +589,35 @@ function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// 2. Render Full Act Reader
-function renderFullActReader() {
+// 2. Render Full Act Reader (Lazy-loads search index for full-text reader display)
+async function renderFullActReader() {
   const container = document.getElementById('full-act-text-container');
-  container.innerHTML = '';
+  if (!container) return;
 
+  if (!searchIndexData) {
+    container.innerHTML = `
+      <div class="no-selection-placeholder">
+        <div class="loading-spinner"></div>
+        <p style="margin-top: 10px;">Loading Act reader content...</p>
+      </div>
+    `;
+    try {
+      const response = await fetch('data/search_index.json');
+      if (response.ok) {
+        searchIndexData = await response.json();
+      }
+    } catch (e) {
+      console.error("Failed to load search index:", e);
+      container.innerHTML = `
+        <div class="no-selection-placeholder">
+          <p style="color: var(--del-color);">Error loading Act content. Please check your connection.</p>
+        </div>
+      `;
+      return;
+    }
+  }
+
+  container.innerHTML = '';
   let outputHtml = '';
 
   chaptersData.forEach(chapter => {
@@ -682,7 +636,7 @@ function renderFullActReader() {
       chapterSections = chapterSections.filter(s => {
         const titleMatch = s.title.toLowerCase().includes(state.readerSearchQuery);
         const numMatch = s.number.toLowerCase().includes(state.readerSearchQuery);
-        const bodyText = s.versions['Latest'] || '';
+        const bodyText = searchIndexData[s.id] || '';
         const textMatch = bodyText.toLowerCase().includes(state.readerSearchQuery);
         return titleMatch || numMatch || textMatch;
       });
@@ -707,12 +661,8 @@ function renderFullActReader() {
         ctaHtml = `<button class="cta-amended-badge" data-sec-id="${sec.id}">Amended (${lastYear}) - View History</button>`;
       }
 
-      // Highlight matching text if search is active
-      let bodyText = sec.versions['Latest'] || '';
-      if (state.readerSearchQuery.length > 0) {
-        const regex = new RegExp(`(${escapeRegExp(state.readerSearchQuery)})`, 'gi');
-        bodyText = bodyText.replace(regex, '<span class="highlight-match">$1</span>');
-      }
+      // Format legal body text
+      let bodyText = formatLegalText(searchIndexData[sec.id] || '');
 
       outputHtml += `
         <div class="reader-section-item" id="reader-sec-${sec.id}">
@@ -739,6 +689,11 @@ function renderFullActReader() {
     `;
   } else {
     container.innerHTML = outputHtml;
+    
+    // Highlight search query safely in DOM text nodes
+    if (state.readerSearchQuery.length >= 3) {
+      highlightSearchQueryInElement(container, state.readerSearchQuery);
+    }
     
     // Add click listeners to CTA badges
     container.querySelectorAll('.cta-amended-badge').forEach(badge => {
@@ -782,8 +737,11 @@ function renderExplorerTOC() {
     chapterSections = sectionsData.filter(s => {
       const titleMatch = s.title.toLowerCase().includes(state.globalSearchQuery);
       const numMatch = s.number.toLowerCase().includes(state.globalSearchQuery);
-      const latestText = s.versions['Latest'] || '';
-      const textMatch = latestText.toLowerCase().includes(state.globalSearchQuery);
+      let textMatch = false;
+      if (searchIndexData) {
+        const latestText = searchIndexData[s.id] || '';
+        textMatch = latestText.toLowerCase().includes(state.globalSearchQuery);
+      }
       return titleMatch || numMatch || textMatch;
     });
   }
@@ -826,8 +784,8 @@ function renderExplorerTOC() {
   });
 }
 
-// 4. Render Explorer Section Details Workspace
-function renderExplorerDetail() {
+// 4. Render Explorer Section Details Workspace (Lazy-loads details before rendering)
+async function renderExplorerDetail() {
   const panel = document.getElementById('explorer-content-panel');
   if (!state.selectedSectionId) {
     panel.innerHTML = `
@@ -839,7 +797,24 @@ function renderExplorerDetail() {
     return;
   }
 
-  const section = sectionsData.find(s => s.id === state.selectedSectionId);
+  // Show a loading skeleton
+  panel.innerHTML = `
+    <div class="no-selection-placeholder">
+      <div class="loading-spinner"></div>
+      <p style="margin-top: 10px;">Loading section text...</p>
+    </div>
+  `;
+
+  const section = await loadSectionDetails(state.selectedSectionId);
+  if (!section || !section.versions) {
+    panel.innerHTML = `
+      <div class="no-selection-placeholder">
+        <p style="color: var(--del-color);">Error loading section text. Please check your connection.</p>
+      </div>
+    `;
+    return;
+  }
+
   const hasAmendments = section.amendedYears.length > 0;
   const tierClass = section.tier === 'General' ? 'general' : (section.tier === 'Village Panchayat' ? 'vp' : 'zp');
 
@@ -947,12 +922,10 @@ function renderExplorerDetail() {
   } else {
     // Normal single-version text
     const normalText = section.versions[state.explorerBaseVersion] || '';
+    textPane.innerHTML = formatLegalText(normalText);
     const query = state.globalSearchQuery.trim();
     if (query.length >= 3) {
-      const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
-      textPane.innerHTML = escapeHtml(normalText).replace(regex, '<span class="highlight-match">$1</span>');
-    } else {
-      textPane.textContent = normalText;
+      highlightSearchQueryInElement(textPane, query);
     }
   }
 
@@ -980,11 +953,12 @@ function renderTimeline() {
   const track = document.getElementById('timeline-navigation-track');
   const panel = document.getElementById('timeline-detail-panel');
   
+  if (!track || !panel) return;
   track.innerHTML = '';
   
-  // Render timeline year nodes
-  timelineData.forEach(act => {
-    const isActive = state.selectedTimelineYear === act.year;
+  // Render timeline nodes
+  timelineData.forEach((act, idx) => {
+    const isActive = state.selectedTimelineIndex === idx;
     const navItem = document.createElement('button');
     navItem.className = `timeline-nav-item ${isActive ? 'active' : ''}`;
     navItem.innerHTML = `
@@ -992,18 +966,18 @@ function renderTimeline() {
       <span class="timeline-nav-act">${act.actNumber}</span>
     `;
     navItem.addEventListener('click', () => {
-      state.selectedTimelineYear = act.year;
+      state.selectedTimelineIndex = idx;
       renderTimeline();
     });
     track.appendChild(navItem);
   });
 
-  // Render detail panel for selected year
-  const activeAct = timelineData.find(a => a.year === state.selectedTimelineYear);
+  // Render detail panel for selected index
+  const activeAct = timelineData[state.selectedTimelineIndex];
   if (!activeAct) return;
 
   // Find all sections amended in this year
-  const amendedSecs = sectionsData.filter(s => s.amendedYears.includes(state.selectedTimelineYear) || (state.selectedTimelineYear === 1994 && s.versions['1994']));
+  const amendedSecs = sectionsData.filter(s => s.amendedYears.includes(activeAct.year) || (activeAct.year === 1994 && (!s.insertedYear || s.insertedYear <= 1994)));
 
   panel.innerHTML = `
     <div class="timeline-content-header">
@@ -1031,19 +1005,40 @@ function renderTimeline() {
         <h4>Impacted Act Sections</h4>
         <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 12px;">
           ${amendedSecs.map(s => `
-            <div style="padding: 12px 16px; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); display: flex; gap: 12px; align-items: center; font-size: 0.9rem; color: var(--text-secondary);">
+            <div class="timeline-impacted-sec-btn" data-sec-id="${s.id}" style="padding: 12px 16px; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); display: flex; gap: 12px; align-items: center; font-size: 0.9rem; color: var(--text-secondary); cursor: pointer; transition: all var(--transition-fast);">
               <strong style="font-family: var(--font-mono); color: var(--accent-light); font-size: 0.85rem; background-color: var(--bg-tertiary); padding: 2px 6px; border-radius: 4px;">Section ${s.number}</strong>
-              <span style="font-weight: 500;">${s.title}</span>
+              <span style="font-weight: 500; flex-grow: 1;">${s.title}</span>
+              <span style="color: var(--text-muted); font-size: 1.1rem; transition: transform var(--transition-fast);">&rarr;</span>
             </div>
           `).join('')}
         </div>
       </div>
     </div>
   `;
+
+  // Bind click events and hover animations for impacted sections in timeline
+  panel.querySelectorAll('.timeline-impacted-sec-btn').forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+      btn.style.borderColor = 'var(--accent-color)';
+      btn.style.transform = 'translateY(-1px)';
+      const arrow = btn.querySelector('span:last-child');
+      if (arrow) arrow.style.transform = 'translateX(2px)';
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.borderColor = 'var(--border-color)';
+      btn.style.transform = 'translateY(0)';
+      const arrow = btn.querySelector('span:last-child');
+      if (arrow) arrow.style.transform = 'translateX(0)';
+    });
+    btn.addEventListener('click', () => {
+      const secId = btn.getAttribute('data-sec-id');
+      navigateToSection(secId);
+    });
+  });
 }
 
 // 6. Compare Engine Version Selector Updates
-function updateCompareVersionSelectors() {
+async function updateCompareVersionSelectors() {
   const sectionSelect = document.getElementById('compare-section-select');
   
   // Populate section selections once (only sections with amendments)
@@ -1054,8 +1049,8 @@ function updateCompareVersionSelectors() {
     ).join('');
   }
 
-  const section = sectionsData.find(s => s.id === state.compareSectionId);
-  if (!section) return;
+  const section = await loadSectionDetails(state.compareSectionId);
+  if (!section || !section.versions) return;
 
   const availableVersions = Object.keys(section.versions);
 
@@ -1082,13 +1077,27 @@ function updateCompareVersionSelectors() {
   document.getElementById('compare-mode-toggle').value = state.compareLayout;
 }
 
-// 7. Render Compare Engine Workspace
-function renderCompareEngine() {
+// 7. Render Compare Engine Workspace (Lazy-loads details before rendering comparisons)
+async function renderCompareEngine() {
   const workspace = document.getElementById('compare-workspace-output');
-  workspace.innerHTML = '';
+  workspace.innerHTML = `
+    <div class="no-selection-placeholder">
+      <div class="loading-spinner"></div>
+      <p style="margin-top: 10px;">Loading comparison data...</p>
+    </div>
+  `;
 
-  const section = sectionsData.find(s => s.id === state.compareSectionId);
-  if (!section) return;
+  const section = await loadSectionDetails(state.compareSectionId);
+  if (!section || !section.versions) {
+    workspace.innerHTML = `
+      <div class="no-selection-placeholder">
+        <p style="color: var(--del-color);">Error loading comparison data.</p>
+      </div>
+    `;
+    return;
+  }
+
+  workspace.innerHTML = '';
 
   const textA = section.versions[state.compareVersionA] || '';
   const textB = section.versions[state.compareVersionB] || '';
@@ -1279,8 +1288,8 @@ function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// 7. Render Search Results
-function renderSearchResults() {
+// 7. Render Search Results (Lazy-loads search index on query key-up)
+async function renderSearchResults() {
   const output = document.getElementById('search-results-output');
   const summary = document.getElementById('search-results-summary');
   
@@ -1298,17 +1307,42 @@ function renderSearchResults() {
     `;
     return;
   }
+
+  // Lazy-load search index if not loaded yet
+  if (!searchIndexData) {
+    output.innerHTML = `
+      <div class="no-selection-placeholder" style="padding: 40px; text-align: center;">
+        <div class="loading-spinner"></div>
+        <p style="margin-top: 10px;">Loading search index...</p>
+      </div>
+    `;
+    try {
+      const response = await fetch('data/search_index.json');
+      if (response.ok) {
+        searchIndexData = await response.json();
+      }
+    } catch (e) {
+      console.error("Failed to load search index:", e);
+      output.innerHTML = `
+        <div class="no-selection-placeholder" style="padding: 40px; text-align: center; color: var(--del-color);">
+          <p>Error loading search results. Please check your connection.</p>
+        </div>
+      `;
+      return;
+    }
+    output.innerHTML = '';
+  }
   
   // Find matches
   const matches = [];
   sectionsData.forEach(sec => {
-    const text = (sec.versions['Latest'] || '').toLowerCase();
+    const text = (searchIndexData[sec.id] || '').toLowerCase();
     const title = sec.title.toLowerCase();
     const number = sec.number.toLowerCase();
     
     if (text.includes(query) || title.includes(query) || number.includes(query)) {
       // Find first matched sentence containing the query
-      const sentences = (sec.versions['Latest'] || '').split(/[.\n]+/);
+      const sentences = (searchIndexData[sec.id] || '').split(/[.\n]+/);
       let snippetText = '';
       for (const sentence of sentences) {
         if (sentence.toLowerCase().includes(query)) {
@@ -1317,7 +1351,7 @@ function renderSearchResults() {
         }
       }
       if (!snippetText) {
-        snippetText = (sec.versions['Latest'] || '').substring(0, 120).trim();
+        snippetText = (searchIndexData[sec.id] || '').substring(0, 120).trim();
       }
       
       matches.push({
@@ -1384,4 +1418,103 @@ function renderSearchResults() {
     
     output.appendChild(card);
   });
+}
+
+// Helper to format legal texts as nested structures
+function formatLegalText(text) {
+  if (!text) return '';
+  
+  const paragraphs = text.split('\n');
+  let html = '';
+  
+  paragraphs.forEach(para => {
+    para = para.trim();
+    if (!para) return;
+    
+    // Section Title Heading (e.g. "3. Declaration...—")
+    const titleRegex = /^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?)\.\s+([A-Z][a-zA-Z\s,()&'’:\n-]{3,100}?)[.——]/;
+    if (titleRegex.test(para)) {
+      html += `<div class="legal-header">${para}</div>`;
+      return;
+    }
+    
+    // Provisos
+    if (para.startsWith('Provided that') || para.startsWith('Provided further that') || para.startsWith('Provided, however, that')) {
+      html += `<div class="legal-proviso">${para}</div>`;
+      return;
+    }
+    
+    // Explanations
+    if (para.startsWith('Explanation') || para.startsWith('Explanation:')) {
+      html += `<div class="legal-explanation">${para}</div>`;
+      return;
+    }
+    
+    // Sub-sections starting with (1), (2), (10), etc.
+    const subSecMatch = para.match(/^\((\d+[A-Z]?)\)\s*(.*)$/s);
+    if (subSecMatch) {
+      html += `
+        <div class="legal-subsection">
+          <span class="legal-num">(${subSecMatch[1]})</span>
+          <span class="legal-body">${subSecMatch[2]}</span>
+        </div>
+      `;
+      return;
+    }
+    
+    // Clauses starting with (a), (b), (z), (aa), etc.
+    const clauseMatch = para.match(/^\(([a-z]+)\)\s*(.*)$/s);
+    if (clauseMatch) {
+      html += `
+        <div class="legal-clause">
+          <span class="legal-num">(${clauseMatch[1]})</span>
+          <span class="legal-body">${clauseMatch[2]}</span>
+        </div>
+      `;
+      return;
+    }
+    
+    // Sub-clauses starting with (i), (ii), (iv), (ix), etc.
+    const subClauseMatch = para.match(/^\(([ivx]+)\)\s*(.*)$/s);
+    if (subClauseMatch) {
+      html += `
+        <div class="legal-subclause">
+          <span class="legal-num">(${subClauseMatch[1]})</span>
+          <span class="legal-body">${subClauseMatch[2]}</span>
+        </div>
+      `;
+      return;
+    }
+    
+    // Fallback paragraph
+    html += `<p class="legal-paragraph">${para}</p>`;
+  });
+  
+  return html;
+}
+
+// Walk DOM nodes to safely highlight search terms without corrupting tags
+function highlightSearchQueryInElement(element, query) {
+  if (!query || query.length < 3) return;
+  const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+  
+  function walk(node) {
+    if (node.nodeType === 3) { // Text node
+      const parent = node.parentNode;
+      if (parent && parent.classList && parent.classList.contains('highlight-match')) {
+        return;
+      }
+      
+      const text = node.nodeValue;
+      if (regex.test(text)) {
+        const span = document.createElement('span');
+        span.innerHTML = text.replace(regex, '<span class="highlight-match">$1</span>');
+        parent.replaceChild(span, node);
+      }
+    } else {
+      const children = Array.from(node.childNodes);
+      children.forEach(walk);
+    }
+  }
+  walk(element);
 }
