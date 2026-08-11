@@ -918,10 +918,12 @@ async function renderExplorerDetail() {
         diffHtml += `  ${escapeHtml(item.text)}\n`;
       }
     });
+    textPane.style.whiteSpace = 'pre-wrap';
     textPane.innerHTML = diffHtml;
   } else {
     // Normal single-version text
     const normalText = section.versions[state.explorerBaseVersion] || '';
+    textPane.style.whiteSpace = 'normal';
     textPane.innerHTML = formatLegalText(normalText);
     const query = state.globalSearchQuery.trim();
     if (query.length >= 3) {
@@ -1425,6 +1427,19 @@ function formatLegalText(text) {
   
   // Clean raw lines
   const rawLines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  
+  // First, split heading and first subsection if they are combined on the same line
+  const cleanedLines = [];
+  rawLines.forEach(line => {
+    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^.—]*?[.——\s]*)\s*(\(\d+[A-Z]?\)\s*.*)$/s);
+    if (splitMatch) {
+      cleanedLines.push(splitMatch[1].trim());
+      cleanedLines.push(splitMatch[2].trim());
+    } else {
+      cleanedLines.push(line);
+    }
+  });
+  
   const paragraphs = [];
   
   // Helpers to detect new block markers
@@ -1446,7 +1461,7 @@ function formatLegalText(text) {
   };
   
   // Merge split lines
-  rawLines.forEach(line => {
+  cleanedLines.forEach(line => {
     if (paragraphs.length === 0) {
       paragraphs.push(line);
       return;
