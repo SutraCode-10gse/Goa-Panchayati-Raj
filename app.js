@@ -48,7 +48,8 @@ const state = {
   globalSearchQuery: '',
   readerSearchQuery: '',
   readerShowVp: true,
-  readerShowZp: true
+  readerShowZp: true,
+  readerActiveSecId: null
 };
 
 // Initialize Application
@@ -618,11 +619,9 @@ async function renderFullActReader() {
   }
 
   container.innerHTML = '';
-  let outputHtml = '';
   const allMatchedSections = [];
 
   chaptersData.forEach(chapter => {
-    // Get sections for this chapter
     let chapterSections = sectionsData.filter(s => s.chapterId === chapter.id);
 
     // Apply Tier filters
@@ -643,45 +642,15 @@ async function renderFullActReader() {
       });
     }
 
-    if (chapterSections.length === 0) return; // Skip empty chapters in filtered views
-
-    outputHtml += `
-      <div class="reader-chapter-block">
-        <h2>${chapter.title}</h2>
-    `;
-
     chapterSections.forEach(sec => {
       allMatchedSections.push(sec);
-      const hasAmendments = sec.amendedYears.length > 0;
-      const tierClass = sec.tier === 'General' ? 'general' : (sec.tier === 'Village Panchayat' ? 'vp' : 'zp');
-      
-      let badgeHtml = `<span class="badge badge-tier-${tierClass}">${sec.tier}</span>`;
-      let ctaHtml = '';
-
-      if (hasAmendments) {
-        const lastYear = sec.amendedYears[sec.amendedYears.length - 1];
-        ctaHtml = `<button class="cta-amended-badge" data-sec-id="${sec.id}">Amended (${lastYear}) - View History</button>`;
-      }
-
-      // Format legal body text
-      let bodyText = formatLegalText(searchIndexData[sec.id] || '');
-
-      outputHtml += `
-        <div class="reader-section-item" id="reader-sec-${sec.id}">
-          <div class="reader-section-header">
-            <h3 class="reader-section-title"><strong>Section ${sec.number}</strong> ${sec.title}</h3>
-            <div class="reader-section-meta">
-              ${badgeHtml}
-              ${ctaHtml}
-            </div>
-          </div>
-          <div class="reader-section-body">${bodyText}</div>
-        </div>
-      `;
     });
-
-    outputHtml += `</div>`;
   });
+
+  // Decide active section ID
+  if (!state.readerActiveSecId || !allMatchedSections.some(s => s.id === state.readerActiveSecId)) {
+    state.readerActiveSecId = allMatchedSections[0]?.id || null;
+  }
 
   // Populate navigation sidebar
   const navSidebar = document.getElementById('reader-nav-sidebar');
@@ -690,82 +659,91 @@ async function renderFullActReader() {
     if (allMatchedSections.length === 0) {
       navSidebar.innerHTML = `<div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; padding: 20px; width: 100%;">No sections found</div>`;
     } else {
-      allMatchedSections.forEach((sec, idx) => {
+      allMatchedSections.forEach((sec) => {
         const item = document.createElement('button');
         item.className = 'reader-nav-item';
-        if (idx === 0) item.classList.add('active'); // Highlight first by default
+        if (sec.id === state.readerActiveSecId) item.classList.add('active');
         item.setAttribute('data-nav-sec-id', sec.id);
         item.innerHTML = `
           <strong>Sec ${sec.number}</strong>
           <span>${sec.title}</span>
         `;
         item.addEventListener('click', () => {
+          state.readerActiveSecId = sec.id;
           navSidebar.querySelectorAll('.reader-nav-item').forEach(i => i.classList.remove('active'));
           item.classList.add('active');
-          
-          const targetEl = document.getElementById(`reader-sec-${sec.id}`);
-          if (targetEl) {
-            const targetOffset = targetEl.getBoundingClientRect().top - container.getBoundingClientRect().top + container.scrollTop;
-            container.scrollTo({
-              top: targetOffset - 15,
-              behavior: 'smooth'
-            });
-          }
+          renderActiveSectionContent();
         });
         navSidebar.appendChild(item);
       });
     }
   }
 
-  // Scroll spy to highlight active section in nav sidebar on scrolling
-  let isScrolling = false;
-  container.addEventListener('scroll', () => {
-    if (isScrolling) return;
-    isScrolling = true;
-    requestAnimationFrame(() => {
-      const containerRect = container.getBoundingClientRect();
-      let activeSecId = null;
-      
-      const sectionItems = container.querySelectorAll('.reader-section-item');
-      for (const item of sectionItems) {
-        const rect = item.getBoundingClientRect();
-        // If the section is visible near or above the top of the container view
-        if (rect.top - containerRect.top <= 100) {
-          activeSecId = item.id.replace('reader-sec-', '');
-        } else {
-          break; // Sections are ordered sequentially
-        }
-      }
-      
-      if (activeSecId && navSidebar) {
-        navSidebar.querySelectorAll('.reader-nav-item').forEach(i => i.classList.remove('active'));
-        const activeNav = navSidebar.querySelector(`[data-nav-sec-id="${activeSecId}"]`);
-        if (activeNav) activeNav.classList.add('active');
-      }
-      isScrolling = false;
-    });
-  });
+  // Render content of active section
+  renderActiveSectionContent();
+}
 
-  if (outputHtml === '') {
+function renderActiveSectionContent() {
+  const container = document.getElementById('full-act-text-container');
+  if (!container) return;
+
+  const activeSec = sectionsData.find(s => s.id === state.readerActiveSecId);
+  if (!activeSec) {
     container.innerHTML = `
       <div class="no-selection-placeholder">
-        <p>No sections match the current filters or search query.</p>
+        <p>No section selected or matches found.</p>
       </div>
     `;
-  } else {
-    container.innerHTML = outputHtml;
+    return;
+  }
+
+  const chapter = chaptersData.find(c => c.id === activeSec.chapterId);
+  const chapterTitle = chapter ? chapter.title : '';
+  
+  const hasAmendments = activeSec.amendedYears.length > 0;
+  const tierClass = activeSec.tier === 'General' ? 'general' : (activeSec.tier === 'Village Panchayat' ? 'vp' : 'zp');
+  
+  let badgeHtml = `<span class="badge badge-tier-${tierClass}">${activeSec.tier}</span>`;
+  let ctaHtml = '';
+
+  if (hasAmendments) {
+    const lastYear = activeSec.amendedYears[activeSec.amendedYears.length - 1];
+    ctaHtml = `<button class="cta-amended-badge" data-sec-id="${activeSec.id}">Amended (${lastYear}) - View History</button>`;
+  }
+
+  // Format legal body text
+  let bodyText = formatLegalText(searchIndexData[activeSec.id] || '');
+
+  container.innerHTML = `
+    <div class="reader-chapter-block" style="margin-bottom: 24px; width: 100%;">
+      <h2 style="font-size: 1.1rem; color: var(--accent-light); margin-bottom: 16px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+        ${chapterTitle}
+      </h2>
+    </div>
     
-    // Highlight search query safely in DOM text nodes
-    if (state.readerSearchQuery.length >= 3) {
-      highlightSearchQueryInElement(container, state.readerSearchQuery);
-    }
-    
-    // Add click listeners to CTA badges
-    container.querySelectorAll('.cta-amended-badge').forEach(badge => {
-      badge.addEventListener('click', (e) => {
-        const secId = e.target.getAttribute('data-sec-id');
-        navigateToCompareSection(secId);
-      });
+    <div class="reader-section-item" id="reader-sec-${activeSec.id}" style="width: 100%;">
+      <div class="reader-section-header">
+        <h3 class="reader-section-title"><strong>Section ${activeSec.number}</strong> ${activeSec.title}</h3>
+        <div class="reader-section-meta">
+          ${badgeHtml}
+          ${ctaHtml}
+        </div>
+      </div>
+      <div class="reader-section-body">${bodyText}</div>
+    </div>
+  `;
+
+  // Highlight search query
+  if (state.readerSearchQuery.length >= 3) {
+    highlightSearchQueryInElement(container, state.readerSearchQuery);
+  }
+
+  // Add click listener to CTA badge
+  const ctaBtn = container.querySelector('.cta-amended-badge');
+  if (ctaBtn) {
+    ctaBtn.addEventListener('click', (e) => {
+      const secId = e.target.getAttribute('data-sec-id');
+      navigateToCompareSection(secId);
     });
   }
 }
