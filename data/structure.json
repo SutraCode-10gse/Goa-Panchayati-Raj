@@ -1355,6 +1355,24 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_112",
+      "chapterId": "ch3",
+      "number": "112",
+      "title": "Prohibition of nuisance",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_112_A",
+      "chapterId": "ch3",
+      "number": "112-A",
+      "title": "Stray cattle",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_112_B",
       "chapterId": "ch3",
       "number": "112-B",
@@ -1404,6 +1422,15 @@
       "chapterId": "ch4",
       "number": "113",
       "title": "Secretary",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_113_A",
+      "chapterId": "ch4",
+      "number": "113-A",
+      "title": "Duties, powers and responsibilities of Panchayat Secretary",
       "tier": "Village Panchayat",
       "amendedYears": [],
       "insertedYear": 1994
@@ -1472,6 +1499,15 @@
       "insertedYear": 1999
     },
     {
+      "id": "gen_sec_115_E",
+      "chapterId": "ch4a",
+      "number": "115-E",
+      "title": "List of voters",
+      "tier": "Zilla Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
       "id": "gen_sec_115_F",
       "chapterId": "ch4a",
       "number": "115-F",
@@ -1491,7 +1527,7 @@
     },
     {
       "id": "gen_sec_115_H",
-      "chapterId": "ch4",
+      "chapterId": "ch4a",
       "number": "115-H",
       "title": "Disqualification for members",
       "tier": "Village Panchayat",
@@ -1500,7 +1536,7 @@
     },
     {
       "id": "gen_sec_115_I",
-      "chapterId": "ch4",
+      "chapterId": "ch4a",
       "number": "115-I",
       "title": "Vacation of seats by members",
       "tier": "Village Panchayat",
@@ -1509,7 +1545,7 @@
     },
     {
       "id": "gen_sec_115_J",
-      "chapterId": "ch4",
+      "chapterId": "ch4a",
       "number": "115-J",
       "title": "Decision on question as to disqualification and on vacation of seats by members",
       "tier": "Village Panchayat",
@@ -1518,7 +1554,7 @@
     },
     {
       "id": "gen_sec_115_K",
-      "chapterId": "ch4",
+      "chapterId": "ch4a",
       "number": "115-K",
       "title": "Application of certain sections relating to elections",
       "tier": "Village Panchayat",
@@ -1527,7 +1563,7 @@
     },
     {
       "id": "gen_sec_115_L",
-      "chapterId": "ch4",
+      "chapterId": "ch4a",
       "number": "115-L",
       "title": "Publication of names of members, term of office, resignation of members and casual vacancies",
       "tier": "Village Panchayat",
@@ -1536,7 +1572,7 @@
     },
     {
       "id": "gen_sec_115_M",
-      "chapterId": "ch4",
+      "chapterId": "ch4a",
       "number": "115-M",
       "title": "Application of certain sections relating to election of Chairperson or Vice-Chairperson",
       "tier": "Village Panchayat",
@@ -1545,7 +1581,7 @@
     },
     {
       "id": "gen_sec_115_N",
-      "chapterId": "ch4",
+      "chapterId": "ch4a",
       "number": "115-N",
       "title": "Removal of Chairperson, Vice-Chairperson or member for misconduct",
       "tier": "Village Panchayat",
@@ -1554,7 +1590,7 @@
     },
     {
       "id": "gen_sec_115_O",
-      "chapterId": "ch4",
+      "chapterId": "ch4a",
       "number": "115-O",
       "title": "Liability and accountability of members",
       "tier": "Village Panchayat",
@@ -1670,6 +1706,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_117",
+      "chapterId": "ch5",
+      "number": "117",
+      "title": "Constitution of Zilla Panchayats",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_118",
       "chapterId": "ch5",
       "number": "118",
@@ -1684,6 +1729,15 @@
       "number": "119",
       "title": "Delimitation of territorial constituencies",
       "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_120",
+      "chapterId": "ch5",
+      "number": "120",
+      "title": "Right to vote",
+      "tier": "General",
       "amendedYears": [],
       "insertedYear": 1994
     },
@@ -1801,6 +1855,15 @@
       "number": "133",
       "title": "Election of Adhyaksha and Upadhyaksha and term of office",
       "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_134",
+      "chapterId": "ch5",
+      "number": "134",
+      "title": "Salary and Allowances to the Adhyaksha, Upadhyaksha and other members",
+      "tier": "General",
       "amendedYears": [],
       "insertedYear": 1994
     },
@@ -1945,6 +2008,15 @@
       "number": "150",
       "title": "Chief Executive Officer and other Officers",
       "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_151",
+      "chapterId": "ch6",
+      "number": "151",
+      "title": "Functions, powers and duties of the Chief Executive Officer and other officers",
+      "tier": "General",
       "amendedYears": [],
       "insertedYear": 1994
     },
@@ -2111,6 +2183,24 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_170",
+      "chapterId": "ch7",
+      "number": "170",
+      "title": "Zilla Panchayat may raise loans and form a sinking fund",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_171",
+      "chapterId": "ch7",
+      "number": "171",
+      "title": "Prohibition of expenditure not covered by the Budget",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_172",
       "chapterId": "ch8",
       "number": "172",
@@ -2192,6 +2282,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_181",
+      "chapterId": "ch9",
+      "number": "181",
+      "title": "Director’s power to specify the role of Panchayats",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_182",
       "chapterId": "ch10",
       "number": "182",
@@ -2246,6 +2345,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_188",
+      "chapterId": "ch10",
+      "number": "188",
+      "title": "Presentation of accounts and budget of Zilla Panchayat",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_189",
       "chapterId": "ch10",
       "number": "189",
@@ -2282,6 +2390,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_193",
+      "chapterId": "ch10",
+      "number": "193",
+      "title": "Power to write off irrecoverable sums",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_194",
       "chapterId": "ch10",
       "number": "194",
@@ -2296,6 +2413,15 @@
       "number": "195",
       "title": "Action by Zilla Panchayat on audit report",
       "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_196",
+      "chapterId": "ch10",
+      "number": "196",
+      "title": "Recovery of amounts disallowed",
+      "tier": "General",
       "amendedYears": [],
       "insertedYear": 1994
     },
@@ -2683,6 +2809,24 @@
       "number": "239",
       "title": "District Planning Committee",
       "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_239_A",
+      "chapterId": "ch12",
+      "number": "239-A",
+      "title": "Powers of officers",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_239_B",
+      "chapterId": "ch12",
+      "number": "239-B",
+      "title": "Limitation and Court fees",
+      "tier": "General",
       "amendedYears": [],
       "insertedYear": 1994
     },
