@@ -1431,7 +1431,7 @@ function formatLegalText(text) {
   // First, split heading and first subsection if they are combined on the same line
   const cleanedLines = [];
   rawLines.forEach(line => {
-    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^.—]*?[.——\s]*)\s*(?:—\s*)?(\(\d+[A-Z]?\)\s*.*)$/s);
+    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^.—]*?[.——\s]*)\s*(?:[—\s-]*)\s*(\(\d+[A-Z]?\)\s*.*)$/s);
     if (splitMatch) {
       cleanedLines.push(splitMatch[1].trim());
       cleanedLines.push(splitMatch[2].trim());
