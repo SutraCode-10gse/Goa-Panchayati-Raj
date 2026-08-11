@@ -1536,9 +1536,9 @@ function formatLegalText(text) {
   let html = '';
   paragraphs.forEach(para => {
     // Section Title Heading (e.g. "3. Declaration...—")
+    // We skip rendering this line in the body block since the UI cards already display a large metadata header.
     const titleRegex = /^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?)\.\s+([A-Z][a-zA-Z\s,()&'’:\n-]{3,100}?)[.——]/;
     if (titleRegex.test(para)) {
-      html += `<div class="legal-header">${para}</div>`;
       return;
     }
     
