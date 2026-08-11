@@ -900,6 +900,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_62",
+      "chapterId": "ch3",
+      "number": "62",
+      "title": "General powers of the Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_63",
       "chapterId": "ch3",
       "number": "63",
@@ -938,6 +947,15 @@
         2021,
         2025
       ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_67",
+      "chapterId": "ch3",
+      "number": "67",
+      "title": "Restriction on erection of buildings in certain areas without permission",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
       "insertedYear": 1994
     },
     {
@@ -990,6 +1008,15 @@
       "chapterId": "ch3",
       "number": "73",
       "title": "Obstructions and encroachments upon public streets and open sites",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_74",
+      "chapterId": "ch3",
+      "number": "74",
+      "title": "Transfer of any work or institutions to Panchayat",
       "tier": "Village Panchayat",
       "amendedYears": [],
       "insertedYear": 1994
@@ -1112,6 +1139,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_88",
+      "chapterId": "ch3",
+      "number": "88",
+      "title": "Penalty for using water for certain purposes",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_89",
       "chapterId": "ch3",
       "number": "89",
@@ -1224,6 +1260,15 @@
       "chapterId": "ch3",
       "number": "101",
       "title": "Power for making drains",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_102",
+      "chapterId": "ch3",
+      "number": "102",
+      "title": "Sufficient drainage of houses",
       "tier": "Village Panchayat",
       "amendedYears": [],
       "insertedYear": 1994
