@@ -1420,17 +1420,63 @@ async function renderSearchResults() {
   });
 }
 
-// Helper to format legal texts as nested structures
 function formatLegalText(text) {
   if (!text) return '';
   
-  const paragraphs = text.split('\n');
-  let html = '';
+  // Clean raw lines
+  const rawLines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  const paragraphs = [];
   
-  paragraphs.forEach(para => {
-    para = para.trim();
-    if (!para) return;
+  // Helpers to detect new block markers
+  const isNewBlock = (line) => {
+    // 1. Heading (e.g. "3. Declaration...—")
+    if (/^\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z]/.test(line)) return true;
+    // 2. Subsection (e.g. "(1)")
+    if (/^\(\d+[A-Z]?\)/.test(line)) return true;
+    // 3. Clause (e.g. "(a)")
+    if (/^\([a-z]+\)/.test(line)) return true;
+    // 4. Subclause (e.g. "(i)")
+    if (/^\([ivx]+\)/.test(line)) return true;
+    // 5. Proviso (e.g. "Provided that")
+    if (line.startsWith('Provided that') || line.startsWith('Provided further that') || line.startsWith('Provided, however, that')) return true;
+    // 6. Explanation (e.g. "Explanation:")
+    if (line.startsWith('Explanation') || line.startsWith('Explanation:')) return true;
     
+    return false;
+  };
+  
+  // Merge split lines
+  rawLines.forEach(line => {
+    if (paragraphs.length === 0) {
+      paragraphs.push(line);
+      return;
+    }
+    
+    const lastIndex = paragraphs.length - 1;
+    const lastLine = paragraphs[lastIndex];
+    let shouldMerge = false;
+    
+    if (!isNewBlock(line)) {
+      const endsWithTerminal = /[.;:]\s*$/.test(lastLine);
+      if (!endsWithTerminal) {
+        shouldMerge = true;
+      } else {
+        const startsWithLowercase = /^[a-z]/.test(line);
+        if (startsWithLowercase) {
+          shouldMerge = true;
+        }
+      }
+    }
+    
+    if (shouldMerge) {
+      paragraphs[lastIndex] = lastLine + ' ' + line;
+    } else {
+      paragraphs.push(line);
+    }
+  });
+  
+  let html = '';
+  paragraphs.forEach(para => {
     // Section Title Heading (e.g. "3. Declaration...—")
     const titleRegex = /^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?)\.\s+([A-Z][a-zA-Z\s,()&'’:\n-]{3,100}?)[.——]/;
     if (titleRegex.test(para)) {
