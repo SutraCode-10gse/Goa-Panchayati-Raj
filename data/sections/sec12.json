@@ -1,0 +1,22 @@
+{
+  "id": "sec12",
+  "chapterId": "ch2",
+  "number": "12",
+  "title": "Vacation of seat by members",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    1997
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "12. Vacation of seat by members.— (1) If a member of a Panchayat—\n(a) is or becomes subject to any of the disqualifications mentioned in section 10; or\n(b) absents himself for more than three consecutive ordinary meetings of the Panchayat without the leave of the Panchayat or is absent from the State of Goa for more than four consecutive months:\nProvided that when an application is made by a member for leave to the Panchayat for leave to absent himself and the Panchayat fails to inform the applicant of its decision on the application within a period of one month from the date of the receipt of the application by the Panchayat, the leave applied for shall be deemed to have been granted by the Panchayat;\n(c) absents himself with leave of the Panchayat for a period not exceeding six months but fails to attend the next meeting of Panchayat after the expiry of such leave;\n(d) votes or takes part in discussion in contravention of the provisions of sub-section (4) of section 55, his seat shall be deemed to be or to have become, as the case may be, vacant.\n\n(2) If any question arises as to whether a person has become subject to disqualification under clause (b) or clause (c) of sub-section (1), the Collector may either suo-moto or on a report made to him and after giving an opportunity to the person concerned of being heard, decide the question whose decision shall be final.",
+    "Latest": "12. Vacation of seat by members.— (1) If a member of a Panchayat—\n(a) is or becomes subject to any of the disqualifications mentioned in section 10; or\n(b) absents himself for more than three consecutive ordinary meetings of the Panchayat without the leave of the Panchayat or is absent from the State of Goa for more than four consecutive months:\nProvided that when an application is made by a member for leave to the Panchayat for leave to absent himself and the Panchayat fails to inform the applicant of its decision on the application within a period of one month from the date of the receipt of the application by the Panchayat, the leave applied for shall be deemed to have been granted by the Panchayat;\n(c) absents himself with leave of the Panchayat for a period not exceeding six months but fails to attend the next meeting of Panchayat after the expiry of such leave;\n(d) votes or takes part in discussion in contravention of the provisions of sub-section (4) of section 55, his seat shall be deemed to be or to have become, as the case may be, vacant.\n\n(2) If any question arises as to whether a person has become subject to disqualification under clause (b) or clause (c) of sub-section (1), the Block Development Officer may either suo-moto or on a report made to him and after giving an opportunity to the person concerned of being heard, decide the question whose decision shall be final."
+  },
+  "history": [
+    {
+      "year": 1997,
+      "act": "Act 1 of 1997",
+      "details": "Substituted 'Block Development Officer' for 'Collector' in sub-section (2) as the competent authority to decide member absence/leave disputes."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "sec47",
+  "chapterId": "ch2",
+  "number": "47",
+  "title": "Executive powers and functions of the Secretary",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    1997,
+    2023
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "47. Executive powers and functions of the Secretary.— (1) The Secretary shall perform such duties and exercise such administrative powers as may be assigned to him under this Act or rules made thereunder.\n(2) He shall attend meetings of the Panchayat, record minutes, and manage local files under the general direction of the Sarpanch.",
+    "1997": "47. Executive powers and functions of the Secretary.— Notwithstanding anything contained in this Act and the rules framed thereunder, the Secretary shall also exercise the powers on the following matters, namely:—\n(i) to issue the licences for construction, repairs, modification, alteration, so also occupancy certificate in pursuance of the resolution of the Panchayat;\n(ii) to initiate action for stopping and or demolishing an unauthorized structure/building constructed without the permission of the Panchayat after resolution is passed to that effect;\n(iii) to execute the resolution passed by the Panchayat body.",
+    "Latest": "47. Executive powers and functions of the Secretary.— Notwithstanding anything contained in this Act and the rules framed thereunder, the Secretary shall also exercise the powers on the following matters, namely:—\n(i) to issue the licences for construction, repairs, modification, alteration, so also occupancy certificate in pursuance of the resolution of the Panchayat;\n(i-a) in matters of trade licensing and commercial permissions approved by resolution of the Panchayat, the Secretary shall issue the physical license within 30 days of the resolution, and failing such action, the license shall be issued under the authority of the block development officer;\n(ii) to initiate action for stopping and or demolishing an unauthorized structure/building constructed without the permission of the Panchayat after resolution is passed to that effect;\n(iii) to execute the resolution passed by the Panchayat body."
+  },
+  "history": [
+    {
+      "year": 1997,
+      "act": "Act 1 of 1997",
+      "details": "Completely substituted Section 47 to expand the Secretary's autonomous executive role. Granted explicit signature authority to issue building licenses, execute panchayat resolutions, and initiate demolition proceedings for illegal structures."
+    },
+    {
+      "year": 2023,
+      "act": "Act 13 of 2023",
+      "details": "Inserted sub-section (i-a) to bypass licensing delays: BDO is authorized to issue trade licenses if the Secretary fails to execute a passed resolution within 30 days."
+    }
+  ]
+}

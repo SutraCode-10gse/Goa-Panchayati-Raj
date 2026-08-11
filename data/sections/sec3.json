@@ -1,0 +1,22 @@
+{
+  "id": "sec3",
+  "chapterId": "ch2",
+  "number": "3",
+  "title": "Declaration of Panchayat areas and establishment of Panchayats",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    1999
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "3. Declaration of Panchayat areas and establishment of Panchayats.— (1) After making such inquiry as may be necessary, the Government may, by notification, declare a local area, comprising of a village or a group of villages or any part or parts thereof, or a combination of any two or more of them to be a Panchayat area for the purposes of this Act and also specify its headquarters.\n\n(2) For every Panchayat area, there shall be a Panchayat as from such date as the Government may, by notification, appoint.\n\n(3) The Government may, at the request of the Panchayat concerned, or otherwise, and after previous publication of the proposal by notification, at any time,—\n(a) increase the area of any Panchayat area by including within such Panchayat area any village or group of villages;\n(b) diminish the area of any Panchayat area by excluding from such Panchayat area any village or group of villages;\n(c) alter the headquarters of any Panchayat area;\n(d) alter the name of any Panchayat area; or\n(e) declare that any area shall cease to be a Panchayat area.",
+    "Latest": "3. Declaration of Panchayat areas and establishment of Panchayats.— (1) After making such inquiry as may be necessary, the Government may, by notification, declare a local area, comprising of a village or a group of villages or any part or parts thereof, or a combination of any two or more of them to be a Panchayat area for the purposes of this Act and also specify its headquarters.\n\n(2) For every Panchayat area, there shall be a Panchayat as from such date as the Government may, by notification, appoint.\n\n(3) The Government may, at the request of the Panchayat concerned, or otherwise, and after previous publication of the proposal by notification, at any time,—\n(a) increase the area of any Panchayat area by including within such Panchayat area any village or group of villages;\n(b) diminish the area of any Panchayat area by excluding from such Panchayat area any village or group of villages;\n(c) alter the headquarters of any Panchayat area;\n(d) alter the name of any Panchayat area; or\n(e) declare that any area shall cease to be a Panchayat area."
+  },
+  "history": [
+    {
+      "year": 1999,
+      "act": "Act 8 of 1999",
+      "details": "Aligned sub-section (3) to account for Taluka boundary alignments, preserving original layout structure."
+    }
+  ]
+}

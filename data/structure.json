@@ -1,0 +1,2654 @@
+{
+  "timeline": [
+    {
+      "year": 1994,
+      "actNumber": "Goa Act 14 of 1994",
+      "title": "Enactment of the Principal Act",
+      "date": "July 14, 1994",
+      "description": "The original Goa Panchayat Raj Act, 1994 is passed by the Goa Legislative Assembly, receiving the Governor's assent on July 9, 1994. It establishes a two-tier rural local self-governance system consisting of Village Panchayats and Zilla Panchayats in conformity with the 73rd Constitutional Amendment.",
+      "keyChanges": [
+        "Established the baseline structure of Village Panchayats, Taluka reference units, and Zilla Panchayats.",
+        "Set up Gram Sabha membership representing all electors in a village (Section 4).",
+        "Created initial frameworks for building permissions under Section 66 and licensing under Section 47."
+      ]
+    },
+    {
+      "year": 1997,
+      "actNumber": "Goa Act 1 of 1997",
+      "title": "First Amendment Act, 1996",
+      "date": "February 20, 1997",
+      "description": "Brings in major changes to the executive powers of the Panchayat, the election of office bearers, and the appeal processes for building permissions.",
+      "keyChanges": [
+        "Substituted Section 47 to grant specific executive licensing, stop-work, and execution powers to the Panchayat Secretary.",
+        "Substituted Section 66(2) to define the 30-day appeal process to the Deputy Director for building permissions.",
+        "Inserted a co-opted member proviso under Section 7(4) for Scheduled Castes where reservation was not viable."
+      ]
+    },
+    {
+      "year": 1998,
+      "actNumber": "Notification of 15-1-1998",
+      "title": "State Election Commissioner Rules, 1997",
+      "date": "January 15, 1998",
+      "description": "Establishes terms of service and administrative powers for the autonomous State Election Commissioner of Goa.",
+      "keyChanges": [
+        "Defined tenure, salary structure, and allowances of the Commissioner.",
+        "Strengthened independent supervision over local panchayat and municipality elections."
+      ]
+    },
+    {
+      "year": 1999,
+      "actNumber": "Goa Act 8 of 1999",
+      "title": "Second Amendment Act, 1999",
+      "date": "September 27, 1999",
+      "description": "A landmark amendment that completely overhauls the local governance framework by introducing Taluka Panchayats, expanding Zilla Panchayat structures, and strengthening Gram Sabha participation.",
+      "keyChanges": [
+        "Substituted Sections 5 and 6, expanding Gram Sabha ordinary meetings to four times a year and detailing a comprehensive list of functions and committees.",
+        "Inserted Chapters IV-A to IV-G constituting the Taluka Panchayats.",
+        "Incorporated Taluka Panchayats into the State Finance Commission's review scope."
+      ]
+    },
+    {
+      "year": 2000,
+      "actNumber": "Goa Act 11 of 2000",
+      "title": "Third Amendment Act, 2000",
+      "date": "May 23, 2000",
+      "description": "Deemed to have come into force from December 15, 1999, this update focuses on elections and disqualification criteria.",
+      "keyChanges": [
+        "Refined conditions under which members could face disqualification under Section 10.",
+        "Aligned representation parameters for reserved seats."
+      ]
+    },
+    {
+      "year": 2001,
+      "actNumber": "Goa Act 13 of 2001",
+      "title": "Amendment Act, 2001",
+      "date": "January 31, 2001",
+      "description": "Deemed to have come into force from December 6, 2000, this update streamlines building repair permission procedures for villagers.",
+      "keyChanges": [
+        "Amended Section 66 to permit the alteration of tiles to R.C.C. slab roofing for pre-existing single dwelling units without full development permission, subject to structural stability certification."
+      ]
+    },
+    {
+      "year": 2001,
+      "actNumber": "Goa Act 43 of 2001",
+      "title": "Amendment Act, 2001 (May)",
+      "date": "June 4, 2001",
+      "description": "Brings minor administrative modifications to reservation policies and financial controls.",
+      "keyChanges": [
+        "Refined reservation criteria for women and backward classes in the local body elections."
+      ]
+    },
+    {
+      "year": 2002,
+      "actNumber": "Goa Act 11 of 2002",
+      "title": "Amendment Act, 2002 (Jan)",
+      "date": "January 31, 2002",
+      "description": "Updates financial audit mandates and administrative timelines for Panchayat funds.",
+      "keyChanges": [
+        "Strengthened inspection procedures and audit regulations for local body accounts."
+      ]
+    },
+    {
+      "year": 2002,
+      "actNumber": "Goa Act 20 of 2002",
+      "title": "Sixth Amendment Act, 2002",
+      "date": "September 17, 2002",
+      "description": "Deemed to have come into force from April 1, 2002, this amendment focuses on financial allocations and budgeting.",
+      "keyChanges": [
+        "Modified administrative procedures for preparing budgets and raising municipal funds."
+      ]
+    },
+    {
+      "year": 2003,
+      "actNumber": "Goa Act 10 of 2003",
+      "title": "Seventh Amendment Act, 2003",
+      "date": "April 16, 2003",
+      "description": "Introduces anti-defection and vacancy provisions for elected panchayat members who also contest or hold assembly/parliamentary seats.",
+      "keyChanges": [
+        "Inserted Section 10A to declare a Panchayat member's seat vacant if they are elected to Parliament or the State Legislative Assembly."
+      ]
+    },
+    {
+      "year": 2003,
+      "actNumber": "Goa Act 26 of 2003",
+      "title": "Eighth Amendment Act, 2003",
+      "date": "December 1, 2003",
+      "description": "Deemed to have come into force from April 1, 2003, this update streamlines general revenue sharing and taxation procedures.",
+      "keyChanges": [
+        "Refined tax collection rules and house tax calculations under Chapter VII."
+      ]
+    },
+    {
+      "year": 2007,
+      "actNumber": "Goa Act 4 of 2007",
+      "title": "Amendment Act, 2007",
+      "date": "March 22, 2007",
+      "description": "Deemed to have come into force from December 4, 2006, this amendment updates election rules and office-bearer disqualifications.",
+      "keyChanges": [
+        "Further detailed disqualification query procedures under Section 12."
+      ]
+    },
+    {
+      "year": 2010,
+      "actNumber": "Goa Act 18 of 2010",
+      "title": "Amendment Act, 2010",
+      "date": "October 15, 2010",
+      "description": "Brings audit mandates, budget requirements, and structural controls into line with modern state guidelines.",
+      "keyChanges": [
+        "Implemented strict financial audit regulations and penalties for non-compliance."
+      ]
+    },
+    {
+      "year": 2015,
+      "actNumber": "Goa Act 21 of 2015",
+      "title": "Amendment Act, 2015",
+      "date": "September 15, 2015",
+      "description": "Focuses on decentralization and local public planning groups.",
+      "keyChanges": [
+        "Inserted Section 65 to mandate the establishment of Ward Development Committees for local micro-planning."
+      ]
+    },
+    {
+      "year": 2021,
+      "actNumber": "Goa Act 32 of 2021",
+      "title": "Amendment Act, 2021",
+      "date": "October 8, 2021",
+      "description": "Empowers state authorities to call public interest meetings and refines structural clearance criteria for residential properties.",
+      "keyChanges": [
+        "Amended Section 5 to allow the Director of Panchayats to mandate extraordinary Gram Sabha meetings in public interest.",
+        "Refined the building code exception under Section 66 to exempt minor maintenance (painting, plastering, flooring) from licensing."
+      ]
+    },
+    {
+      "year": 2023,
+      "actNumber": "Goa Act 13 of 2023",
+      "title": "Amendment Act, 2023",
+      "date": "March 6, 2023",
+      "description": "Introduces strict enforcement powers to seal unauthorized commercial premises and streamlines trade licensing to promote ease of doing business.",
+      "keyChanges": [
+        "Amended Section 47 to authorize the Block Development Officer to issue trade licenses if the Secretary fails to act within 30 days.",
+        "Inserted Section 72-A, giving the Secretary power to seal premises operating unlicensed businesses."
+      ]
+    },
+    {
+      "year": 2025,
+      "actNumber": "Goa Act 24 of 2025",
+      "title": "Amendment Act, 2025",
+      "date": "October 1, 2025",
+      "description": "A landmark amendment targeting administrative delays by cutting building permission review periods in half and introducing a deemed approval clause.",
+      "keyChanges": [
+        "Substituted Section 66(2) to reduce building permission processing times from 30 days to 15 days.",
+        "Introduced the 'Deemed Permission' clause, allowing applicants to proceed with construction if the Panchayat fails to respond within 15 days, provided technical clearances are met."
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Chapter I: Preliminary",
+      "range": "Sec 1 - 2"
+    },
+    {
+      "id": "ch2",
+      "title": "Chapter II: Gram Sabha — Constitution of Panchayats",
+      "range": "Sec 3 - 59"
+    },
+    {
+      "id": "ch3",
+      "title": "Chapter III: Functions, Duties and Powers of Panchayats, Sarpanch and Deputy Sarpanch",
+      "range": "Sec 60 - 112"
+    },
+    {
+      "id": "ch4",
+      "title": "Chapter IV: Staff of Panchayats",
+      "range": "Sec 113 - 115"
+    },
+    {
+      "id": "ch4a",
+      "title": "Chapter IV-A: Constitution of Taluka Panchayats",
+      "range": "Sec 115-A - 115-P"
+    },
+    {
+      "id": "ch4b",
+      "title": "Chapter IV-B: Functions, Duties and Powers of Taluka Panchayat...",
+      "range": "Sec 115-Q - 115-X"
+    },
+    {
+      "id": "ch4c",
+      "title": "Chapter IV-C: Staff of Taluka Panchayat",
+      "range": "Sec 115-Y - 115-Z-B"
+    },
+    {
+      "id": "ch4d",
+      "title": "Chapter IV-D: Financial control and audit",
+      "range": "Sec 115-Z-C"
+    },
+    {
+      "id": "ch4e",
+      "title": "Chapter IV-E: Properties and funds of Taluka Panchayats",
+      "range": "Sec 115-Z-D"
+    },
+    {
+      "id": "ch4f",
+      "title": "Chapter IV-F: Inspection, Supervision, etc.",
+      "range": "Sec 115-Z-E"
+    },
+    {
+      "id": "ch4g",
+      "title": "Chapter IV-G: Miscellaneous",
+      "range": "Sec 115-Z-F"
+    },
+    {
+      "id": "ch5",
+      "title": "Chapter V: Constitution of Zilla Panchayats",
+      "range": "Sec 116 - 149"
+    },
+    {
+      "id": "ch6",
+      "title": "Chapter VI: Staff of Zilla Panchayat",
+      "range": "Sec 150 - 152"
+    },
+    {
+      "id": "ch7",
+      "title": "Chapter VII: Taxes and Fees",
+      "range": "Sec 153 - 157"
+    },
+    {
+      "id": "ch8",
+      "title": "Chapter VIII: Properties and Funds of Panchayats",
+      "range": "Sec 158 - 172"
+    },
+    {
+      "id": "ch9",
+      "title": "Chapter IX: Inspection, Supervision, etc.",
+      "range": "Sec 173 - 181"
+    },
+    {
+      "id": "ch10",
+      "title": "Chapter X: Financial Control and Audit",
+      "range": "Sec 182 - 198"
+    },
+    {
+      "id": "ch11",
+      "title": "Chapter XI: Finance Commission",
+      "range": "Sec 199"
+    },
+    {
+      "id": "ch12",
+      "title": "Chapter XII: Miscellaneous",
+      "range": "Sec 200 - 246"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec1",
+      "chapterId": "ch1",
+      "number": "1",
+      "title": "Short title and commencement",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec2",
+      "chapterId": "ch1",
+      "number": "2",
+      "title": "Definitions",
+      "tier": "General",
+      "amendedYears": [
+        1997,
+        1999,
+        2000,
+        2003
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec3",
+      "chapterId": "ch2",
+      "number": "3",
+      "title": "Declaration of Panchayat areas and establishment of Panchayats",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1999
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec4",
+      "chapterId": "ch2",
+      "number": "4",
+      "title": "Gram Sabha",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec5",
+      "chapterId": "ch2",
+      "number": "5",
+      "title": "Meeting of Gram Sabha",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1999,
+        2021
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec6",
+      "chapterId": "ch2",
+      "number": "6",
+      "title": "Functions of Gram Sabha",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1999
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec7",
+      "chapterId": "ch2",
+      "number": "7",
+      "title": "Constitution of Panchayats",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997,
+        2007
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec8",
+      "chapterId": "ch2",
+      "number": "8",
+      "title": "Incorporation of Panchayats",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec9",
+      "chapterId": "ch2",
+      "number": "9",
+      "title": "Qualification for membership",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec10",
+      "chapterId": "ch2",
+      "number": "10",
+      "title": "Disqualification for membership",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec10a",
+      "chapterId": "ch2",
+      "number": "10A",
+      "title": "Membership Vacancy on Legislative Election",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        2003
+      ],
+      "insertedYear": 2003
+    },
+    {
+      "id": "sec11",
+      "chapterId": "ch2",
+      "number": "11",
+      "title": "Decision on questions as to disqualification",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec12",
+      "chapterId": "ch2",
+      "number": "12",
+      "title": "Vacation of seat by members",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec13",
+      "chapterId": "ch2",
+      "number": "13",
+      "title": "Lists of Voters",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec14",
+      "chapterId": "ch2",
+      "number": "14",
+      "title": "Right to vote",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec15",
+      "chapterId": "ch2",
+      "number": "15",
+      "title": "Election of members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec16",
+      "chapterId": "ch2",
+      "number": "16",
+      "title": "Election Petition",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec17",
+      "chapterId": "ch2",
+      "number": "17",
+      "title": "Contents of petition and relief that may be claimed",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec18",
+      "chapterId": "ch2",
+      "number": "18",
+      "title": "Trial of election petition",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec19",
+      "chapterId": "ch2",
+      "number": "19",
+      "title": "Decision of the prescribed authority",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec20",
+      "chapterId": "ch2",
+      "number": "20",
+      "title": "Grounds for declaring election to be void",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec21",
+      "chapterId": "ch2",
+      "number": "21",
+      "title": "Grounds on which a candidate other than the returned candidate may be declared to have been elected",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec22",
+      "chapterId": "ch2",
+      "number": "22",
+      "title": "Procedure in case of equality of votes",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec23",
+      "chapterId": "ch2",
+      "number": "23",
+      "title": "Corrupt practices",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec24",
+      "chapterId": "ch2",
+      "number": "24",
+      "title": "Order as to corrupt practices",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec25",
+      "chapterId": "ch2",
+      "number": "25",
+      "title": "Communication of orders",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec26",
+      "chapterId": "ch2",
+      "number": "26",
+      "title": "Fresh election if a seat becomes vacant",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec27",
+      "chapterId": "ch2",
+      "number": "27",
+      "title": "Prohibition of canvassing in or near polling station",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec28",
+      "chapterId": "ch2",
+      "number": "28",
+      "title": "Penalty for disorderly conduct in or near polling stations",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec29",
+      "chapterId": "ch2",
+      "number": "29",
+      "title": "Penalty for misconduct at polling station",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec30",
+      "chapterId": "ch2",
+      "number": "30",
+      "title": "Maintenance of secrecy of voting",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec31",
+      "chapterId": "ch2",
+      "number": "31",
+      "title": "Officers etc., at elections not to act for candidate or influence voting",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec32",
+      "chapterId": "ch2",
+      "number": "32",
+      "title": "Breaches of official duty in connection with elections",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec33",
+      "chapterId": "ch2",
+      "number": "33",
+      "title": "Removal of ballot papers from polling stations to be an offence",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec34",
+      "chapterId": "ch2",
+      "number": "34",
+      "title": "Other offences & penalties thereof",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec35",
+      "chapterId": "ch2",
+      "number": "35",
+      "title": "Promotion of enmity between classes in connection with election",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec36",
+      "chapterId": "ch2",
+      "number": "36",
+      "title": "Prohibition of public meetings on the day preceding the election day and on the election day",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec37",
+      "chapterId": "ch2",
+      "number": "37",
+      "title": "Powers of Collector to prohibit fairs etc., on election day",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec38",
+      "chapterId": "ch2",
+      "number": "38",
+      "title": "Disturbance of election meetings",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec39",
+      "chapterId": "ch2",
+      "number": "39",
+      "title": "Restrictions on the printing of pamphlets, posters, etc.",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec40",
+      "chapterId": "ch2",
+      "number": "40",
+      "title": "Penalty for illegal hiring or procuring of conveyance at election",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec41",
+      "chapterId": "ch2",
+      "number": "41",
+      "title": "Prosecution in certain offences",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec42",
+      "chapterId": "ch2",
+      "number": "42",
+      "title": "Term of office",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec43",
+      "chapterId": "ch2",
+      "number": "43",
+      "title": "Commencement of term of office",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec44",
+      "chapterId": "ch2",
+      "number": "44",
+      "title": "Resignation of member",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec45",
+      "chapterId": "ch2",
+      "number": "45",
+      "title": "Reservation of office of Sarpanch and Deputy Sarpanch",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec46",
+      "chapterId": "ch2",
+      "number": "46",
+      "title": "Procedure for Election of Sarpanch and Deputy Sarpanch",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec47",
+      "chapterId": "ch2",
+      "number": "47",
+      "title": "Executive powers and functions of the Secretary",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997,
+        2023
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec47a",
+      "chapterId": "ch2",
+      "number": "47-A",
+      "title": "Executive powers of the Sarpanch",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1997
+    },
+    {
+      "id": "sec47b",
+      "chapterId": "ch2",
+      "number": "47-B",
+      "title": "Execution of order by the Secretary",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        2010
+      ],
+      "insertedYear": 2010
+    },
+    {
+      "id": "sec48",
+      "chapterId": "ch2",
+      "number": "48",
+      "title": "Term of office and conditions of service of Sarpanch, Deputy Sarpanch, elected and co-opted members",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        2002,
+        2003
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec49",
+      "chapterId": "ch2",
+      "number": "49",
+      "title": "Appointment of Sarpanch during vacancy in the office",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec50",
+      "chapterId": "ch2",
+      "number": "50",
+      "title": "Resignation or Removal of Sarpanch or Deputy Sarpanch",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec51",
+      "chapterId": "ch2",
+      "number": "51",
+      "title": "Motion of no confidence against Sarpanch and Deputy Sarpanch",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec52",
+      "chapterId": "ch2",
+      "number": "52",
+      "title": "Procedure at meeting",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec53",
+      "chapterId": "ch2",
+      "number": "53",
+      "title": "Casual Vacancies",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec54",
+      "chapterId": "ch2",
+      "number": "54",
+      "title": "Meeting of the Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec55",
+      "chapterId": "ch2",
+      "number": "55",
+      "title": "Quorum and procedure",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec56",
+      "chapterId": "ch2",
+      "number": "56",
+      "title": "Modification or cancellation of resolution",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec57",
+      "chapterId": "ch2",
+      "number": "57",
+      "title": "Minutes",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec58",
+      "chapterId": "ch2",
+      "number": "58",
+      "title": "Interpellations and resolutions",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec59",
+      "chapterId": "ch2",
+      "number": "59",
+      "title": "Validity of proceeding",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec60",
+      "chapterId": "ch3",
+      "number": "60",
+      "title": "Functions of the Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_61",
+      "chapterId": "ch3",
+      "number": "61",
+      "title": "Assignments of functions",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_63",
+      "chapterId": "ch3",
+      "number": "63",
+      "title": "Standing Committees",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_64",
+      "chapterId": "ch3",
+      "number": "64",
+      "title": "Powers and duties of the Sarpanch and Deputy Sarpanch",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_65",
+      "chapterId": "ch3",
+      "number": "65",
+      "title": "Power of Panchayat as to roads, bridges, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "sec66",
+      "chapterId": "ch3",
+      "number": "66",
+      "title": "Regulation of the erection of buildings",
+      "tier": "Village Panchayat",
+      "amendedYears": [
+        1997,
+        2001,
+        2021,
+        2025
+      ],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_68",
+      "chapterId": "ch3",
+      "number": "68",
+      "title": "Permission for the construction of factories and the installation of machinery",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_69",
+      "chapterId": "ch3",
+      "number": "69",
+      "title": "Prohibition of offensive or dangerous trades without licence",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_70",
+      "chapterId": "ch3",
+      "number": "70",
+      "title": "Control of hotels etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_71",
+      "chapterId": "ch3",
+      "number": "71",
+      "title": "Licensing of shops",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_72",
+      "chapterId": "ch3",
+      "number": "72",
+      "title": "Provisions applicable to permission and licences",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_73",
+      "chapterId": "ch3",
+      "number": "73",
+      "title": "Obstructions and encroachments upon public streets and open sites",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_75",
+      "chapterId": "ch3",
+      "number": "75",
+      "title": "Power to name streets and number buildings",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_76",
+      "chapterId": "ch3",
+      "number": "76",
+      "title": "Removal of structures, trees, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_77",
+      "chapterId": "ch3",
+      "number": "77",
+      "title": "Power as to sanitation, conservancy and drainage",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_78",
+      "chapterId": "ch3",
+      "number": "78",
+      "title": "Contribution from persons having control over places of pilgrimage, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_79",
+      "chapterId": "ch3",
+      "number": "79",
+      "title": "Power for providing adequate water supply",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_80",
+      "chapterId": "ch3",
+      "number": "80",
+      "title": "Power of Panchayat to make bye-laws regarding provisions of water supply",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_81",
+      "chapterId": "ch3",
+      "number": "81",
+      "title": "Appointment of Joint Committee",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_82",
+      "chapterId": "ch3",
+      "number": "82",
+      "title": "Power of entry",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_83",
+      "chapterId": "ch3",
+      "number": "83",
+      "title": "Filthy buildings, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_84",
+      "chapterId": "ch3",
+      "number": "84",
+      "title": "Powers and duties in regard to sources of water supply",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_85",
+      "chapterId": "ch3",
+      "number": "85",
+      "title": "Remedy for non-compliance with directions issued",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_86",
+      "chapterId": "ch3",
+      "number": "86",
+      "title": "Power to set apart public springs, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_87",
+      "chapterId": "ch3",
+      "number": "87",
+      "title": "Power to prohibit use of water from certain sources",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_89",
+      "chapterId": "ch3",
+      "number": "89",
+      "title": "Abatement of nuisance from foul water",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_90",
+      "chapterId": "ch3",
+      "number": "90",
+      "title": "Closing of places for the disposal of the dead",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_91",
+      "chapterId": "ch3",
+      "number": "91",
+      "title": "Power of entry into building, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_92",
+      "chapterId": "ch3",
+      "number": "92",
+      "title": "Disinfection of buildings etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_93",
+      "chapterId": "ch3",
+      "number": "93",
+      "title": "Articles exposed to infection",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_94",
+      "chapterId": "ch3",
+      "number": "94",
+      "title": "Registration of burial and burning grounds",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_95",
+      "chapterId": "ch3",
+      "number": "95",
+      "title": "Licensing of places for disposal of the dead",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_96",
+      "chapterId": "ch3",
+      "number": "96",
+      "title": "A book to be kept of places registered, licensed, as provided",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_97",
+      "chapterId": "ch3",
+      "number": "97",
+      "title": "Prohibition against burying or burning, in unauthorized places",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_98",
+      "chapterId": "ch3",
+      "number": "98",
+      "title": "Notice of burials, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_99",
+      "chapterId": "ch3",
+      "number": "99",
+      "title": "Public landing places, cart stands, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_100",
+      "chapterId": "ch3",
+      "number": "100",
+      "title": "Regulation of huts",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_101",
+      "chapterId": "ch3",
+      "number": "101",
+      "title": "Power for making drains",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_103",
+      "chapterId": "ch3",
+      "number": "103",
+      "title": "Power of owner or occupier of buildings or lands to drain into Panchayat drains",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_104",
+      "chapterId": "ch3",
+      "number": "104",
+      "title": "Right to carry drain through land or into drain belonging to other persons",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_105",
+      "chapterId": "ch3",
+      "number": "105",
+      "title": "Rights of owner of land through which drain is carried in regard to subsequent building thereon",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_106",
+      "chapterId": "ch3",
+      "number": "106",
+      "title": "Provision of privies, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_107",
+      "chapterId": "ch3",
+      "number": "107",
+      "title": "Cost of altering, repairing and keeping in proper order privies, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_108",
+      "chapterId": "ch3",
+      "number": "108",
+      "title": "Inspection of drains, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_109",
+      "chapterId": "ch3",
+      "number": "109",
+      "title": "Dangerous quarrying",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_110",
+      "chapterId": "ch3",
+      "number": "110",
+      "title": "Using offensive substance, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_111",
+      "chapterId": "ch3",
+      "number": "111",
+      "title": "Emission of smoke",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_112_B",
+      "chapterId": "ch3",
+      "number": "112-B",
+      "title": "Penalty for allowing cattle to stray in streets or to trespass in public or private property",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 2021
+    },
+    {
+      "id": "gen_sec_112_C",
+      "chapterId": "ch3",
+      "number": "112-C",
+      "title": "Impounding of cattles",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 2021
+    },
+    {
+      "id": "gen_sec_112_D",
+      "chapterId": "ch3",
+      "number": "112-D",
+      "title": "Delivery of cattle claimed",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 2021
+    },
+    {
+      "id": "gen_sec_112_E",
+      "chapterId": "ch3",
+      "number": "112-E",
+      "title": "Sale of cattle not claimed",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 2021
+    },
+    {
+      "id": "gen_sec_112_F",
+      "chapterId": "ch3",
+      "number": "112-F",
+      "title": "Complaint of illegal seizure or detention",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 2021
+    },
+    {
+      "id": "gen_sec_113",
+      "chapterId": "ch4",
+      "number": "113",
+      "title": "Secretary",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_113_B",
+      "chapterId": "ch4",
+      "number": "113-B",
+      "title": "Duties and functions of Gram Sevak",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_114",
+      "chapterId": "ch4",
+      "number": "114",
+      "title": "Staffing pattern and schedule of employees",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_115",
+      "chapterId": "ch4",
+      "number": "115",
+      "title": "Appointment and control of employees",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_115_A",
+      "chapterId": "ch4a",
+      "number": "115-A",
+      "title": "Establishment of Taluka Panchayat and its incorporation",
+      "tier": "Zilla Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_B",
+      "chapterId": "ch4a",
+      "number": "115-B",
+      "title": "Composition of Taluka Panchayats",
+      "tier": "Zilla Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_C",
+      "chapterId": "ch4a",
+      "number": "115-C",
+      "title": "Reservation of seats",
+      "tier": "Zilla Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_D",
+      "chapterId": "ch4a",
+      "number": "115-D",
+      "title": "Territorial Constituencies of Taluka Panchayats",
+      "tier": "Zilla Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_F",
+      "chapterId": "ch4a",
+      "number": "115-F",
+      "title": "Right to vote",
+      "tier": "Zilla Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_G",
+      "chapterId": "ch4a",
+      "number": "115-G",
+      "title": "Qualification of a Candidate",
+      "tier": "Zilla Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_H",
+      "chapterId": "ch4",
+      "number": "115-H",
+      "title": "Disqualification for members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_I",
+      "chapterId": "ch4",
+      "number": "115-I",
+      "title": "Vacation of seats by members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_J",
+      "chapterId": "ch4",
+      "number": "115-J",
+      "title": "Decision on question as to disqualification and on vacation of seats by members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_K",
+      "chapterId": "ch4",
+      "number": "115-K",
+      "title": "Application of certain sections relating to elections",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_L",
+      "chapterId": "ch4",
+      "number": "115-L",
+      "title": "Publication of names of members, term of office, resignation of members and casual vacancies",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_N",
+      "chapterId": "ch4",
+      "number": "115-N",
+      "title": "Removal of Chairperson, Vice-Chairperson or member for misconduct",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_O",
+      "chapterId": "ch4",
+      "number": "115-O",
+      "title": "Liability and accountability of members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_P",
+      "chapterId": "ch4a",
+      "number": "115-P",
+      "title": "Salaries and allowances to the Chairperson, Vice-Chairperson and other members",
+      "tier": "Zilla Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Q",
+      "chapterId": "ch4b",
+      "number": "115-Q",
+      "title": "Functions of the Taluka Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_R",
+      "chapterId": "ch4b",
+      "number": "115-R",
+      "title": "Assignment of functions",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_S",
+      "chapterId": "ch4b",
+      "number": "115-S",
+      "title": "Standing Committees",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_T",
+      "chapterId": "ch4b",
+      "number": "115-T",
+      "title": "Delegation of powers",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_U",
+      "chapterId": "ch4b",
+      "number": "115-U",
+      "title": "General powers of Taluka Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_V",
+      "chapterId": "ch4b",
+      "number": "115-V",
+      "title": "Powers and duties of the Chairperson",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_W",
+      "chapterId": "ch4b",
+      "number": "115-W",
+      "title": "Powers and duties of the Vice-Chairperson",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_X",
+      "chapterId": "ch4b",
+      "number": "115-X",
+      "title": "Power of making contracts",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Y",
+      "chapterId": "ch4c",
+      "number": "115-Y",
+      "title": "Staff of Taluka Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Z",
+      "chapterId": "ch4c",
+      "number": "115-Z",
+      "title": "Member-Secretary",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_116",
+      "chapterId": "ch5",
+      "number": "116",
+      "title": "Establishment of Zilla Panchayat and its incorporation",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_118",
+      "chapterId": "ch5",
+      "number": "118",
+      "title": "Reservation of seats",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_119",
+      "chapterId": "ch5",
+      "number": "119",
+      "title": "Delimitation of territorial constituencies",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_121",
+      "chapterId": "ch5",
+      "number": "121",
+      "title": "Electoral Roll",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_122",
+      "chapterId": "ch5",
+      "number": "122",
+      "title": "Qualification of a candidate",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_123",
+      "chapterId": "ch5",
+      "number": "123",
+      "title": "Disqualification for members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_124",
+      "chapterId": "ch5",
+      "number": "124",
+      "title": "Vacancy of seat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_125",
+      "chapterId": "ch5",
+      "number": "125",
+      "title": "Method of voting and procedure for election",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_126",
+      "chapterId": "ch5",
+      "number": "126",
+      "title": "Prohibition of simultaneous membership",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_127",
+      "chapterId": "ch5",
+      "number": "127",
+      "title": "Application of certain sections relating to elections",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_128",
+      "chapterId": "ch5",
+      "number": "128",
+      "title": "Publication of names of members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_129",
+      "chapterId": "ch5",
+      "number": "129",
+      "title": "Term of office of member",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_130",
+      "chapterId": "ch5",
+      "number": "130",
+      "title": "Resignation of members",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_131",
+      "chapterId": "ch5",
+      "number": "131",
+      "title": "Removal of Members for misconduct",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_132",
+      "chapterId": "ch5",
+      "number": "132",
+      "title": "Casual vacancy",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_133",
+      "chapterId": "ch5",
+      "number": "133",
+      "title": "Election of Adhyaksha and Upadhyaksha and term of office",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_135",
+      "chapterId": "ch5",
+      "number": "135",
+      "title": "Resignation or removal of Adhyaksha and Upadhyaksha",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_136",
+      "chapterId": "ch5",
+      "number": "136",
+      "title": "Meeting of Zilla Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_137",
+      "chapterId": "ch5",
+      "number": "137",
+      "title": "Interpellations and Resolution",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_138",
+      "chapterId": "ch5",
+      "number": "138",
+      "title": "Zilla Panchayat may require the presence of Government officer at meetings",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_139",
+      "chapterId": "ch5",
+      "number": "139",
+      "title": "Validity of proceedings",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_140",
+      "chapterId": "ch5",
+      "number": "140",
+      "title": "Functions of the Zilla Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_141",
+      "chapterId": "ch5",
+      "number": "141",
+      "title": "Assignment of functions",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_142",
+      "chapterId": "ch5",
+      "number": "142",
+      "title": "Standing Committees",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_143",
+      "chapterId": "ch5",
+      "number": "143",
+      "title": "Delegation of powers",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_144",
+      "chapterId": "ch5",
+      "number": "144",
+      "title": "Power to divert discontinue or close road",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_145",
+      "chapterId": "ch5",
+      "number": "145",
+      "title": "General powers of Zilla Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_146",
+      "chapterId": "ch5",
+      "number": "146",
+      "title": "Control of unwieldy traffic",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_147",
+      "chapterId": "ch5",
+      "number": "147",
+      "title": "Powers and duties of the Adhyaksha",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_148",
+      "chapterId": "ch5",
+      "number": "148",
+      "title": "Powers and duties of the Upadhyaksha",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_149",
+      "chapterId": "ch5",
+      "number": "149",
+      "title": "Mode of making contracts",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_150",
+      "chapterId": "ch6",
+      "number": "150",
+      "title": "Chief Executive Officer and other Officers",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_152",
+      "chapterId": "ch6",
+      "number": "152",
+      "title": "Chief Executive officer’s right to requisition records, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_153",
+      "chapterId": "ch7",
+      "number": "153",
+      "title": "Levy of taxes, rates etc",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_154",
+      "chapterId": "ch7",
+      "number": "154",
+      "title": "Recovery of taxes and other dues",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_155",
+      "chapterId": "ch7",
+      "number": "155",
+      "title": "Appeal against assessment etc",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_156",
+      "chapterId": "ch7",
+      "number": "156",
+      "title": "Composition of taxes in factory areas",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_157",
+      "chapterId": "ch7",
+      "number": "157",
+      "title": "Agency for collection",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_158",
+      "chapterId": "ch8",
+      "number": "158",
+      "title": "Panchayat may acquire, hold and dispose of property, etc",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_159",
+      "chapterId": "ch8",
+      "number": "159",
+      "title": "Vesting of property in Panchayat",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_160",
+      "chapterId": "ch8",
+      "number": "160",
+      "title": "Grants to a Panchayat or a Zilla Panchayat",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_161",
+      "chapterId": "ch8",
+      "number": "161",
+      "title": "Panchayat Fund",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_162",
+      "chapterId": "ch8",
+      "number": "162",
+      "title": "Application of Panchayat Fund and property",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_163",
+      "chapterId": "ch8",
+      "number": "163",
+      "title": "Panchayat may raise loans and form a sinking fund",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_164",
+      "chapterId": "ch8",
+      "number": "164",
+      "title": "Zilla Panchayat may acquire, hold and dispose of property, etc",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_165",
+      "chapterId": "ch8",
+      "number": "165",
+      "title": "Vesting of property in Zilla Panchayat",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_166",
+      "chapterId": "ch8",
+      "number": "166",
+      "title": "Zilla Panchayat Fund",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_167",
+      "chapterId": "ch8",
+      "number": "167",
+      "title": "Custody and investment of Zilla Panchayat Fund",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_168",
+      "chapterId": "ch8",
+      "number": "168",
+      "title": "Application of Zilla Panchayat Fund and property",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_169",
+      "chapterId": "ch8",
+      "number": "169",
+      "title": "Rents and Fees",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_172",
+      "chapterId": "ch8",
+      "number": "172",
+      "title": "Government may place roads and other property under Zilla Panchayat",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_173",
+      "chapterId": "ch9",
+      "number": "173",
+      "title": "Power of inspection and supervision",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_174",
+      "chapterId": "ch9",
+      "number": "174",
+      "title": "Technical supervision and inspections",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_175",
+      "chapterId": "ch9",
+      "number": "175",
+      "title": "Director and Chief Executive Officer’s powers in respect of Panchayat and Zilla Panchayat",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_177",
+      "chapterId": "ch9",
+      "number": "177",
+      "title": "Inquiry into affairs of Panchayat, or Zilla Panchayat by the Government",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_178",
+      "chapterId": "ch9",
+      "number": "178",
+      "title": "Power of suspending execution of unlawful orders or resolution",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_179",
+      "chapterId": "ch9",
+      "number": "179",
+      "title": "Purchase of stores and equipments",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_180",
+      "chapterId": "ch9",
+      "number": "180",
+      "title": "Power to appoint Administrator in certain cases",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_182",
+      "chapterId": "ch10",
+      "number": "182",
+      "title": "Presentation of accounts and budget of Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_183",
+      "chapterId": "ch10",
+      "number": "183",
+      "title": "Revision of budget",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_184",
+      "chapterId": "ch10",
+      "number": "184",
+      "title": "Maintenance of accounts and restriction of expenditure",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_185",
+      "chapterId": "ch10",
+      "number": "185",
+      "title": "Transmission of accounts",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_186",
+      "chapterId": "ch10",
+      "number": "186",
+      "title": "Power to write off irrecoverable amounts",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_187",
+      "chapterId": "ch10",
+      "number": "187",
+      "title": "Audit of accounts",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_189",
+      "chapterId": "ch10",
+      "number": "189",
+      "title": "Revision of budget",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_190",
+      "chapterId": "ch10",
+      "number": "190",
+      "title": "Supplementary budget",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_191",
+      "chapterId": "ch10",
+      "number": "191",
+      "title": "Maintenance of accounts and restrictions of expenditure",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_192",
+      "chapterId": "ch10",
+      "number": "192",
+      "title": "Transmission of accounts",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_194",
+      "chapterId": "ch10",
+      "number": "194",
+      "title": "Audit of Accounts",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_195",
+      "chapterId": "ch10",
+      "number": "195",
+      "title": "Action by Zilla Panchayat on audit report",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_197",
+      "chapterId": "ch10",
+      "number": "197",
+      "title": "Procedure for recovery of dues of Zilla Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_198",
+      "chapterId": "ch10",
+      "number": "198",
+      "title": "Conditions of distraint and sale",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_199",
+      "chapterId": "ch11",
+      "number": "199",
+      "title": "Finance Commission",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_200",
+      "chapterId": "ch12",
+      "number": "200",
+      "title": "Dissolution of Panchayats",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_201",
+      "chapterId": "ch12",
+      "number": "201",
+      "title": "Appeals",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_202",
+      "chapterId": "ch12",
+      "number": "202",
+      "title": "Power over decisions of committees",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_203",
+      "chapterId": "ch12",
+      "number": "203",
+      "title": "Requisition of premises, vehicles, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_204",
+      "chapterId": "ch12",
+      "number": "204",
+      "title": "Payment of compensation",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_205",
+      "chapterId": "ch12",
+      "number": "205",
+      "title": "Power to obtain information",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_206",
+      "chapterId": "ch12",
+      "number": "206",
+      "title": "Power of entry into and inspection of premises, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_207",
+      "chapterId": "ch12",
+      "number": "207",
+      "title": "Eviction from requisitioned premises",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_208",
+      "chapterId": "ch12",
+      "number": "208",
+      "title": "Release of premises from requisitioning",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_209",
+      "chapterId": "ch12",
+      "number": "209",
+      "title": "Penalty for contravention of any order regarding requisition",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_210",
+      "chapterId": "ch12",
+      "number": "210",
+      "title": "Liability of Members of Panchayats and Zilla Panchayats for loss, waste or misapplication",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_212",
+      "chapterId": "ch12",
+      "number": "212",
+      "title": "Penalty for interested member voting",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_213",
+      "chapterId": "ch12",
+      "number": "213",
+      "title": "Penalty for acquisition by officer or servant of interest in contract",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_214",
+      "chapterId": "ch12",
+      "number": "214",
+      "title": "Wrongful obstruction of certain officers",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_215",
+      "chapterId": "ch12",
+      "number": "215",
+      "title": "Prohibition against obstruction of Sarpanch or Deputy Sarpanch, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_216",
+      "chapterId": "ch12",
+      "number": "216",
+      "title": "Prohibition against removal or obliteration of notice",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_217",
+      "chapterId": "ch12",
+      "number": "217",
+      "title": "Penalty for not furnishing information or giving false information",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_218",
+      "chapterId": "ch12",
+      "number": "218",
+      "title": "Bidding prohibited",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_220",
+      "chapterId": "ch12",
+      "number": "220",
+      "title": "Damage to any property of Panchayats and how made good",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_221",
+      "chapterId": "ch12",
+      "number": "221",
+      "title": "Restrictions with respect to institution of suits against a Panchayat or Zilla Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_222",
+      "chapterId": "ch12",
+      "number": "222",
+      "title": "Injunctions not to be granted in election proceedings",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_223",
+      "chapterId": "ch12",
+      "number": "223",
+      "title": "Punishment for disobedience or orders and notices not punishable under any other section",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_224",
+      "chapterId": "ch12",
+      "number": "224",
+      "title": "In default of owner or occupier, Panchayat may execute works and recover expenses",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_225",
+      "chapterId": "ch12",
+      "number": "225",
+      "title": "Expenses or costs how determined and recovered",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_226",
+      "chapterId": "ch12",
+      "number": "226",
+      "title": "Bar of suits, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_227",
+      "chapterId": "ch12",
+      "number": "227",
+      "title": "Alternative programme by suit",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_228",
+      "chapterId": "ch12",
+      "number": "228",
+      "title": "Punishment for offences under this Act and powers to compound",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_229",
+      "chapterId": "ch12",
+      "number": "229",
+      "title": "Annual administration report",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_230",
+      "chapterId": "ch12",
+      "number": "230",
+      "title": "Adjustment of Government dues, etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_232",
+      "chapterId": "ch12",
+      "number": "232",
+      "title": "Transfer of property may be subject to conditions",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_233",
+      "chapterId": "ch12",
+      "number": "233",
+      "title": "Saving of acts and proceedings",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_234",
+      "chapterId": "ch12",
+      "number": "234",
+      "title": "Procedure for consultation",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_235",
+      "chapterId": "ch12",
+      "number": "235",
+      "title": "Method of serving notices etc",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_236",
+      "chapterId": "ch12",
+      "number": "236",
+      "title": "Official display of flag",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_237",
+      "chapterId": "ch12",
+      "number": "237",
+      "title": "State Election Commission",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_238",
+      "chapterId": "ch12",
+      "number": "238",
+      "title": "Preparation of development plan",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_239",
+      "chapterId": "ch12",
+      "number": "239",
+      "title": "District Planning Committee",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_239_C",
+      "chapterId": "ch12",
+      "number": "239-C",
+      "title": "Procedure",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_240",
+      "chapterId": "ch12",
+      "number": "240",
+      "title": "Power of Government to make rules",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_242",
+      "chapterId": "ch12",
+      "number": "242",
+      "title": "Power of Zilla Panchayat to make regulations",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_243",
+      "chapterId": "ch12",
+      "number": "243",
+      "title": "Power of Panchayat to make bye-laws",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_245",
+      "chapterId": "ch12",
+      "number": "245",
+      "title": "Repeal and savings",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_246",
+      "chapterId": "ch12",
+      "number": "246",
+      "title": "Removal of difficulties",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    }
+  ]
+}

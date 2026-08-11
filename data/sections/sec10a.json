@@ -1,0 +1,22 @@
+{
+  "id": "sec10a",
+  "chapterId": "ch2",
+  "number": "10A",
+  "title": "Membership Vacancy on Legislative Election",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    2003
+  ],
+  "insertedYear": 2003,
+  "versions": {
+    "1994": "[Section did not exist in the original 1994 Act]",
+    "Latest": "10A. Vacancy on Legislative Election.— If a person who has been elected as a member of the Panchayat is or becomes a member of the House of the People, the Council of States or the State Legislative Assembly, then at the expiration of a period of fifteen days of such election, his seat in the Panchayat shall become vacant, unless he has previously resigned from his seat in the House of the People, Council of States or the State Legislative Assembly, as the case may be."
+  },
+  "history": [
+    {
+      "year": 2003,
+      "act": "Act 10 of 2003",
+      "details": "Inserted Section 10A to declare dual-membership in local panchayats and state/national legislatures invalid, forcing a vacancy after 15 days of assembly election."
+    }
+  ]
+}

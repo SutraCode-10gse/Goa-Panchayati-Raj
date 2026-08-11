@@ -1,0 +1,28 @@
+{
+  "id": "sec48",
+  "chapterId": "ch2",
+  "number": "48",
+  "title": "Term of office and conditions of service of Sarpanch, Deputy Sarpanch, elected and co-opted members",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    2002,
+    2003
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "48. Term of office and conditions of service of Sarpanch and Deputy Sarpanch.— (1) The term of office of every Sarpanch and every Deputy Sarpanch of the Panchayat shall, save as otherwise provided in this Act, cease on the expiry of his term of office as a member of the Panchayat.\n\n(2) Other conditions of service shall be as prescribed.",
+    "Latest": "48. Term of office and conditions of service of Sarpanch, Deputy Sarpanch, elected and co-opted members of the Panchayat.— (1) The term of office of every Sarpanch and every Deputy Sarpanch of the Panchayat shall, save as otherwise provided in this Act, cease on the expiry of his term of office as a member of the Panchayat.\n\n(2) Salary and other conditions of service of the Sarpanch, Deputy Sarpanch, elected and co-opted members of the Panchayat shall be as prescribed."
+  },
+  "history": [
+    {
+      "year": 2002,
+      "act": "Act 20 of 2002",
+      "details": "Substituted the title and body to explicitly include co-opted members alongside elected members under service conditions."
+    },
+    {
+      "year": 2003,
+      "act": "Act 26 of 2003",
+      "details": "Further aligned sub-section (2) to clarify salary and allowances for elected and co-opted members."
+    }
+  ]
+}

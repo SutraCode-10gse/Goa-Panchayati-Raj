@@ -1,0 +1,28 @@
+{
+  "id": "sec7",
+  "chapterId": "ch2",
+  "number": "7",
+  "title": "Constitution of Panchayats",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    1997,
+    2007
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "7. Constitution of Panchayats.— (1) A Panchayat shall consist of, such number of members as the Government may, by order, determine, so far as may be in accordance with the following Table:-\n\nFor a Panchayat with a population of:\n(1) 1500 or more but not more than 2000: 5 members (Classification D)\n(2) more than 2000 but not more than 5000: 7 members (Classification C)\n(3) more than 5000 but not more than 8000: 9 members (Classification B)\n(4) more than 8000: 11 members (Classification A)\n\n(2) All the members of a panchayat shall be elected.\n\n(3) The Director shall divide each Panchayat area into wards the number of which shall be equal to the number of members determined in respect of such Panchayat under sub-section (1).\n\n(4) In every Panchayat, seats shall be reserved for the Scheduled Castes and the Scheduled Tribes and the number of seats so reserved shall bear as nearly as may be, the same proportion to the total number of seats in the Panchayat as the population of the Scheduled Castes and the Scheduled Tribes in the Panchayat area bears to the total population of the Panchayat area:\nProvided that Government may by notification reserve any seat reserved for Scheduled Castes and Scheduled Tribes for women belonging to the Scheduled Castes or as the case may be, the Scheduled Tribes.\n\n(5) The Government may, by notification reserve such number of seats in any Panchayat as may be considered necessary, taking into account the population of the backward classes in the Panchayat area, for persons belonging to the backward classes.\n\n(6) Not less than one third of the total number of seats to be filled by direct election in every Panchayat shall be reserved for women.\n\n(7) Failure to elect remaining members shall not affect the constitution of the Panchayat.\n\n(8) The Director shall publish, in the prescribed manner, the names of members elected.",
+    "Latest": "7. Constitution of Panchayats.— (1) A Panchayat shall consist of, such number of members as the Government may, by order, determine, so far as may be in accordance with the following Table:-\n\nFor a Panchayat with a population of:\n(1) 1500 or more but not more than 2000: 5 members (Classification D)\n(2) more than 2000 but not more than 5000: 7 members (Classification C)\n(3) more than 5000 but not more than 8000: 9 members (Classification B)\n(4) more than 8000: 11 members (Classification A)\n\n(2) All the members of a panchayat shall be elected.\n\n(3) The Director shall divide each Panchayat area into wards the number of which shall be equal to the number of members determined in respect of such Panchayat under sub-section (1).\n\n(4) In every Panchayat, seats shall be reserved for the Scheduled Castes and the Scheduled Tribes and the number of seats so reserved shall bear as nearly as may be, the same proportion to the total number of seats in the Panchayat as the population of the Scheduled Castes and the Scheduled Tribes in the Panchayat area bears to the total population of the Panchayat area:\nProvided that Government may by notification reserve any seat reserved for Scheduled Castes and Scheduled Tribes for women belonging to the Scheduled Castes or as the case may be, the Scheduled Tribes.\nProvided further that the Government may, by order published in the Official Gazette, direct any Panchayat to co-opt in such manner as may be prescribed, a person belonging to the Scheduled Caste, where there is a reasonable population of the Scheduled Caste but the reservation may not be made.\n\n(5) The Government may, by notification reserve such number of seats in any Panchayat as may be considered necessary, taking into account the population of the backward classes in the Panchayat area, for persons belonging to the backward classes.\n\n(6) Not less than one third (including the number of seats reserved for women belonging to Scheduled Castes or Scheduled Tribes) of the total number of seats to be filled by direct election in every Panchayat shall be reserved for women:\nProvided that the seats reserved under sub-section (4), (5) and (6) shall be allotted by rotation to different wards in the panchayat area.\nProvided further that nothing contained in this section shall be deemed to prevent a woman or a person belonging to SC/ST or Backward Classes from contesting for elections to any non-reserved ward.\n\n(7) Failure to elect remaining members shall not affect the constitution of the Panchayat.\n\n(8) The Director shall publish, in the prescribed manner, the names of members elected.\n\nExplanation:— In this section, the expression \"population\" means the population as ascertained at the last preceding census of which the relevant figures of have been published, but where figures of census are not available, the population shall be ascertained from other relevant authenticated records maintained by the Government."
+  },
+  "history": [
+    {
+      "year": 1997,
+      "act": "Act 1 of 1997",
+      "details": "Inserted the second proviso in sub-section (4) allowing the co-option of Scheduled Caste members in areas with a reasonable SC population where a seat reservation could not be formally allocated."
+    },
+    {
+      "year": 2007,
+      "act": "Act 4 of 2007",
+      "details": "Inserted the Explanation at the end of the section defining the methodology of determining 'population' using latest census or authenticated state records."
+    }
+  ]
+}

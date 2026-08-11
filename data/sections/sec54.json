@@ -1,0 +1,22 @@
+{
+  "id": "sec54",
+  "chapterId": "ch2",
+  "number": "54",
+  "title": "Meeting of the Panchayat",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    1997
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "54. Meeting of the Panchayat.— (1) A Panchayat shall meet for transaction of business at least once in a month at the office of the Panchayat and at such time as the Sarpanch may determine.\n\n(2) The Sarpanch may... call a special meeting.\n\n(3) Seven clear days notice... shall be given by the Secretary...\n\n(4) Government officers... may attend but not vote.",
+    "Latest": "54. Meeting of the Panchayat.— (1) A Panchayat shall meet for transaction of business at least once in fifteen days at the office of the Panchayat and at such time as the Sarpanch may determine.\n\n(2) The Sarpanch may, whenever he thinks fit, and shall, upon the written request of not less than one-third of the total number of members and on a date within fifteen days from the receipt of such request hold a special meeting.\n\n(3) Seven clear days notice of an ordinary meeting and three clear days notice of a special meeting specifying the place, date and time of such meeting and the business to be transacted thereat, shall be given by the Secretary...\n\n(4) The officers to whom notice is given under sub-section (3) and other Government officers... shall be entitled to attend... but shall not be entitled to vote.\n\n(5) If the Sarpanch fails to hold a special meeting as provided in sub-section (2), the Block Development Officer shall hold such a meeting within seven days upon the receipt of the written request of not less than one-third of the total number of members of the Panchayat."
+  },
+  "history": [
+    {
+      "year": 1997,
+      "act": "Act 1 of 1997",
+      "details": "Substituted 'fifteen days' for 'month' in sub-section (1). Inserted the BDO default intervention mechanism in sub-section (5) to bypass Sarpanch failures to convene requisitioned special meetings."
+    }
+  ]
+}

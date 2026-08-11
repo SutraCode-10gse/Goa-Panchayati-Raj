@@ -1,0 +1,22 @@
+{
+  "id": "sec13",
+  "chapterId": "ch2",
+  "number": "13",
+  "title": "Lists of Voters",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    1997
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "13. Lists of Voters.— (1) Subject to the provisions of sub-section (1), the electoral roll of the House of the People for the time being in force for such part of the ward of a Panchayat shall be deemed to be the list of voters for such Panchayat wards.\n\n(2) No amendment transposition or deletion of any entry in the electoral roll of the House of the People made after, the last date of making nominations for an election in any Panchayat ward and before the completion of such election shall form part of the list of voters for such election for the purpose of this section.",
+    "Latest": "13. Lists of Voters.— (1) Subject to the provisions of sub-section (1), the electoral roll of the Legislative Assembly of the State for the time being in force for such part of the ward of a Panchayat shall be deemed to be the list of voters for such Panchayat wards.\n\n(2) No amendment transposition or deletion of any entry in the electoral roll of the Legislative Assembly of the State made after, the last date of making nominations for an election in any Panchayat ward and before the completion of such election shall form part of the list of voters for such election for the purpose of this section."
+  },
+  "history": [
+    {
+      "year": 1997,
+      "act": "Act 1 of 1997",
+      "details": "Substituted 'Legislative Assembly of the State' for 'House of the People' in referencing which electoral rolls are adopted for Panchayat elections."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "sec2",
+  "chapterId": "ch1",
+  "number": "2",
+  "title": "Definitions",
+  "tier": "General",
+  "amendedYears": [
+    1997,
+    1999,
+    2000,
+    2003
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "2. Definitions.— In this Act, unless the context otherwise requires,-\n\n(1) \"Backward classes\" means such classes of citizens as may be notified by the Government from time to time as belonging to backward class;\n(2) \"building\" includes a house, outhouse, stable, privy, urinals, shed, hut, wall and any other structure whether of masonry, bricks, wood, metal or any other material, but does not include a temporary structure erected on ceremonial or festive occasion or a tent;\n(3) \"Sarpanch\" means the Sarpanch of a Panchayat;\n(4) \"Deputy Sarpanch\" means the Deputy Sarpanch of a Panchayat;\n(5) \"Adhyaksha\" means the Adhyaksha of a Zilla Panchayat;\n(6) \"Upadhyaksha\" means the Upadhyaksha of a Zilla Panchayat;\n(7) \"Collector\" means the Collector of the district;\n(8) \"Chief Executive Officer\" means the Chief Executive Officer of a Zilla Panchayat;\n(9) \"Director\" means the person appointed as the Director of Panchayats under this Act;\n(10) \"district\" means a revenue district;\n(11) \"Government\" means the Government of Goa;\n(12) \"land\" includes land which is built upon or covered with water;\n(13) \"notification\" means a notification published in the Official Gazette;\n(14) \"Panchayat\" means a Village Panchayat established under section 3;\n(15) \"erection or re-erection or enlargement\" of any building includes dynamic structural alterations, additions of rooms, and covering of open spaces;\n(16) \"factory\" means besides a factory as defined in the Factories Act, 1948, any industrial premises;\n(17) \"prescribed\" means prescribed by rules framed under this Act;\n(18) \"Schedule\" means a Schedule appended to this Act;\n(19) \"Scheduled Castes and Scheduled Tribes\" means such castes and tribes specified in respect of the State of Goa under the Constitution;\n(20) \"Secretary\" means the Secretary of the Panchayat;\n(21) \"Zilla Panchayat\" means a Zilla Panchayat constituted under this Act.",
+    "Latest": "2. Definitions.— In this Act, unless the context otherwise requires,-\n\n(1) \"Backward classes\" means such classes of citizens as may be notified by the Government from time to time as belonging to backward class;\n(1-A) \"Block Development Officer\" means a person appointed as Block Development Officer by the Government;\n(1-B) \"Ballot\" means ballot papers prepared in accordance with the provisions of the Act or rules made thereunder and includes \"Electronic Voting Machine\";\n(2) \"building\" includes a house, outhouse, stable, privy, urinals, shed, hut, wall and any other structure whether of masonry, bricks, wood, metal or any other material, but does not include a temporary structure erected on ceremonial or festive occasion or a tent;\n(3) \"Sarpanch\" means the Sarpanch of a Panchayat;\n(4) \"Deputy Sarpanch\" means the Deputy Sarpanch of a Panchayat;\n(5) \"Adhyaksha\" means the Adhyaksha of a Zilla Panchayat;\n(6) \"Upadhyaksha\" means the Upadhyaksha of a Zilla Panchayat;\n(7) \"Collector\" means the Collector of the district and includes an Additional Collector;\n(8) \"Chief Executive Officer\" means the Chief Executive Officer of a Zilla Panchayat and includes any other officer appointed by the Government in this behalf;\n(8-A) \"Deputy Director\" means the person appointed as the Deputy Director of Panchayat by the Government;\n(9) \"Director\" means the person appointed as the Director of Panchayats under this Act and includes an Additional Director;\n(10) \"district\" means a revenue district;\n(11) \"Government\" means the Government of Goa;\n(11-A) \"Gram Sevak\" means the person appointed by the Director to perform the duties as Gram Sevak;\n(12) \"land\" includes land which is built upon or covered with water;\n(12-A) \"Member-Secretary\" means a person appointed by the Government as Member-Secretary and includes a Block Development Officer;\n(13) \"notification\" means a notification published in the Official Gazette;\n(14) \"Panchayat\" means a Village Panchayat established under section 3;\n(15) \"erection or re-erection or enlargement\" of any building includes specific structural conversions, additions of rooms, roof coverings, and door placements;\n(16) \"factory\" means besides a factory as defined in the Factories Act, 1948, any industrial premises;\n(17) \"prescribed\" means prescribed by rules framed under this Act;\n(18) \"Schedule\" means a Schedule appended to this Act;\n(19) \"Scheduled Castes and Scheduled Tribes\" means such castes and tribes specified in respect of the State of Goa under the Constitution;\n(20) \"Secretary\" means the Secretary of the Panchayat;\n(20A) \"Taluka Panchayat\" means a Taluka Panchayat established under this Act;\n(21) \"Zilla Panchayat\" means a Zilla Panchayat constituted under this Act."
+  },
+  "history": [
+    {
+      "year": 1997,
+      "act": "Act 1 of 1997",
+      "details": "Inserted Clause (1-A) defining Block Development Officer, Clause (8-A) defining Deputy Director, Clause (11-A) defining Gram Sevak, and expanded the definitions of Collector, CEO, and Director."
+    },
+    {
+      "year": 1999,
+      "act": "Act 8 of 1999",
+      "details": "Inserted Clause (12-A) defining Member-Secretary and Clause (20A) defining Taluka Panchayat."
+    },
+    {
+      "year": 2000,
+      "act": "Act 11 of 2000",
+      "details": "Inserted Clause (1-B) defining Ballot and Electronic Voting Machines."
+    },
+    {
+      "year": 2003,
+      "act": "Act 10 of 2003",
+      "details": "Substituted Clause (9) regarding Director representation and qualifications."
+    }
+  ]
+}

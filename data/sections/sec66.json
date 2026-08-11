@@ -1,0 +1,42 @@
+{
+  "id": "sec66",
+  "chapterId": "ch3",
+  "number": "66",
+  "title": "Regulation of the erection of buildings",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    1997,
+    2001,
+    2021,
+    2025
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "66. Regulation of the erection of buildings.— (1) Subject to such rules as may be prescribed, no person shall erect any building or alter or add to any existing building or reconstruct any building without the written permission of the Panchayat.\n\n(2) The Panchayat shall decide on building license applications within thirty days of receipt, communicating approvals or rejections directly to the applicant.",
+    "1997": "66. Regulation of the erection of buildings.— (1) Subject to such rules as may be prescribed, no person shall erect any building or alter or add to any existing building or reconstruct any building without the written permission of the Panchayat. The permission may be granted on payment of such fees as may be prescribed.\n\n(2) If a Panchayat does not, within thirty days from the date of receipt of application, determine whether such permission should be given or not and communicate its decision to the applicant, the applicant may file an appeal within thirty days from the date of expiry of aforesaid period, to the Deputy Director who shall dispose of the same within thirty days from the date of filings of such appeal. If the Deputy Director fails to dispose of the appeal within thirty days, such permission shall be deemed to have been given and the applicant may proceed to execute the work, but not so as to contravene any of the provisions of this Act or any rules or bye-laws made under this Act.\n\n(3) Whenever any building is erected without permission, the Panchayat may direct that construction be stopped or require it to be demolished.\n\n(4) Demolition expenses are recoverable from the owner as if it were a tax.\n\n(5) If the Panchayat fails to demolish unauthorized structures, the Deputy Director shall assume powers within one month of knowledge.\n\n(6) BDO may serve stop-work notices for violations.\n\n(7) An appeal against orders under this section lies with the Director within thirty days.",
+    "2021": "66. Regulation of the erection of buildings.— (1) Subject to such rules as may be prescribed, no person shall erect any building or alter or add to any existing building or reconstruct any building without the written permission of the Panchayat. The permission may be granted on payment of such fees as may be prescribed:\nProvided that alteration of a building consisting of a single dwelling unit, which existed prior to the commencement of this Act, for replacing tile roofing with R.C.C. slab roofing, shall be permitted upon producing a certificate of structural stability from a TCP-registered engineer.\nProvided further that no such permission shall be required for carrying out minor plastering, flooring, or painting works which do not alter the structural integrity or height of the building.\n\n(2) If a Panchayat does not, within thirty days from the date of receipt of application, determine whether such permission should be given or not and communicate its decision to the applicant, the applicant may file an appeal within thirty days from the date of expiry of aforesaid period, to the Deputy Director who shall dispose of the same within thirty days from the date of filings of such appeal. If the Deputy Director fails to dispose of the appeal within thirty days, such permission shall be deemed to have been given and the applicant may proceed to execute the work, but not so as to contravene any of the provisions of this Act or any rules or bye-laws made under this Act.\n\n(3) [Demolition and stop-work orders as in 1997]\n(4) [Demolition recovery]\n(5) [Deputy Director intervention]\n(6) [BDO stop-work]\n(7) [Appeal to Director within thirty days]",
+    "Latest": "66. Regulation of the erection of buildings.— (1) Subject to such rules as may be prescribed, no person shall erect any building or alter or add to any existing building or reconstruct any building without the written permission of the Panchayat. The permission may be granted on payment of such fees as may be prescribed:\nProvided that alteration of a building consisting of a single dwelling unit, which existed prior to the commencement of this Act, for replacing tile roofing with R.C.C. slab roofing, shall be permitted upon producing a certificate of structural stability from a TCP-registered engineer.\nProvided further that no such permission shall be required for carrying out minor plastering, flooring, or painting works which do not alter the structural integrity or height of the building.\n\n(2) If a Panchayat does not, within fifteen days from the date of receipt of application, determine whether such permission should be given or not and communicate its decision to the applicant, the permission shall be deemed to have been granted, and the applicant may proceed to execute the work, provided it complies with technical clearances and plans approved by the Town and Country Planning Authorities and other statutory conditions.\n\n(3) [Demolition and stop-work orders as in 1997]\n(4) [Demolition recovery]\n(5) [Deputy Director intervention]\n(6) [BDO stop-work]\n(7) [Appeal to Director within thirty days]"
+  },
+  "history": [
+    {
+      "year": 1997,
+      "act": "Act 1 of 1997",
+      "details": "Substituted sub-section (2) to set up BDO/Deputy Director appeals. Added sub-sections (5), (6), and (7) to define demolition assumptions, BDO enforcement notices, and final appeals to the Director."
+    },
+    {
+      "year": 2001,
+      "act": "Act 13 of 2001",
+      "details": "Inserted the first proviso under sub-section (1) exempting pre-existing single dwelling units from development clearance when replacing tiles with R.C.C. slabs, subject to stability certificates."
+    },
+    {
+      "year": 2021,
+      "act": "Act 32 of 2021",
+      "details": "Refined the stability cert requirement under the first proviso to specify TCP-registered engineers, and added the second proviso exempting minor maintenance (plastering, painting) from licensing."
+    },
+    {
+      "year": 2025,
+      "act": "Act 24 of 2025",
+      "details": "Substituted sub-section (2) to slash review times from 30 days to 15 days, and introduced automatic Deemed Permission if the Panchayat fails to issue a written response within 15 days."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "sec5",
+  "chapterId": "ch2",
+  "number": "5",
+  "title": "Meeting of Gram Sabha",
+  "tier": "Village Panchayat",
+  "amendedYears": [
+    1999,
+    2021
+  ],
+  "insertedYear": 1994,
+  "versions": {
+    "1994": "5. Meeting of Gram Sabha.— (1) There shall be at least two ordinary meetings of the Gram Sabha in every year, one to be held in the first block of the financial year and another in the last block of the financial year, to be convened by the Sarpanch.\n\n(2) The Sarpanch shall, upon a requisition in writing by not less than one-tenth of the number of members, call an extraordinary meeting of the Gram Sabha within thirty days from the receipt of such requisition.\n\n(3) One-tenth of the total number of members of the Gram Sabha shall form the quorum for a meeting.",
+    "1999": "5. Meeting of Gram Sabha.— (1) There shall be four ordinary meetings of the Gram Sabha to be held on any Sunday of January, April, July and October of every year, to be convened by the Sarpanch.\n\n(2) There shall also be special meetings of the Gram Sabha to be convened by the Sarpanch on 26th January, 15th August, 2nd October and 19th December, every year.\n\n(3) The meetings of the Gram Sabha shall be presided over by each Sarpanch and attended by the concerned Panchayat member. In the absence of the Sarpanch, Deputy Sarpanch or ward member, the meeting may be presided over by any member chosen by the Gram Sabha.\n\n(4) In the event, the Sarpanch fails to convene the meeting of the Gram Sabha, as specified in sub-section (1) and (2), the meeting shall be convened by the Block Development Officer in the following month.\n\n(5) The Sarpanch shall, upon a reacquisition in writing by not less than one-tenth of number of members call an extraordinary meetings of the Gram Sabha, within thirty days from the receipt of such requisition.\n\n(6) One-tenth of the total number of members of the Gram Sabha shall form the quorum for the meeting.\n\n(7) When there is no quorum for any meeting after fifteen minutes from the appointed time, the meeting shall stand adjourned for half an hour and when it re-assembles, no quorum shall be necessary to transact the business communicated to members in the agenda of the appointed meeting.\n\n(8) An officer nominated by the Block Development Officer shall attend the Gram Sabha meetings.",
+    "Latest": "5. Meeting of Gram Sabha.— (1) There shall be four ordinary meetings of the Gram Sabha to be held on any Sunday of January, April, July and October of every year, to be convened by the Sarpanch.\n\n(2) There shall also be special meetings of the Gram Sabha to be convened by the Sarpanch on 26th January, 15th August, 2nd October and 19th December, every year.\n\n(3) The meetings of the Gram Sabha shall be presided over by each Sarpanch and attended by the concerned Panchayat member. In the absence of the Sarpanch, Deputy Sarpanch or ward member, the meeting may be presided over by any member chosen by the Gram Sabha.\n\n(4) In the event, the Sarpanch fails to convene the meeting of the Gram Sabha, as specified in sub-section (1) and (2), the meeting shall be convened by the Block Development Officer in the following month.\n\n(5) The Sarpanch shall, upon a reacquisition in writing by not less than one-tenth of number of members call an extraordinary meetings of the Gram Sabha, within thirty days from the receipt of such requisition.\n\n(5-A) The Director of Panchayats may also, by order in writing, direct the Sarpanch to convene an extraordinary meeting of the Gram Sabha if in the opinion of the Director such a meeting is necessary in public interest. In case the Sarpanch fails, the Block Development Officer shall convene it within fifteen days.\n\n(6) One-tenth of the total number of members of the Gram Sabha shall form the quorum for the meeting.\n\n(7) When there is no quorum for any meeting after fifteen minutes from the appointed time, the meeting shall stand adjourned for half an hour and when it re-assembles, no quorum shall be necessary to transact the business communicated to members in the agenda of the appointed meeting.\n\n(8) An officer nominated by the Block Development Officer shall attend the Gram Sabha meetings."
+  },
+  "history": [
+    {
+      "year": 1999,
+      "act": "Act 8 of 1999",
+      "details": "Completely substituted Section 5. Increased ordinary meetings from two to four per year (held on Sundays of Jan, Apr, Jul, Oct). Established rules for special holiday meetings (Jan 26, Aug 15, Oct 2, Dec 19), BDO intervention for failures, and specific quorum adjournment procedures."
+    },
+    {
+      "year": 2021,
+      "act": "Act 32 of 2021",
+      "details": "Inserted sub-section (5-A), granting the Director of Panchayats powers to order extraordinary meetings in the public interest, with a 15-day deadline for BDO intervention if the Sarpanch defaults."
+    }
+  ]
+}
