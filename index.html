@@ -219,7 +219,7 @@
         </section>
 
         <!-- 2. FULL ACT READER TAB -->
-        <section id="tab-reader" class="tab-pane">
+        <section id="tab-reader" class="tab-pane" style="height: 100%; display: flex; flex-direction: column;">
           <div class="reader-toolbar">
             <div class="toolbar-search">
               <input type="text" id="reader-search-input" placeholder="Filter sections in this view...">
@@ -230,8 +230,15 @@
             </div>
           </div>
           
-          <div class="reader-container" id="full-act-text-container">
-            <!-- Dynamically populated entire consolidated act -->
+          <div class="reader-workspace">
+            <!-- Vertical Navigation Sidebar for Sections -->
+            <div class="reader-nav-sidebar" id="reader-nav-sidebar">
+              <!-- Dynamically populated vertical section links -->
+            </div>
+            
+            <div class="reader-container" id="full-act-text-container">
+              <!-- Dynamically populated entire consolidated act -->
+            </div>
           </div>
         </section>
 

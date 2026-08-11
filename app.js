@@ -619,6 +619,7 @@ async function renderFullActReader() {
 
   container.innerHTML = '';
   let outputHtml = '';
+  const allMatchedSections = [];
 
   chaptersData.forEach(chapter => {
     // Get sections for this chapter
@@ -650,6 +651,7 @@ async function renderFullActReader() {
     `;
 
     chapterSections.forEach(sec => {
+      allMatchedSections.push(sec);
       const hasAmendments = sec.amendedYears.length > 0;
       const tierClass = sec.tier === 'General' ? 'general' : (sec.tier === 'Village Panchayat' ? 'vp' : 'zp');
       
@@ -679,6 +681,69 @@ async function renderFullActReader() {
     });
 
     outputHtml += `</div>`;
+  });
+
+  // Populate navigation sidebar
+  const navSidebar = document.getElementById('reader-nav-sidebar');
+  if (navSidebar) {
+    navSidebar.innerHTML = '';
+    if (allMatchedSections.length === 0) {
+      navSidebar.innerHTML = `<div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; padding: 20px; width: 100%;">No sections found</div>`;
+    } else {
+      allMatchedSections.forEach((sec, idx) => {
+        const item = document.createElement('button');
+        item.className = 'reader-nav-item';
+        if (idx === 0) item.classList.add('active'); // Highlight first by default
+        item.setAttribute('data-nav-sec-id', sec.id);
+        item.innerHTML = `
+          <strong>Sec ${sec.number}</strong>
+          <span>${sec.title}</span>
+        `;
+        item.addEventListener('click', () => {
+          navSidebar.querySelectorAll('.reader-nav-item').forEach(i => i.classList.remove('active'));
+          item.classList.add('active');
+          
+          const targetEl = document.getElementById(`reader-sec-${sec.id}`);
+          if (targetEl) {
+            const targetOffset = targetEl.getBoundingClientRect().top - container.getBoundingClientRect().top + container.scrollTop;
+            container.scrollTo({
+              top: targetOffset - 15,
+              behavior: 'smooth'
+            });
+          }
+        });
+        navSidebar.appendChild(item);
+      });
+    }
+  }
+
+  // Scroll spy to highlight active section in nav sidebar on scrolling
+  let isScrolling = false;
+  container.addEventListener('scroll', () => {
+    if (isScrolling) return;
+    isScrolling = true;
+    requestAnimationFrame(() => {
+      const containerRect = container.getBoundingClientRect();
+      let activeSecId = null;
+      
+      const sectionItems = container.querySelectorAll('.reader-section-item');
+      for (const item of sectionItems) {
+        const rect = item.getBoundingClientRect();
+        // If the section is visible near or above the top of the container view
+        if (rect.top - containerRect.top <= 100) {
+          activeSecId = item.id.replace('reader-sec-', '');
+        } else {
+          break; // Sections are ordered sequentially
+        }
+      }
+      
+      if (activeSecId && navSidebar) {
+        navSidebar.querySelectorAll('.reader-nav-item').forEach(i => i.classList.remove('active'));
+        const activeNav = navSidebar.querySelector(`[data-nav-sec-id="${activeSecId}"]`);
+        if (activeNav) activeNav.classList.add('active');
+      }
+      isScrolling = false;
+    });
   });
 
   if (outputHtml === '') {

@@ -670,6 +670,69 @@ h1, h2, h3, h4, h5, h6 {
   accent-color: var(--accent-color);
 }
 
+.reader-workspace {
+  display: flex;
+  gap: 20px;
+  height: calc(100% - 60px);
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.reader-nav-sidebar {
+  width: 280px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.reader-nav-item {
+  background: none;
+  border: 1px solid transparent;
+  padding: 10px 12px;
+  text-align: left;
+  border-radius: var(--border-radius-sm);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reader-nav-item:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--accent-light);
+  border-color: var(--border-color);
+}
+
+.reader-nav-item.active {
+  background-color: var(--accent-glow);
+  border-color: var(--accent-color);
+  color: var(--accent-light);
+}
+
+.reader-nav-item strong {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent-light);
+}
+
+.reader-nav-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .reader-container {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
