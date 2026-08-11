@@ -1431,7 +1431,7 @@ function formatLegalText(text) {
   // First, split heading and first subsection if they are combined on the same line
   const cleanedLines = [];
   rawLines.forEach(line => {
-    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^.—]*?[.——\s]*)\s*(\(\d+[A-Z]?\)\s*.*)$/s);
+    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^.—]*?[.——\s]*)\s*(?:—\s*)?(\(\d+[A-Z]?\)\s*.*)$/s);
     if (splitMatch) {
       cleanedLines.push(splitMatch[1].trim());
       cleanedLines.push(splitMatch[2].trim());
@@ -1446,12 +1446,12 @@ function formatLegalText(text) {
   const isNewBlock = (line) => {
     // 1. Heading (e.g. "3. Declaration...—")
     if (/^\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z]/.test(line)) return true;
-    // 2. Subsection (e.g. "(1)")
-    if (/^\(\d+[A-Z]?\)/.test(line)) return true;
-    // 3. Clause (e.g. "(a)")
-    if (/^\([a-z]+\)/.test(line)) return true;
-    // 4. Subclause (e.g. "(i)")
-    if (/^\([ivx]+\)/.test(line)) return true;
+    // 2. Subsection (e.g. "— (1)")
+    if (/^[—\s]*\(\d+[A-Z]?\)/.test(line)) return true;
+    // 3. Clause (e.g. "— (a)")
+    if (/^[—\s]*\([a-z]+\)/.test(line)) return true;
+    // 4. Subclause (e.g. "— (i)")
+    if (/^[—\s]*\([ivx]+\)/.test(line)) return true;
     // 5. Proviso (e.g. "Provided that")
     if (line.startsWith('Provided that') || line.startsWith('Provided further that') || line.startsWith('Provided, however, that')) return true;
     // 6. Explanation (e.g. "Explanation:")
@@ -1511,8 +1511,8 @@ function formatLegalText(text) {
       return;
     }
     
-    // Sub-sections starting with (1), (2), (10), etc.
-    const subSecMatch = para.match(/^\((\d+[A-Z]?)\)\s*(.*)$/s);
+    // Sub-sections starting with (1), (2), (10), etc. (allowing leading dashes/spaces)
+    const subSecMatch = para.match(/^[—\s]*\((\d+[A-Z]?)\)\s*(.*)$/s);
     if (subSecMatch) {
       html += `
         <div class="legal-subsection">
@@ -1524,7 +1524,7 @@ function formatLegalText(text) {
     }
     
     // Clauses starting with (a), (b), (z), (aa), etc.
-    const clauseMatch = para.match(/^\(([a-z]+)\)\s*(.*)$/s);
+    const clauseMatch = para.match(/^[—\s]*\(([a-z]+)\)\s*(.*)$/s);
     if (clauseMatch) {
       html += `
         <div class="legal-clause">
@@ -1536,7 +1536,7 @@ function formatLegalText(text) {
     }
     
     // Sub-clauses starting with (i), (ii), (iv), (ix), etc.
-    const subClauseMatch = para.match(/^\(([ivx]+)\)\s*(.*)$/s);
+    const subClauseMatch = para.match(/^[—\s]*\(([ivx]+)\)\s*(.*)$/s);
     if (subClauseMatch) {
       html += `
         <div class="legal-subclause">
