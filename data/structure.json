@@ -1490,6 +1490,15 @@
       "insertedYear": 1999
     },
     {
+      "id": "gen_sec_115_M",
+      "chapterId": "ch4",
+      "number": "115-M",
+      "title": "Application of certain sections relating to election of Chairperson or Vice-Chairperson",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
       "id": "gen_sec_115_N",
       "chapterId": "ch4",
       "number": "115-N",
@@ -2093,6 +2102,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_176",
+      "chapterId": "ch9",
+      "number": "176",
+      "title": "Power of Government, Director and Chief Executive Officer to provide for performance of duties in default of Panchayat or Zilla Panchayat",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_177",
       "chapterId": "ch9",
       "number": "177",
@@ -2363,6 +2381,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_211",
+      "chapterId": "ch12",
+      "number": "211",
+      "title": "Penalty for acting as a member, Sarpanch or Deputy Sarpanch of Village Panchayat, Chairperson or Vice-Chairperson of Taluka Panchayat and Adhyaksha or Upadhyaksha of Zilla Panchayat when disqualified",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_212",
       "chapterId": "ch12",
       "number": "212",
@@ -2422,6 +2449,15 @@
       "number": "218",
       "title": "Bidding prohibited",
       "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_219",
+      "chapterId": "ch12",
+      "number": "219",
+      "title": "Application of the term “public servant” to members of Panchayats and Taluka Panchayats and Zilla Panchayats",
+      "tier": "General",
       "amendedYears": [],
       "insertedYear": 1994
     },
@@ -2525,6 +2561,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_231",
+      "chapterId": "ch12",
+      "number": "231",
+      "title": "Power of Government to dissolve and reconstitute Panchayats on the alteration of limits of Panchayat areas",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_232",
       "chapterId": "ch12",
       "number": "232",
@@ -2615,6 +2660,15 @@
       "insertedYear": 1994
     },
     {
+      "id": "gen_sec_241",
+      "chapterId": "ch12",
+      "number": "241",
+      "title": "Amendment of schedules",
+      "tier": "General",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
       "id": "gen_sec_242",
       "chapterId": "ch12",
       "number": "242",
@@ -2629,6 +2683,15 @@
       "number": "243",
       "title": "Power of Panchayat to make bye-laws",
       "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1994
+    },
+    {
+      "id": "gen_sec_244",
+      "chapterId": "ch12",
+      "number": "244",
+      "title": "Power of Government to make model regulations and bye-laws and adoption of the same by the Panchayats",
+      "tier": "General",
       "amendedYears": [],
       "insertedYear": 1994
     },
