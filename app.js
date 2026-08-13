@@ -63,6 +63,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // Load active database (LocalStorage -> data/structure.json)
 async function loadDatabase() {
+  const DB_VERSION = '1.0.3';
+  const savedVersion = localStorage.getItem('goa-panchayat-db-version');
+  
+  // Auto-invalidate database cache if code version updates
+  if (savedVersion !== DB_VERSION) {
+    localStorage.removeItem('goa-panchayat-db');
+    localStorage.setItem('goa-panchayat-db-version', DB_VERSION);
+  }
+
   const localDb = localStorage.getItem('goa-panchayat-db');
   
   if (localDb) {
@@ -82,7 +91,7 @@ async function loadDatabase() {
 
   // Fetch partitioned structure.json
   try {
-    const response = await fetch('data/structure.json');
+    const response = await fetch('data/structure.json?v=1.0.3');
     if (response.ok) {
       const db = await response.json();
       timelineData = db.timeline || [];
@@ -110,7 +119,7 @@ async function loadSectionDetails(sectionId) {
   }
   
   try {
-    const response = await fetch(`data/sections/${sectionId}.json`);
+    const response = await fetch(`data/sections/${sectionId}.json?v=1.0.3`);
     if (response.ok) {
       const data = await response.json();
       section.versions = data.versions || {};
@@ -490,6 +499,7 @@ function handleDatabaseUpload(file) {
       
       // Save to localStorage
       localStorage.setItem('goa-panchayat-db', JSON.stringify(db));
+      localStorage.setItem('goa-panchayat-db-version', '1.0.3');
       alert("Database imported successfully! Reloading application...");
       window.location.reload();
     } catch (err) {
@@ -611,7 +621,7 @@ async function renderFullActReader() {
       </div>
     `;
     try {
-      const response = await fetch('data/search_index.json');
+      const response = await fetch('data/search_index.json?v=1.0.3');
       if (response.ok) {
         searchIndexData = await response.json();
       }
@@ -1370,7 +1380,7 @@ async function renderSearchResults() {
       </div>
     `;
     try {
-      const response = await fetch('data/search_index.json');
+      const response = await fetch('data/search_index.json?v=1.0.3');
       if (response.ok) {
         searchIndexData = await response.json();
       }
