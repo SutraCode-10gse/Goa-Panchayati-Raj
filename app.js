@@ -118,6 +118,10 @@ async function loadSectionDetails(sectionId) {
     return section;
   }
   
+  // Initialize safe defaults to prevent UI crashes if file fetch fails
+  section.versions = {};
+  section.history = [];
+  
   try {
     const response = await fetch(`data/sections/${sectionId}.json?v=1.0.3`);
     if (response.ok) {
@@ -880,7 +884,23 @@ async function renderExplorerDetail() {
   const tierClass = section.tier === 'General' ? 'general' : (section.tier === 'Village Panchayat' ? 'vp' : 'zp');
 
   // Setup Version Options list
-  const availableVersions = Object.keys(section.versions); // E.g. ['1994', '2001', 'Latest']
+  const availableVersions = Object.keys(section.versions || {}); // E.g. ['1994', '2001', 'Latest']
+  
+  if (availableVersions.length === 0) {
+    panel.innerHTML = `
+      <div class="section-view-header">
+        <h2><strong>Section ${section.number}</strong> ${section.title}</h2>
+        <div class="section-meta-row">
+          <span class="badge badge-tier-${tierClass}">${section.tier}</span>
+          <span class="badge badge-outline">Unamended (Original Form)</span>
+        </div>
+      </div>
+      <div class="no-selection-placeholder" style="padding: 40px; text-align: center; color: var(--text-muted);">
+        <p>No content has been compiled for Section ${section.number} yet.</p>
+      </div>
+    `;
+    return;
+  }
   
   // Ensure selection values match available versions
   if (!availableVersions.includes(state.explorerBaseVersion)) {
@@ -1492,7 +1512,7 @@ function formatLegalText(text) {
   // First, split heading and first subsection if they are combined on the same line
   const cleanedLines = [];
   rawLines.forEach(line => {
-    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^.—]*?[.——\s]*)\s*(?:[—\s-]*)\s*(\(?\d*[A-Z]?\)?\s*[A-Z].*)$/s);
+    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^.—]*?\.\s*—+)\s*(.*)$/s);
     if (splitMatch) {
       cleanedLines.push(splitMatch[1].trim());
       cleanedLines.push(splitMatch[2].trim());
