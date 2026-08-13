@@ -317,15 +317,23 @@ function setupEventListeners() {
       searchClear.style.display = 'none';
     }
     
-    // Automatically switch to search tab if query is 3+ characters long
-    if (state.globalSearchQuery.length >= 3) {
-      if (state.activeTab !== 'search') {
+    // Dynamically filter sections in whichever tab is currently active
+    if (state.activeTab === 'explorer') {
+      renderExplorerTOC();
+    } else if (state.activeTab === 'reader') {
+      state.readerSearchQuery = state.globalSearchQuery;
+      const readerSearchInput = document.getElementById('reader-search-input');
+      if (readerSearchInput) readerSearchInput.value = e.target.value;
+      renderFullActReader();
+    } else if (state.activeTab === 'search') {
+      renderSearchResults();
+    } else {
+      // For other tabs (like Dashboard), switch to the search results tab if query is 3+ chars
+      if (state.globalSearchQuery.length >= 3) {
         switchTab('search');
       } else {
-        renderSearchResults();
+        renderView(state.activeTab);
       }
-    } else {
-      renderView(state.activeTab);
     }
   });
 
