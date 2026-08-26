@@ -17,11 +17,23 @@
       "actNumber": "Goa Act 1 of 1997",
       "title": "First Amendment Act, 1996",
       "date": "February 20, 1997",
-      "description": "Brings in major changes to the executive powers of the Panchayat, the election of office bearers, and the appeal processes for building permissions.",
+      "description": "Published on February 20, 1997, this amendment brings in major changes to the executive powers of the Panchayat, the election of office bearers, and the appeal processes for building permissions.",
       "keyChanges": [
         "Substituted Section 47 to grant specific executive licensing, stop-work, and execution powers to the Panchayat Secretary.",
         "Substituted Section 66(2) to define the 30-day appeal process to the Deputy Director for building permissions.",
-        "Inserted a co-opted member proviso under Section 7(4) for Scheduled Castes where reservation was not viable."
+        "Inserted a co-opted member proviso under Section 7(4) for Scheduled Castes where reservation was not viable.",
+        "Amended Section 12(2) to transfer the power to decide member disqualifications for absence from the Chief Executive Officer to the Block Development Officer.",
+        "Amended Section 13 to adopt the Legislative Assembly electoral rolls instead of Zilla Panchayat rolls.",
+        "Amended Section 46 to establish the procedure for the election of the Sarpanch and Deputy Sarpanch.",
+        "Inserted Section 47-A to define the executive powers of the Sarpanch.",
+        "Amended Section 50(4) and 50(5) to expand the scope for removing the Sarpanch or Deputy Sarpanch.",
+        "Amended Section 51 to prohibit bringing a no-confidence motion within six months after a previous motion is defeated.",
+        "Amended Section 54 to authorize the Block Development Officer to convene a special meeting if the Sarpanch fails to do so.",
+        "Amended Section 57(2) to require sending copy of minutes to the Block Development Officer instead of the Chief Executive Officer.",
+        "Inserted Sections 112-A to 112-F to regulate the impounding of stray cattle, fines, and seizures.",
+        "Inserted Section 113-A and 113-B specifying the responsibilities of the Secretary and Gram Sevak.",
+        "Amended Section 153 to introduce lighting, drainage, trade, and octroi taxes to raise Panchayat revenues.",
+        "Amended Section 180 to allow the appointment of an administrator if more than half of the members resign."
       ]
     },
     {
@@ -40,11 +52,12 @@
       "actNumber": "Goa Act 8 of 1999",
       "title": "Second Amendment Act, 1999",
       "date": "September 27, 1999",
-      "description": "A landmark amendment that completely overhauls the local governance framework by introducing Taluka Panchayats, expanding Zilla Panchayat structures, and strengthening Gram Sabha participation.",
+      "description": "A landmark amendment that overhauls the local governance framework by introducing Taluka Panchayats, expanding Zilla Panchayat structures, and strengthening Gram Sabha participation as a legislative body.",
       "keyChanges": [
-        "Substituted Sections 5 and 6, expanding Gram Sabha ordinary meetings to four times a year and detailing a comprehensive list of functions and committees.",
-        "Inserted Chapters IV-A to IV-G constituting the Taluka Panchayats.",
-        "Incorporated Taluka Panchayats into the State Finance Commission's review scope."
+        "Substituted Sections 5 and 6, expanding Gram Sabha ordinary meetings to four times a year and making its decisions binding on the Panchayat.",
+        "Inserted Chapters IV-A to IV-G constituting the Taluka Panchayats (Sections 115-A to 115-ZF).",
+        "Inserted Schedule I-A specifying the functions and responsibilities of Taluka Panchayats.",
+        "Amended Schedule II specifying the functions and responsibilities of Zilla Panchayats."
       ]
     },
     {
@@ -52,10 +65,11 @@
       "actNumber": "Goa Act 11 of 2000",
       "title": "Third Amendment Act, 2000",
       "date": "May 23, 2000",
-      "description": "Deemed to have come into force from December 15, 1999, this update focuses on elections and disqualification criteria.",
+      "description": "Deemed to have come into force from December 15, 1999, this amendment increases the number of elected members for the North Goa Zilla Panchayat and introduces provisions for the use of Electronic Voting Machines (EVMs).",
       "keyChanges": [
-        "Refined conditions under which members could face disqualification under Section 10.",
-        "Aligned representation parameters for reserved seats."
+        "Amended Section 117 and 119 to increase the number of elected members in the North Goa Zilla Panchayat from 20 to 30 (while South Goa Zilla Panchayat remains at 20).",
+        "Inserted Section 125-A to authorize the State Election Commission to use Electronic Voting Machines (EVMs) in lieu of traditional ballot papers.",
+        "Amended Section 2 to add the definition of 'ballot' including Electronic Voting Machines."
       ]
     },
     {
@@ -63,9 +77,9 @@
       "actNumber": "Goa Act 13 of 2001",
       "title": "Amendment Act, 2001",
       "date": "January 31, 2001",
-      "description": "Deemed to have come into force from December 6, 2000, this update streamlines building repair permission procedures for villagers.",
+      "description": "Deemed to have come into force from December 6, 2000, this amendment updates administrative rules to allow the appointment of an administrator in cases where a new Panchayat or Zilla Panchayat is established.",
       "keyChanges": [
-        "Amended Section 66 to permit the alteration of tiles to R.C.C. slab roofing for pre-existing single dwelling units without full development permission, subject to structural stability certification."
+        "Amended Section 180 to allow the Government to appoint an administrator when a new Panchayat or Zilla Panchayat is established."
       ]
     },
     {
@@ -73,9 +87,11 @@
       "actNumber": "Goa Act 43 of 2001",
       "title": "Amendment Act, 2001 (May)",
       "date": "June 4, 2001",
-      "description": "Brings minor administrative modifications to reservation policies and financial controls.",
+      "description": "Published on June 4, 2001, this amendment empowers the Government to direct development works in public interest, restructures local tax revisions, and enforces audit compliance by withholding grants.",
       "keyChanges": [
-        "Refined reservation criteria for women and backward classes in the local body elections."
+        "Amended Section 153 to mandate revision of taxes on buildings and lands every three years by a minimum increase of 10%, and introduced garbage disposal tax and octroi.",
+        "Amended Section 160 to restrict government grants to any Panchayat that fails to audit its accounts for more than three consecutive years.",
+        "Inserted Section 244-B to empower the Government to direct Panchayats to execute development works in public interest (Information Technology, co-operatives, self-employment schemes)."
       ]
     },
     {
@@ -83,9 +99,9 @@
       "actNumber": "Goa Act 11 of 2002",
       "title": "Amendment Act, 2002 (Jan)",
       "date": "January 31, 2002",
-      "description": "Updates financial audit mandates and administrative timelines for Panchayat funds.",
+      "description": "Published on January 31, 2002, this amendment doubles the timeframe for Zilla Panchayat budget reviews from thirty to sixty days.",
       "keyChanges": [
-        "Strengthened inspection procedures and audit regulations for local body accounts."
+        "Amended Section 133(1) to increase the timeline for the Government to approve or return the Zilla Panchayat budget from thirty days to sixty days."
       ]
     },
     {
@@ -93,9 +109,11 @@
       "actNumber": "Goa Act 20 of 2002",
       "title": "Sixth Amendment Act, 2002",
       "date": "September 17, 2002",
-      "description": "Deemed to have come into force from April 1, 2002, this amendment focuses on financial allocations and budgeting.",
+      "description": "Deemed to have come into force on April 1, 2002, this amendment formally regulates the salaries, allowances, and service conditions of Sarpanches, Deputy Sarpanches, and other elected members of Village and Zilla Panchayats.",
       "keyChanges": [
-        "Modified administrative procedures for preparing budgets and raising municipal funds."
+        "Substituted Section 48 to prescribe salaries and conditions of service for the Sarpanch, Deputy Sarpanch, and directly elected members of the Village Panchayat.",
+        "Substituted Section 134 to prescribe salaries and allowances for the Zilla Panchayat's Adhyaksha, Upadhyaksha, and elected members.",
+        "Amended Section 162(2)(i) to authorize the payment of these salaries and allowances from the Panchayat Fund."
       ]
     },
     {
@@ -103,9 +121,11 @@
       "actNumber": "Goa Act 10 of 2003",
       "title": "Seventh Amendment Act, 2003",
       "date": "April 16, 2003",
-      "description": "Introduces anti-defection and vacancy provisions for elected panchayat members who also contest or hold assembly/parliamentary seats.",
+      "description": "Published on April 16, 2003, this amendment introduces vacancy rules for elected members who enter state or national legislatures, defines Additional Director roles, and mandates oaths.",
       "keyChanges": [
-        "Inserted Section 10A to declare a Panchayat member's seat vacant if they are elected to Parliament or the State Legislative Assembly."
+        "Inserted Section 10A to declare a Panchayat member's seat vacant within 15 days if they are elected to the Parliament or the State Legislative Assembly.",
+        "Amended Section 2(9) to expand the definition of 'Director' of Panchayats to include an 'Additional Director'.",
+        "Amended Section 129 by adding sub-section (4) to mandate that Zilla Panchayat members take their oath of office before the Director of Panchayats."
       ]
     },
     {
@@ -113,9 +133,10 @@
       "actNumber": "Goa Act 26 of 2003",
       "title": "Eighth Amendment Act, 2003",
       "date": "December 1, 2003",
-      "description": "Deemed to have come into force from April 1, 2003, this update streamlines general revenue sharing and taxation procedures.",
+      "description": "Deemed to have come into force on April 1, 2003, this amendment extends salary and allowance provisions to co-opted members of Village Panchayats.",
       "keyChanges": [
-        "Refined tax collection rules and house tax calculations under Chapter VII."
+        "Amended Section 48 to include co-opted members under the salary and service condition benefits.",
+        "Amended Section 162(2)(i) to authorize the payment of salaries and allowances to co-opted members from the Panchayat Fund."
       ]
     },
     {
@@ -123,9 +144,10 @@
       "actNumber": "Goa Act 4 of 2007",
       "title": "Amendment Act, 2007",
       "date": "March 22, 2007",
-      "description": "Deemed to have come into force from December 4, 2006, this amendment updates election rules and office-bearer disqualifications.",
+      "description": "Deemed to have come into force on December 4, 2006, this amendment clarifies the definition of local population for ward allocation and permits the appointment of an administrator if elections cannot be held in time.",
       "keyChanges": [
-        "Further detailed disqualification query procedures under Section 12."
+        "Amended Section 7 by inserting an Explanation defining 'population' based on the last census or authenticated state records.",
+        "Amended Section 180(1) by adding clause (d) to authorize the Government to appoint an administrator when elections to a Village or Zilla Panchayat cannot be held upon the expiry of their term."
       ]
     },
     {
@@ -133,19 +155,53 @@
       "actNumber": "Goa Act 18 of 2010",
       "title": "Amendment Act, 2010",
       "date": "October 15, 2010",
-      "description": "Brings audit mandates, budget requirements, and structural controls into line with modern state guidelines.",
+      "description": "Published on October 15, 2010, this amendment establishes the Secretary's duty to execute appellate orders, clarifies the Deputy Sarpanch's succession rules, introduces revision applications to District Courts, and allows the transfer of local proceedings.",
       "keyChanges": [
-        "Implemented strict financial audit regulations and penalties for non-compliance."
+        "Inserted Section 47-B to mandate that the Panchayat Secretary execute orders of appellate authorities if the Panchayat fails to do so within the specified limit or one month.",
+        "Amended Section 64 to clarify that the Deputy Sarpanch assumes all duties when the Sarpanch is absent, resigns, dies, is disqualified, or faces a no-confidence motion.",
+        "Inserted Section 201-B to allow revision applications to be filed in the District Court against any order passed under the Act within 30 days.",
+        "Inserted Section 244-C to empower the Director and the Government to transfer pending administrative proceedings between respective local officers (e.g. CEOs, BDOs, Deputy Directors)."
+      ]
+    },
+    {
+      "year": 2015,
+      "actNumber": "Goa Act 6 of 2015",
+      "title": "Amendment Act, 2015 (Feb)",
+      "date": "June 3, 2015",
+      "description": "Deemed to have come into force on February 4, 2015, this amendment introduces the participation of recognized political parties in Zilla Panchayat elections.",
+      "keyChanges": [
+        "Amended Section 2 by inserting clause (16-A) to define 'political party' based on Election Commission recognition.",
+        "Inserted Section 133-A to allow political parties to officially sponsor candidates in Zilla Panchayat elections, while still permitting independent candidates to contest."
       ]
     },
     {
       "year": 2015,
       "actNumber": "Goa Act 21 of 2015",
-      "title": "Amendment Act, 2015",
+      "title": "Amendment Act, 2015 (Sep)",
       "date": "September 15, 2015",
-      "description": "Focuses on decentralization and local public planning groups.",
+      "description": "Focuses on decentralization, ward planning, and local public planning groups.",
       "keyChanges": [
-        "Inserted Section 65 to mandate the establishment of Ward Development Committees for local micro-planning."
+        "Amended Section 6 by inserting sub-sections (8) and (9) to mandate that the Gram Sabha constitute Ward Development Committees for local micro-planning."
+      ]
+    },
+    {
+      "year": 2017,
+      "actNumber": "Goa Act 20 of 2017",
+      "title": "Amendment Act, 2017",
+      "date": "September 12, 2017",
+      "description": "Deemed to have come into force on June 9, 2017, this amendment introduces the mandate for employers to grant a paid holiday to employees on polling day to encourage voter turnout.",
+      "keyChanges": [
+        "Inserted Section 40-A to require all employers in any business, trade, or industrial establishment to grant a paid holiday on the day of the Panchayat poll to all employees entitled to vote."
+      ]
+    },
+    {
+      "year": 2017,
+      "actNumber": "Section 173 of Goa GST Act, 2017",
+      "title": "Goa GST Act Amendment",
+      "date": "June 26, 2017",
+      "description": "Pursuant to the implementation of the Goods and Services Tax (GST), Section 173 of the Goa GST Act, 2017 amended the tax collection powers of local bodies.",
+      "keyChanges": [
+        "Amended Section 153 to remove the local power to levy Octroi on Goods (excluding petroleum products) to align with national GST framework."
       ]
     },
     {
@@ -153,10 +209,23 @@
       "actNumber": "Goa Act 32 of 2021",
       "title": "Amendment Act, 2021",
       "date": "October 8, 2021",
-      "description": "Empowers state authorities to call public interest meetings and refines structural clearance criteria for residential properties.",
+      "description": "Empowers state authorities to call public interest meetings and refines structural clearance criteria.",
       "keyChanges": [
-        "Amended Section 5 to allow the Director of Panchayats to mandate extraordinary Gram Sabha meetings in public interest.",
-        "Refined the building code exception under Section 66 to exempt minor maintenance (painting, plastering, flooring) from licensing."
+        "Amended Section 2 to add definitions of 'alteration', 'Registered Structural Engineer', and 'single dwelling unit'.",
+        "Amended Section 7 and 119 to transfer ward and constituency division authority to the State Election Commission in consultation with the Government.",
+        "Amended Section 12(2) and 15 to adjust casual vacancy review periods and bye-election exceptions if the remaining term is less than one year.",
+        "Amended Section 66 to permit the alteration of pre-existing single dwelling units (changing tiles to R.C.C. slab roofing) subject to Registered Structural Engineer certification.",
+        "Amended Section 153 to permit levying tax on unauthorized buildings without regularizing them."
+      ]
+    },
+    {
+      "year": 2022,
+      "actNumber": "Notification No. 26/DP/PAN/Schedule-III/Rules/2021/766",
+      "title": "Schedule-III Rate Substitution",
+      "date": "February 17, 2022",
+      "description": "Amended Schedule III of the Act to establish maximum tax rates and fee structures for residential/commercial buildings, land assessments, market spaces, bus stands, and minor mineral extractions.",
+      "keyChanges": [
+        "Substituted Schedule III to update maximum rates for building tax, land tax, market fees, bus stand fees, advertisement fees, and professional tax."
       ]
     },
     {
@@ -164,7 +233,7 @@
       "actNumber": "Goa Act 13 of 2023",
       "title": "Amendment Act, 2023",
       "date": "March 6, 2023",
-      "description": "Introduces strict enforcement powers to seal unauthorized commercial premises and streamlines trade licensing to promote ease of doing business.",
+      "description": "Introduces strict enforcement powers to seal unauthorized commercial premises and streamlines trade licensing deadlines.",
       "keyChanges": [
         "Amended Section 47 to authorize the Block Development Officer to issue trade licenses if the Secretary fails to act within 30 days.",
         "Inserted Section 72-A, giving the Secretary power to seal premises operating unlicensed businesses."
@@ -175,7 +244,7 @@
       "actNumber": "Goa Act 24 of 2025",
       "title": "Amendment Act, 2025",
       "date": "October 1, 2025",
-      "description": "A landmark amendment targeting administrative delays by cutting building permission review periods in half and introducing a deemed approval clause.",
+      "description": "A landmark amendment targeting administrative delays by cutting building permission review periods in half.",
       "keyChanges": [
         "Substituted Section 66(2) to reduce building permission processing times from 30 days to 15 days.",
         "Introduced the 'Deemed Permission' clause, allowing applicants to proceed with construction if the Panchayat fails to respond within 15 days, provided technical clearances are met."
