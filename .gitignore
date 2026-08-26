@@ -1,0 +1,6 @@
+# Ignore the folder containing the 60 raw book images
+/Additional data/
+
+# Ignore local OS metadata
+.DS_Store
+Thumbs.db
