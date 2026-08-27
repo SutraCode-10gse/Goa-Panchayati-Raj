@@ -1512,7 +1512,7 @@ function formatLegalText(text) {
   // First, split heading and first subsection if they are combined on the same line
   const cleanedLines = [];
   rawLines.forEach(line => {
-    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^.—]*?\.\s*—+)\s*(.*)$/s);
+    const splitMatch = line.match(/^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?\.\s+[A-Z][^—]*?\.\s*—+)\s*(.*)$/s);
     if (splitMatch) {
       cleanedLines.push(splitMatch[1].trim());
       cleanedLines.push(splitMatch[2].trim());
@@ -1578,7 +1578,7 @@ function formatLegalText(text) {
   paragraphs.forEach(para => {
     // Section Title Heading (e.g. "3. Declaration...—")
     // We skip rendering this line in the body block since the UI cards already display a large metadata header.
-    const titleRegex = /^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?)\.\s+([A-Z][a-zA-Z\s,()&'’:\n-]{3,100}?)[.——]/;
+    const titleRegex = /^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?)\.\s+.*?\.\s*—+\s*$/;
     if (titleRegex.test(para)) {
       return;
     }
