@@ -1553,13 +1553,16 @@ function formatLegalText(text) {
     let shouldMerge = false;
     
     if (!isNewBlock(line)) {
-      const endsWithTerminal = /[.;:]\s*$/.test(lastLine);
-      if (!endsWithTerminal) {
-        shouldMerge = true;
-      } else {
-        const startsWithLowercase = /^[a-z]/.test(line);
-        if (startsWithLowercase) {
+      const isPrevHeading = /^(\d+(?:-[A-Z]+)?(?:-Z-[A-Z]+)?)\.\s+/.test(lastLine);
+      if (!isPrevHeading) {
+        const endsWithTerminal = /[.;:]\s*$/.test(lastLine);
+        if (!endsWithTerminal) {
           shouldMerge = true;
+        } else {
+          const startsWithLowercase = /^[a-z]/.test(line);
+          if (startsWithLowercase) {
+            shouldMerge = true;
+          }
         }
       }
     }
