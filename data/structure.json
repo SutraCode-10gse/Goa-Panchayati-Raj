@@ -279,7 +279,7 @@
     },
     {
       "id": "ch4b",
-      "title": "Chapter IV-B: Functions, Duties and Powers of Taluka Panchayat...",
+      "title": "Chapter IV-B: Functions, Duties and Powers of Taluka Panchayat, Chairperson and Vice-Chairperson",
       "range": "Sec 115-Q - 115-X"
     },
     {
@@ -1769,7 +1769,61 @@
       "id": "gen_sec_115_Z",
       "chapterId": "ch4c",
       "number": "115-Z",
-      "title": "Member-Secretary",
+      "title": "Member Secretary",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Z_A",
+      "chapterId": "ch4c",
+      "number": "115-Z-A",
+      "title": "Functions, powers and duties of the Member Secretary",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Z_B",
+      "chapterId": "ch4c",
+      "number": "115-Z-B",
+      "title": "Member-Secretary’s right to requisition records, etc.",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Z_C",
+      "chapterId": "ch4d",
+      "number": "115-Z-C",
+      "title": "Application of certain sections relating to accounts and budget of the Taluka Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Z_D",
+      "chapterId": "ch4e",
+      "number": "115-Z-D",
+      "title": "Application of certain sections relating to properties and funds of the Taluka Panchayat",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Z_E",
+      "chapterId": "ch4f",
+      "number": "115-Z-E",
+      "title": "Application of certain sections relating to inspection, supervision, etc.",
+      "tier": "Village Panchayat",
+      "amendedYears": [],
+      "insertedYear": 1999
+    },
+    {
+      "id": "gen_sec_115_Z_F",
+      "chapterId": "ch4g",
+      "number": "115-Z-F",
+      "title": "Application of certain sections relating to miscellaneous matters to Taluka Panchayat",
       "tier": "Village Panchayat",
       "amendedYears": [],
       "insertedYear": 1999
